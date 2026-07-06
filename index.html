@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hideのニュース</title>
+<style>
+:root {
+  --surface-1: #fcfcfb; --page: #f9f9f7;
+  --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #898781;
+  --grid: #e1e0d9; --border: rgba(11,11,11,0.10); --accent-line: #2a78d6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-1: #1a1a19; --page: #0d0d0d;
+    --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #7d7c77;
+    --grid: #2c2c2a; --border: rgba(255,255,255,0.10);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 32px 20px; background: var(--page); color: var(--text-primary);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6;
+}
+.wrap { max-width: 900px; margin: 0 auto; }
+header.top { margin-bottom: 20px; }
+header.top h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: .01em; }
+header.top .meta { font-size: 12px; color: var(--text-muted); }
+h2.section { font-size: 13px; text-transform: uppercase; letter-spacing: .05em;
+  color: var(--text-secondary); font-weight: 600; margin: 34px 0 12px;
+  display: flex; align-items: center; gap: 8px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.count { color: var(--text-muted); font-weight: 400; letter-spacing: 0; text-transform: none; }
+
+/* stock (＋) button */
+.stock-btn { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--surface-1); color: var(--text-muted);
+  font-size: 15px; line-height: 1; cursor: pointer; padding: 0; }
+.stock-btn:hover { background: var(--grid); color: var(--text-primary); }
+.stock-btn.on { background: #eda100; border-color: #eda100; color: #fff; }
+
+.pick { background: var(--surface-1); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.pick .head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.stars { color: #eda100; font-size: 13px; letter-spacing: 1px; flex-shrink: 0; }
+.pick a.title { font-size: 15px; font-weight: 600; color: var(--text-primary); text-decoration: none; flex: 1; }
+.pick a.title:hover { text-decoration: underline; }
+.pick .src { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+.pick .summary { font-size: 13px; color: var(--text-secondary); margin-top: 6px; }
+
+ul.feed { list-style: none; padding: 0; margin: 0; }
+ul.feed li { padding: 12px 2px; border-bottom: 1px solid var(--grid); display: flex; gap: 10px; align-items: flex-start; }
+ul.feed .body { flex: 1; }
+ul.feed a.title { color: var(--text-primary); text-decoration: none; font-size: 14px; font-weight: 600; }
+ul.feed a.title:hover { text-decoration: underline; }
+ul.feed .src { font-size: 11px; color: var(--text-muted); margin-left: 6px; }
+ul.feed .summary { font-size: 12.5px; color: var(--text-secondary); margin-top: 3px; }
+
+/* 横断ウォッチ枠 */
+.watch { border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; margin-bottom: 8px;
+  background: linear-gradient(180deg, rgba(26,175,122,0.08), transparent 60%); }
+.watch h2 { font-size: 15px; margin: 0 0 4px; display: flex; align-items: center; gap: 8px; }
+.watch .thesis { font-size: 12.5px; color: var(--text-secondary); margin: 0 0 12px; }
+.watch ul { list-style: none; margin: 0; padding: 0; }
+.watch li { padding: 9px 0; border-top: 1px solid var(--grid); display: flex; gap: 10px; align-items: flex-start; }
+.watch .body { flex: 1; }
+.watch a.title { color: var(--text-primary); text-decoration: none; font-size: 13.5px; font-weight: 600; }
+.watch a.title:hover { text-decoration: underline; }
+.watch .src { font-size: 11px; color: var(--text-muted); margin-left: 6px; }
+.watch .summary { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+.watch .tag { font-size: 10px; color: #1baf7a; border: 1px solid #1baf7a; border-radius: 4px; padding: 0 5px; margin-left: 6px; white-space: nowrap; }
+
+/* stock panel */
+#stock-panel { border: 1px solid var(--border); border-radius: 10px; background: var(--surface-1);
+  margin-bottom: 8px; overflow: hidden; }
+#stock-panel[hidden] { display: none; }
+#stock-panel summary { cursor: pointer; padding: 12px 16px; font-size: 13px; font-weight: 600;
+  color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
+#stock-panel .actions { padding: 0 16px 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+#stock-panel .actions button { font-size: 12px; border: 1px solid var(--border); background: var(--surface-1);
+  color: var(--text-secondary); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+#stock-panel .actions button:hover { background: var(--grid); color: var(--text-primary); }
+#stock-list { list-style: none; margin: 0; padding: 4px 16px 14px; }
+#stock-list li { padding: 8px 0; border-top: 1px solid var(--grid); display: flex; gap: 8px; align-items: flex-start; }
+#stock-list a { color: var(--text-primary); text-decoration: none; font-size: 13px; flex: 1; }
+#stock-list a:hover { text-decoration: underline; }
+#stock-list .rm { cursor: pointer; color: var(--text-muted); border: none; background: none; font-size: 14px; }
+#stock-list .st { font-size: 11px; color: var(--text-muted); }
+
+footer { margin-top: 40px; padding-top: 14px; border-top: 1px dashed var(--border);
+  font-size: 11px; color: var(--text-muted); }
+.toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+  background: var(--text-primary); color: var(--surface-1); padding: 8px 16px; border-radius: 8px;
+  font-size: 12px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <h1>Hide専用ニュース</h1>
+  <div class="meta">生成: 2026-07-07 01:45 ／ 注目6件・全30件 ／ 記事の ＋ でストック</div>
+</header>
+<details id="stock-panel" hidden open><summary>📌 ストック（<span id="stock-count">0</span>件）</summary><div class="actions"><button id="stock-copy">⧉ コピー（Claude用）</button><button id="stock-export">⤓ 書き出し(JSON)</button><button id="stock-clear">全消去</button></div><ul id="stock-list"></ul></details>
+<div class="watch"><h2>🔭 機械が払うWeb（M2M決済 / Pay-per-crawl / x402）</h2><p class="thesis">botが弾かれる根本は「機械がコンテンツに小額を払う手段が無い」こと。ステーブルコインはM2Mマイクロ決済に唯一フィットする通貨で、「弾く」を「払えば通す」に変える鍵。ただし支払い(ステーブルコイン)＋身元(デジタルID/VC)の両輪で初めて成立し、政府系の非経済的な遮断は対象外。決済×Agentic Commerce×デジタルIDが交わる横断軸として定点観測する。</p><ul><li><button class="stock-btn" data-link="https://www.finextra.com/pressarticle/110348/bbva-completes-first-agent-initiated-transaction" data-item="{&quot;title&quot;: &quot;BBVA、AIエージェントが起票した初のカード取引を完了&quot;, &quot;link&quot;: &quot;https://www.finextra.com/pressarticle/110348/bbva-completes-first-agent-initiated-transaction&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;Agentic Commerce&quot;, &quot;summary&quot;: &quot;機械（AIエージェント）が実際に決済を実行した実例。「機械が払う」の起点となる事例。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.finextra.com/pressarticle/110348/bbva-completes-first-agent-initiated-transaction" target="_blank" rel="noopener">BBVA、AIエージェントが起票した初のカード取引を完了</a><span class="tag">Agentic Commerce</span><span class="src">Finextra · 2026-07-06</span><div class="summary">機械（AIエージェント）が実際に決済を実行した実例。「機械が払う」の起点となる事例。</div></div></li><li><button class="stock-btn" data-link="https://www.paymentsdive.com/news/stablecoin-open-standard-bridge-abrams-bny-stripe-mastercard-visa-coinbase-adyen/824223/" data-item="{&quot;title&quot;: &quot;カード大手・銀行・フィンテックが「低コスト」ステーブルコイン標準で提携&quot;, &quot;link&quot;: &quot;https://www.paymentsdive.com/news/stablecoin-open-standard-bridge-abrams-bny-stripe-mastercard-visa-coinbase-adyen/824223/&quot;, &quot;source&quot;: &quot;PaymentsDive&quot;, &quot;date&quot;: &quot;2026-07-01&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;M2Mマイクロ決済の前提となる低コストのステーブルコイン共通規格。機械が払うための「レール」側の動き。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.paymentsdive.com/news/stablecoin-open-standard-bridge-abrams-bny-stripe-mastercard-visa-coinbase-adyen/824223/" target="_blank" rel="noopener">カード大手・銀行・フィンテックが「低コスト」ステーブルコイン標準で提携</a><span class="tag">決済・フィンテック</span><span class="src">PaymentsDive · 2026-07-01</span><div class="summary">M2Mマイクロ決済の前提となる低コストのステーブルコイン共通規格。機械が払うための「レール」側の動き。</div></div></li><li><button class="stock-btn" data-link="https://www.finextra.com/blogposting/32190/stablecoins-dont-lend-thats-why-the-ecb-is-fighting-them" data-item="{&quot;title&quot;: &quot;「ステーブルコインは貸さない」——だからECBは反対する&quot;, &quot;link&quot;: &quot;https://www.finextra.com/blogposting/32190/stablecoins-dont-lend-thats-why-the-ecb-is-fighting-them&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-07-05&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;ステーブルコイン普及の摩擦（信用創造をしない／中央銀行の警戒）を論じる。機械が払うWebの逆風・論点整理として。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.finextra.com/blogposting/32190/stablecoins-dont-lend-thats-why-the-ecb-is-fighting-them" target="_blank" rel="noopener">「ステーブルコインは貸さない」——だからECBは反対する</a><span class="tag">決済・フィンテック</span><span class="src">Finextra · 2026-07-05</span><div class="summary">ステーブルコイン普及の摩擦（信用創造をしない／中央銀行の警戒）を論じる。機械が払うWebの逆風・論点整理として。</div></div></li><li><button class="stock-btn" data-link="https://paymentnavi.com/paymentnews/175828.html" data-item="{&quot;title&quot;: &quot;デジタル通貨の分類：ステーブルコイン と CBDC&quot;, &quot;link&quot;: &quot;https://paymentnavi.com/paymentnews/175828.html&quot;, &quot;source&quot;: &quot;ペイメントナビ&quot;, &quot;date&quot;: &quot;2026-07-05&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;ステーブルコインとCBDCの違いを整理した日本語解説。M2M決済の担い手を考える基礎知識。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://paymentnavi.com/paymentnews/175828.html" target="_blank" rel="noopener">デジタル通貨の分類：ステーブルコイン と CBDC</a><span class="tag">決済・フィンテック</span><span class="src">ペイメントナビ · 2026-07-05</span><div class="summary">ステーブルコインとCBDCの違いを整理した日本語解説。M2M決済の担い手を考える基礎知識。</div></div></li></ul></div>
+<h2 class="section">今日の注目 <span class="count">6件</span></h2>
+<div class="pick" style="--accent:#2a78d6"><div class="head"><span class="stars">★★★</span><a class="title" href="https://paymentnavi.com/paymentnews/176555.html" target="_blank" rel="noopener">「LINE」と「PayPay」をつなぐ新体験を順次提供へ</a><button class="stock-btn" data-link="https://paymentnavi.com/paymentnews/176555.html" data-item="{&quot;title&quot;: &quot;「LINE」と「PayPay」をつなぐ新体験を順次提供へ&quot;, &quot;link&quot;: &quot;https://paymentnavi.com/paymentnews/176555.html&quot;, &quot;source&quot;: &quot;ペイメントナビ&quot;, &quot;date&quot;: &quot;2026-07-02&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;PayPayとLINEヤフーがLINEとPayPayを連携する新機能を順次提供。国内最大級のメッセージ圏と決済圏の統合で、加盟店・ユーザー動線への波及が大きい。&quot;}" title="ストックに追加">＋</button></div><div class="src">ペイメントナビ · 2026-07-02 ｜ 決済・フィンテック</div><div class="summary">PayPayとLINEヤフーがLINEとPayPayを連携する新機能を順次提供。国内最大級のメッセージ圏と決済圏の統合で、加盟店・ユーザー動線への波及が大きい。</div></div>
+<div class="pick" style="--accent:#e34948"><div class="head"><span class="stars">★★★</span><a class="title" href="https://www.finextra.com/pressarticle/110348/bbva-completes-first-agent-initiated-transaction" target="_blank" rel="noopener">BBVA、AIエージェントが起票した初のカード取引を完了</a><button class="stock-btn" data-link="https://www.finextra.com/pressarticle/110348/bbva-completes-first-agent-initiated-transaction" data-item="{&quot;title&quot;: &quot;BBVA、AIエージェントが起票した初のカード取引を完了&quot;, &quot;link&quot;: &quot;https://www.finextra.com/pressarticle/110348/bbva-completes-first-agent-initiated-transaction&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;Agentic Commerce&quot;, &quot;summary&quot;: &quot;BBVAがカード会員に代わりAIエージェントが開始した取引を完了。エージェントが実際に決済を実行するAgentic Commerceが実運用フェーズに入った象徴。&quot;}" title="ストックに追加">＋</button></div><div class="src">Finextra · 2026-07-06 ｜ Agentic Commerce</div><div class="summary">BBVAがカード会員に代わりAIエージェントが開始した取引を完了。エージェントが実際に決済を実行するAgentic Commerceが実運用フェーズに入った象徴。</div></div>
+<div class="pick" style="--accent:#2a78d6"><div class="head"><span class="stars">★★</span><a class="title" href="https://www.paymentsdive.com/news/stablecoin-open-standard-bridge-abrams-bny-stripe-mastercard-visa-coinbase-adyen/824223/" target="_blank" rel="noopener">カード大手・銀行・フィンテックが「低コスト」ステーブルコイン標準で提携</a><button class="stock-btn" data-link="https://www.paymentsdive.com/news/stablecoin-open-standard-bridge-abrams-bny-stripe-mastercard-visa-coinbase-adyen/824223/" data-item="{&quot;title&quot;: &quot;カード大手・銀行・フィンテックが「低コスト」ステーブルコイン標準で提携&quot;, &quot;link&quot;: &quot;https://www.paymentsdive.com/news/stablecoin-open-standard-bridge-abrams-bny-stripe-mastercard-visa-coinbase-adyen/824223/&quot;, &quot;source&quot;: &quot;PaymentsDive&quot;, &quot;date&quot;: &quot;2026-07-01&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;Visa・Mastercard・Klarna・MoneyGramらが低コストのステーブルコイン共通規格を支持。決済大手が束になって暗号資産決済を標準化しにいく動き。&quot;}" title="ストックに追加">＋</button></div><div class="src">PaymentsDive · 2026-07-01 ｜ 決済・フィンテック</div><div class="summary">Visa・Mastercard・Klarna・MoneyGramらが低コストのステーブルコイン共通規格を支持。決済大手が束になって暗号資産決済を標準化しにいく動き。</div></div>
+<div class="pick" style="--accent:#4a3aa7"><div class="head"><span class="stars">★★</span><a class="title" href="https://www.finextra.com/pressarticle/110342/signicat-and-trusttech-partner-to-bring-reusable-identity-to-european-digital-wallets" target="_blank" rel="noopener">Signicatとトラステック、欧州デジタルウォレットに「再利用可能なID」を提供へ提携</a><button class="stock-btn" data-link="https://www.finextra.com/pressarticle/110342/signicat-and-trusttech-partner-to-bring-reusable-identity-to-european-digital-wallets" data-item="{&quot;title&quot;: &quot;Signicatとトラステック、欧州デジタルウォレットに「再利用可能なID」を提供へ提携&quot;, &quot;link&quot;: &quot;https://www.finextra.com/pressarticle/110342/signicat-and-trusttech-partner-to-bring-reusable-identity-to-european-digital-wallets&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-07-03&quot;, &quot;theme&quot;: &quot;デジタルアイデンティティ/VC&quot;, &quot;summary&quot;: &quot;欧州のデジタルID大手Signicatが、EUデジタルウォレット向けに一度作れば使い回せる本人確認（再利用可能ID＝VC的な仕組み）を推進。&quot;}" title="ストックに追加">＋</button></div><div class="src">Finextra · 2026-07-03 ｜ デジタルアイデンティティ/VC</div><div class="summary">欧州のデジタルID大手Signicatが、EUデジタルウォレット向けに一度作れば使い回せる本人確認（再利用可能ID＝VC的な仕組み）を推進。</div></div>
+<div class="pick" style="--accent:#eda100"><div class="head"><span class="stars">★★</span><a class="title" href="https://www.fsa.go.jp/policy/nisa/20260703.html" target="_blank" rel="noopener">NISA口座の利用状況に関する調査結果（令和7年12月末時点）</a><button class="stock-btn" data-link="https://www.fsa.go.jp/policy/nisa/20260703.html" data-item="{&quot;title&quot;: &quot;NISA口座の利用状況に関する調査結果（令和7年12月末時点）&quot;, &quot;link&quot;: &quot;https://www.fsa.go.jp/policy/nisa/20260703.html&quot;, &quot;source&quot;: &quot;金融庁&quot;, &quot;date&quot;: &quot;2026-07-03&quot;, &quot;theme&quot;: &quot;コンサル/政策&quot;, &quot;summary&quot;: &quot;金融庁が令和7年12月末時点のNISA口座利用状況を公表。新NISAの浸透度・買付動向を示す一次データで、個人マネーの流れを読む基礎資料。&quot;}" title="ストックに追加">＋</button></div><div class="src">金融庁 · 2026-07-03 ｜ コンサル/政策</div><div class="summary">金融庁が令和7年12月末時点のNISA口座利用状況を公表。新NISAの浸透度・買付動向を示す一次データで、個人マネーの流れを読む基礎資料。</div></div>
+<div class="pick" style="--accent:#4a3aa7"><div class="head"><span class="stars">★</span><a class="title" href="https://www.digital.go.jp/policies/mynumber/mynumbercard-mdoc" target="_blank" rel="noopener">マイナカードのスマホ搭載（属性証明機能／カード代替電磁的記録）関連資料を更新</a><button class="stock-btn" data-link="https://www.digital.go.jp/policies/mynumber/mynumbercard-mdoc" data-item="{&quot;title&quot;: &quot;マイナカードのスマホ搭載（属性証明機能／カード代替電磁的記録）関連資料を更新&quot;, &quot;link&quot;: &quot;https://www.digital.go.jp/policies/mynumber/mynumbercard-mdoc&quot;, &quot;source&quot;: &quot;デジタル庁&quot;, &quot;date&quot;: &quot;2026-07-02&quot;, &quot;theme&quot;: &quot;デジタルアイデンティティ/VC&quot;, &quot;summary&quot;: &quot;スマホにマイナ機能を載せ属性を証明する「カード代替電磁的記録」の資料を更新。日本版デジタルID／VCの基盤整備。&quot;}" title="ストックに追加">＋</button></div><div class="src">デジタル庁 · 2026-07-02 ｜ デジタルアイデンティティ/VC</div><div class="summary">スマホにマイナ機能を載せ属性を証明する「カード代替電磁的記録」の資料を更新。日本版デジタルID／VCの基盤整備。</div></div>
+<h2 class="section"><span class="dot" style="background:#2a78d6"></span>決済・フィンテック <span class="count">7件</span></h2>
+<ul class="feed">
+<li><button class="stock-btn" data-link="https://www.finextra.com/newsarticle/48045/klarna-applies-for-us-banking-license" data-item="{&quot;title&quot;: &quot;クラーナ、米国の銀行免許を申請&quot;, &quot;link&quot;: &quot;https://www.finextra.com/newsarticle/48045/klarna-applies-for-us-banking-license&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;後払い(BNPL)大手クラーナが米国の銀行免許を申請。BNPLから銀行業へ踏み込み、規制対応と収益源の多様化を狙う。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.finextra.com/newsarticle/48045/klarna-applies-for-us-banking-license" target="_blank" rel="noopener">クラーナ、米国の銀行免許を申請</a><span class="src">Finextra · 2026-07-06</span><div class="summary">後払い(BNPL)大手クラーナが米国の銀行免許を申請。BNPLから銀行業へ踏み込み、規制対応と収益源の多様化を狙う。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.finextra.com/pressarticle/110349/standard-chartered-enables-institutional-clients-to-access-usdc-minting-and-redemption" data-item="{&quot;title&quot;: &quot;スタンダードチャータード、機関投資家向けにUSDCの発行・償還を提供&quot;, &quot;link&quot;: &quot;https://www.finextra.com/pressarticle/110349/standard-chartered-enables-institutional-clients-to-access-usdc-minting-and-redemption&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;大手銀SCが機関顧客にステーブルコインUSDCの発行・償還機能を提供開始。伝統的な銀行がステーブルコイン基盤に本格参入。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.finextra.com/pressarticle/110349/standard-chartered-enables-institutional-clients-to-access-usdc-minting-and-redemption" target="_blank" rel="noopener">スタンダードチャータード、機関投資家向けにUSDCの発行・償還を提供</a><span class="src">Finextra · 2026-07-06</span><div class="summary">大手銀SCが機関顧客にステーブルコインUSDCの発行・償還機能を提供開始。伝統的な銀行がステーブルコイン基盤に本格参入。</div></div></li>
+<li><button class="stock-btn" data-link="https://paymentnavi.com/paymentnews/176452.html" data-item="{&quot;title&quot;: &quot;MOLTSが「Unifi Pay」導入、JPYC決済開始で最大8%還元&quot;, &quot;link&quot;: &quot;https://paymentnavi.com/paymentnews/176452.html&quot;, &quot;source&quot;: &quot;ペイメントナビ&quot;, &quot;date&quot;: &quot;2026-07-04&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;円建てステーブルコインJPYCが実サービスの決済手段として使われ始めた具体事例。規制整備と合わせ注目度が高い。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://paymentnavi.com/paymentnews/176452.html" target="_blank" rel="noopener">MOLTSが「Unifi Pay」導入、JPYC決済開始で最大8%還元</a><span class="src">ペイメントナビ · 2026-07-04</span><div class="summary">円建てステーブルコインJPYCが実サービスの決済手段として使われ始めた具体事例。規制整備と合わせ注目度が高い。</div></div></li>
+<li><button class="stock-btn" data-link="https://paymentnavi.com/paymentnews/176617.html" data-item="{&quot;title&quot;: &quot;JCBのタッチ決済が台湾・台北MRTで利用開始、台新銀行と協業&quot;, &quot;link&quot;: &quot;https://paymentnavi.com/paymentnews/176617.html&quot;, &quot;source&quot;: &quot;ペイメントナビ&quot;, &quot;date&quot;: &quot;2026-07-05&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;日系決済ブランドのアジア公共交通での面展開。訪日・訪台双方のインバウンド取り込みに効く。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://paymentnavi.com/paymentnews/176617.html" target="_blank" rel="noopener">JCBのタッチ決済が台湾・台北MRTで利用開始、台新銀行と協業</a><span class="src">ペイメントナビ · 2026-07-05</span><div class="summary">日系決済ブランドのアジア公共交通での面展開。訪日・訪台双方のインバウンド取り込みに効く。</div></div></li>
+<li><button class="stock-btn" data-link="https://paymentnavi.com/paymentnews/176534.html" data-item="{&quot;title&quot;: &quot;みずほとUPSIDER、法人向け総合金融「UPSIDER BANK by MIZUHO」&quot;, &quot;link&quot;: &quot;https://paymentnavi.com/paymentnews/176534.html&quot;, &quot;source&quot;: &quot;ペイメントナビ&quot;, &quot;date&quot;: &quot;2026-07-02&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;メガバンク×フィンテックが組む法人向けBaaS的連携。法人決済・資金管理領域の競争軸を示す。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://paymentnavi.com/paymentnews/176534.html" target="_blank" rel="noopener">みずほとUPSIDER、法人向け総合金融「UPSIDER BANK by MIZUHO」</a><span class="src">ペイメントナビ · 2026-07-02</span><div class="summary">メガバンク×フィンテックが組む法人向けBaaS的連携。法人決済・資金管理領域の競争軸を示す。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.paymentsdive.com/news/amex-apple-team-on-rewards-cards-digital-wallets/824268/" data-item="{&quot;title&quot;: &quot;アメックスとアップルが特典で連携&quot;, &quot;link&quot;: &quot;https://www.paymentsdive.com/news/amex-apple-team-on-rewards-cards-digital-wallets/824268/&quot;, &quot;source&quot;: &quot;PaymentsDive&quot;, &quot;date&quot;: &quot;2026-07-02&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;アメックス会員がApple Pay決済時（オンライン/アプリ）にポイントを利用可能に。カードとウォレットの融合が進む。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.paymentsdive.com/news/amex-apple-team-on-rewards-cards-digital-wallets/824268/" target="_blank" rel="noopener">アメックスとアップルが特典で連携</a><span class="src">PaymentsDive · 2026-07-02</span><div class="summary">アメックス会員がApple Pay決済時（オンライン/アプリ）にポイントを利用可能に。カードとウォレットの融合が進む。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.fsa.go.jp/news/r8/260703/20260703.html" data-item="{&quot;title&quot;: &quot;「マネロン等・金融犯罪対策の取組と課題（2026年7月）」を公表&quot;, &quot;link&quot;: &quot;https://www.fsa.go.jp/news/r8/260703/20260703.html&quot;, &quot;source&quot;: &quot;金融庁&quot;, &quot;date&quot;: &quot;2026-07-03&quot;, &quot;theme&quot;: &quot;決済・フィンテック&quot;, &quot;summary&quot;: &quot;金融機関のコンプラ・決済事業の前提となる方針。不正・詐欺対策の当局スタンスを押さえられる。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.fsa.go.jp/news/r8/260703/20260703.html" target="_blank" rel="noopener">「マネロン等・金融犯罪対策の取組と課題（2026年7月）」を公表</a><span class="src">金融庁 · 2026-07-03</span><div class="summary">金融機関のコンプラ・決済事業の前提となる方針。不正・詐欺対策の当局スタンスを押さえられる。</div></div></li>
+</ul>
+<h2 class="section"><span class="dot" style="background:#e34948"></span>Agentic Commerce <span class="count">5件</span></h2>
+<ul class="feed">
+<li><button class="stock-btn" data-link="https://www.finextra.com/pressarticle/110345/caixabank-initiates-first-agentic-shopping-transaction" data-item="{&quot;title&quot;: &quot;カイシャバンク、Visaと組みAIエージェントによる初の買い物取引を実行&quot;, &quot;link&quot;: &quot;https://www.finextra.com/pressarticle/110345/caixabank-initiates-first-agentic-shopping-transaction&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;Agentic Commerce&quot;, &quot;summary&quot;: &quot;カイシャバンクがVisaと協業し、AIエージェントが開始した買い物取引を実行。欧州大手銀によるエージェント商取引の実証。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.finextra.com/pressarticle/110345/caixabank-initiates-first-agentic-shopping-transaction" target="_blank" rel="noopener">カイシャバンク、Visaと組みAIエージェントによる初の買い物取引を実行</a><span class="src">Finextra · 2026-07-06</span><div class="summary">カイシャバンクがVisaと協業し、AIエージェントが開始した買い物取引を実行。欧州大手銀によるエージェント商取引の実証。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.finextra.com/pressarticle/110344/monetary-authority-of-singapore-and-banks-team-on-safeguards-for-ai-agents" data-item="{&quot;title&quot;: &quot;シンガポール金融庁(MAS)と銀行、AIエージェントの安全策で連携&quot;, &quot;link&quot;: &quot;https://www.finextra.com/pressarticle/110344/monetary-authority-of-singapore-and-banks-team-on-safeguards-for-ai-agents&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-07-03&quot;, &quot;theme&quot;: &quot;Agentic Commerce&quot;, &quot;summary&quot;: &quot;MASと大手金融・フィンテックがAIエージェント利用の安全策（ガードレール）を公表。エージェント決済の規制設計が始動。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.finextra.com/pressarticle/110344/monetary-authority-of-singapore-and-banks-team-on-safeguards-for-ai-agents" target="_blank" rel="noopener">シンガポール金融庁(MAS)と銀行、AIエージェントの安全策で連携</a><span class="src">Finextra · 2026-07-03</span><div class="summary">MASと大手金融・フィンテックがAIエージェント利用の安全策（ガードレール）を公表。エージェント決済の規制設計が始動。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.paymentsdive.com/spons/the-b2b-payments-infrastructure-gap-most-platforms-werent-built-for-agent/824370/" data-item="{&quot;title&quot;: &quot;B2B決済基盤のギャップ——多くはエージェントAIを前提に作られていない&quot;, &quot;link&quot;: &quot;https://www.paymentsdive.com/spons/the-b2b-payments-infrastructure-gap-most-platforms-werent-built-for-agent/824370/&quot;, &quot;source&quot;: &quot;PaymentsDive&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;Agentic Commerce&quot;, &quot;summary&quot;: &quot;既存のB2B技術は自動化には対応してもエージェントAIには非対応。エージェント商取引に向けた基盤刷新の必要性を指摘。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.paymentsdive.com/spons/the-b2b-payments-infrastructure-gap-most-platforms-werent-built-for-agent/824370/" target="_blank" rel="noopener">B2B決済基盤のギャップ——多くはエージェントAIを前提に作られていない</a><span class="src">PaymentsDive · 2026-07-06</span><div class="summary">既存のB2B技術は自動化には対応してもエージェントAIには非対応。エージェント商取引に向けた基盤刷新の必要性を指摘。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.finextra.com/event-info/620/from-copilot-to-autopilot-exploring-agentic-ais-impact-on-treasury" data-item="{&quot;title&quot;: &quot;「副操縦士から自動操縦へ」——エージェントAIが企業財務に与える影響&quot;, &quot;link&quot;: &quot;https://www.finextra.com/event-info/620/from-copilot-to-autopilot-exploring-agentic-ais-impact-on-treasury&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-07-13&quot;, &quot;theme&quot;: &quot;Agentic Commerce&quot;, &quot;summary&quot;: &quot;エージェントAIが銀行・企業のトレジャリー（資金管理）をどこまで自律化するかを論じる。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.finextra.com/event-info/620/from-copilot-to-autopilot-exploring-agentic-ais-impact-on-treasury" target="_blank" rel="noopener">「副操縦士から自動操縦へ」——エージェントAIが企業財務に与える影響</a><span class="src">Finextra · 2026-07-13</span><div class="summary">エージェントAIが銀行・企業のトレジャリー（資金管理）をどこまで自律化するかを論じる。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.paymentsdive.com/news/nuvei-names-new-c-suite-executives/824358/" data-item="{&quot;title&quot;: &quot;Nuvei、経営陣を刷新しエージェント型コマースに注力&quot;, &quot;link&quot;: &quot;https://www.paymentsdive.com/news/nuvei-names-new-c-suite-executives/824358/&quot;, &quot;source&quot;: &quot;PaymentsDive&quot;, &quot;date&quot;: &quot;2026-07-02&quot;, &quot;theme&quot;: &quot;Agentic Commerce&quot;, &quot;summary&quot;: &quot;Payoneerを買収したNuveiがC-suiteを刷新し、エージェント型コマースへの賭けを強める。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.paymentsdive.com/news/nuvei-names-new-c-suite-executives/824358/" target="_blank" rel="noopener">Nuvei、経営陣を刷新しエージェント型コマースに注力</a><span class="src">PaymentsDive · 2026-07-02</span><div class="summary">Payoneerを買収したNuveiがC-suiteを刷新し、エージェント型コマースへの賭けを強める。</div></div></li>
+</ul>
+<h2 class="section"><span class="dot" style="background:#4a3aa7"></span>デジタルアイデンティティ/VC <span class="count">3件</span></h2>
+<ul class="feed">
+<li><button class="stock-btn" data-link="https://www.paymentsdive.com/news/digital-id-and-payments-turn-to-your-face/824041/" data-item="{&quot;title&quot;: &quot;デジタルIDと決済が「顔」に向かう&quot;, &quot;link&quot;: &quot;https://www.paymentsdive.com/news/digital-id-and-payments-turn-to-your-face/824041/&quot;, &quot;source&quot;: &quot;PaymentsDive&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;デジタルアイデンティティ/VC&quot;, &quot;summary&quot;: &quot;顔認証が決済と本人確認の中心へ。端末と規制当局が後押しし、顔が「財布」兼「身分証」になりつつある。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.paymentsdive.com/news/digital-id-and-payments-turn-to-your-face/824041/" target="_blank" rel="noopener">デジタルIDと決済が「顔」に向かう</a><span class="src">PaymentsDive · 2026-07-06</span><div class="summary">顔認証が決済と本人確認の中心へ。端末と規制当局が後押しし、顔が「財布」兼「身分証」になりつつある。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.digital.go.jp/policies/mynumber/mynumbercard-mdoc/private-usecase-list" data-item="{&quot;title&quot;: &quot;カード代替電磁的記録を使うサービスの導入事例を公開&quot;, &quot;link&quot;: &quot;https://www.digital.go.jp/policies/mynumber/mynumbercard-mdoc/private-usecase-list&quot;, &quot;source&quot;: &quot;デジタル庁&quot;, &quot;date&quot;: &quot;2026-07-02&quot;, &quot;theme&quot;: &quot;デジタルアイデンティティ/VC&quot;, &quot;summary&quot;: &quot;スマホ搭載マイナ（属性証明）を活用する民間サービスの導入事例集を公開。日本版デジタルID／VCの実装が広がり始めた。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.digital.go.jp/policies/mynumber/mynumbercard-mdoc/private-usecase-list" target="_blank" rel="noopener">カード代替電磁的記録を使うサービスの導入事例を公開</a><span class="src">デジタル庁 · 2026-07-02</span><div class="summary">スマホ搭載マイナ（属性証明）を活用する民間サービスの導入事例集を公開。日本版デジタルID／VCの実装が広がり始めた。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.finextra.com/videoarticle/3536/key-trends-in-2026-payments--the-digital-euro-timeline" data-item="{&quot;title&quot;: &quot;2026年決済の主要トレンドとデジタルユーロの工程表&quot;, &quot;link&quot;: &quot;https://www.finextra.com/videoarticle/3536/key-trends-in-2026-payments--the-digital-euro-timeline&quot;, &quot;source&quot;: &quot;Finextra&quot;, &quot;date&quot;: &quot;2026-06-30&quot;, &quot;theme&quot;: &quot;デジタルアイデンティティ/VC&quot;, &quot;summary&quot;: &quot;EBAday 2026より、2026年の決済トレンドとデジタルユーロ（CBDC）の導入スケジュールを解説。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.finextra.com/videoarticle/3536/key-trends-in-2026-payments--the-digital-euro-timeline" target="_blank" rel="noopener">2026年決済の主要トレンドとデジタルユーロの工程表</a><span class="src">Finextra · 2026-06-30</span><div class="summary">EBAday 2026より、2026年の決済トレンドとデジタルユーロ（CBDC）の導入スケジュールを解説。</div></div></li>
+</ul>
+<h2 class="section"><span class="dot" style="background:#eda100"></span>コンサル/政策 <span class="count">5件</span></h2>
+<ul class="feed">
+<li><button class="stock-btn" data-link="https://www.mckinsey.com/capabilities/business-building/our-insights/the-serial-builder-advantage-why-repeat-innovators-win" data-item="{&quot;title&quot;: &quot;連続的に新規事業を生む企業がなぜ勝つのか&quot;, &quot;link&quot;: &quot;https://www.mckinsey.com/capabilities/business-building/our-insights/the-serial-builder-advantage-why-repeat-innovators-win&quot;, &quot;source&quot;: &quot;McKinsey&quot;, &quot;date&quot;: &quot;2026-07-01&quot;, &quot;theme&quot;: &quot;コンサル/政策&quot;, &quot;summary&quot;: &quot;新規事業を繰り返し立ち上げる組織は単発型より高い成果を上げる——というマッキンゼーの研究。事業創出の「再現性」の示唆。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.mckinsey.com/capabilities/business-building/our-insights/the-serial-builder-advantage-why-repeat-innovators-win" target="_blank" rel="noopener">連続的に新規事業を生む企業がなぜ勝つのか</a><span class="src">McKinsey · 2026-07-01</span><div class="summary">新規事業を繰り返し立ち上げる組織は単発型より高い成果を上げる——というマッキンゼーの研究。事業創出の「再現性」の示唆。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.mckinsey.com/industries/chemicals/our-insights/a-dual-transformation-agenda-for-europes-chemicals-industry" data-item="{&quot;title&quot;: &quot;欧州化学業界の「二重の変革」課題&quot;, &quot;link&quot;: &quot;https://www.mckinsey.com/industries/chemicals/our-insights/a-dual-transformation-agenda-for-europes-chemicals-industry&quot;, &quot;source&quot;: &quot;McKinsey&quot;, &quot;date&quot;: &quot;2026-07-02&quot;, &quot;theme&quot;: &quot;コンサル/政策&quot;, &quot;summary&quot;: &quot;足元の業績改善と、抜本的な事業ポートフォリオ転換を同時にこなす——欧州化学大手の変革の勘所。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.mckinsey.com/industries/chemicals/our-insights/a-dual-transformation-agenda-for-europes-chemicals-industry" target="_blank" rel="noopener">欧州化学業界の「二重の変革」課題</a><span class="src">McKinsey · 2026-07-02</span><div class="summary">足元の業績改善と、抜本的な事業ポートフォリオ転換を同時にこなす——欧州化学大手の変革の勘所。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.mckinsey.com/industries/healthcare/our-insights/the-real-future-of-work-in-healthcare" data-item="{&quot;title&quot;: &quot;医療の「働き方の未来」&quot;, &quot;link&quot;: &quot;https://www.mckinsey.com/industries/healthcare/our-insights/the-real-future-of-work-in-healthcare&quot;, &quot;source&quot;: &quot;McKinsey&quot;, &quot;date&quot;: &quot;2026-07-01&quot;, &quot;theme&quot;: &quot;コンサル/政策&quot;, &quot;summary&quot;: &quot;増員やIT投資だけでは解けない医療の生産性危機。次世代のケアが何に依存するかを論じる。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.mckinsey.com/industries/healthcare/our-insights/the-real-future-of-work-in-healthcare" target="_blank" rel="noopener">医療の「働き方の未来」</a><span class="src">McKinsey · 2026-07-01</span><div class="summary">増員やIT投資だけでは解けない医療の生産性危機。次世代のケアが何に依存するかを論じる。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.fsa.go.jp/common/ronten/index.html" data-item="{&quot;title&quot;: &quot;業界団体との意見交換会で金融庁が提起した主な論点を公表&quot;, &quot;link&quot;: &quot;https://www.fsa.go.jp/common/ronten/index.html&quot;, &quot;source&quot;: &quot;金融庁&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;コンサル/政策&quot;, &quot;summary&quot;: &quot;当局が金融業界に対して問題意識として挙げた論点集。今後の監督・規制の方向性を読む材料。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.fsa.go.jp/common/ronten/index.html" target="_blank" rel="noopener">業界団体との意見交換会で金融庁が提起した主な論点を公表</a><span class="src">金融庁 · 2026-07-06</span><div class="summary">当局が金融業界に対して問題意識として挙げた論点集。今後の監督・規制の方向性を読む材料。</div></div></li>
+<li><button class="stock-btn" data-link="https://www.soumu.go.jp/main_sosiki/joho_tsusin/policyreports/joho_tsusin/shohishahogo/02kiban08_04000524.html" data-item="{&quot;title&quot;: &quot;情報通信審議会 消費者保護政策委員会（第9回）を開催&quot;, &quot;link&quot;: &quot;https://www.soumu.go.jp/main_sosiki/joho_tsusin/policyreports/joho_tsusin/shohishahogo/02kiban08_04000524.html&quot;, &quot;source&quot;: &quot;総務省&quot;, &quot;date&quot;: &quot;2026-07-05&quot;, &quot;theme&quot;: &quot;コンサル/政策&quot;, &quot;summary&quot;: &quot;電気通信事業の消費者保護ルールを議論する委員会。通信・デジタルサービスの規制動向として。&quot;}" title="ストックに追加">＋</button><div class="body"><a class="title" href="https://www.soumu.go.jp/main_sosiki/joho_tsusin/policyreports/joho_tsusin/shohishahogo/02kiban08_04000524.html" target="_blank" rel="noopener">情報通信審議会 消費者保護政策委員会（第9回）を開催</a><span class="src">総務省 · 2026-07-05</span><div class="summary">電気通信事業の消費者保護ルールを議論する委員会。通信・デジタルサービスの規制動向として。</div></div></li>
+</ul>
+<footer>fetch_news.py で収集 → curated_news.json を編集 → generate_news.py で生成。
+ストックは「コピー」してClaudeに貼るか「書き出し」した news_stock.json を渡すと知識庫に取り込めます。</footer>
+</div>
+
+<script>
+const KEY = 'hide_news_stock_v1';
+const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch(e){ return []; } };
+const save = (a) => localStorage.setItem(KEY, JSON.stringify(a));
+const has = (link, a) => a.some(x => x.link === link);
+
+function toast(msg){
+  let t = document.querySelector('.toast');
+  if(!t){ t = document.createElement('div'); t.className='toast'; document.body.appendChild(t); }
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(t._t); t._t = setTimeout(()=>t.classList.remove('show'), 1400);
+}
+
+function toggle(item){
+  let a = load();
+  if(has(item.link, a)){ a = a.filter(x => x.link !== item.link); }
+  else { a.unshift({...item, stocked_at: new Date().toISOString()}); toast('ストックに追加'); }
+  save(a); render();
+}
+
+function render(){
+  const a = load();
+  const links = new Set(a.map(x => x.link));
+  document.querySelectorAll('.stock-btn').forEach(b => {
+    const on = links.has(b.dataset.link);
+    b.classList.toggle('on', on);
+    b.textContent = on ? '✓' : '＋';
+    b.title = on ? 'ストックから外す' : 'ストックに追加';
+  });
+  const panel = document.getElementById('stock-panel');
+  const list = document.getElementById('stock-list');
+  const cnt = document.getElementById('stock-count');
+  cnt.textContent = a.length;
+  panel.hidden = a.length === 0;
+  list.innerHTML = a.map(x =>
+    `<li><button class="rm" data-link="${encodeURIComponent(x.link)}" title="外す">✕</button>`
+    + `<a href="${x.link}" target="_blank" rel="noopener">${x.title}`
+    + `<div class="st">${[x.source, (x.date||''), x.theme].filter(Boolean).join(' · ')}</div></a></li>`
+  ).join('');
+  list.querySelectorAll('.rm').forEach(btn => btn.onclick = () => {
+    const link = decodeURIComponent(btn.dataset.link);
+    save(load().filter(x => x.link !== link)); render();
+  });
+}
+
+function toMarkdown(a){
+  return a.map(x => `- [${x.title}](${x.link}) — ${x.source||''}${x.date? ' · '+x.date : ''}`
+    + (x.theme? ` 〔${x.theme}〕`:'') + (x.summary? `\n  ${x.summary}` : '')).join('\n');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.stock-btn').forEach(b => {
+    b.onclick = () => { try { toggle(JSON.parse(b.dataset.item)); } catch(e){ console.error(e); } };
+  });
+  document.getElementById('stock-copy').onclick = async () => {
+    const a = load(); if(!a.length){ toast('ストックは空です'); return; }
+    try { await navigator.clipboard.writeText(toMarkdown(a)); toast('コピーしました（Claudeに貼り付け可）'); }
+    catch(e){ toast('コピー失敗'); }
+  };
+  document.getElementById('stock-export').onclick = () => {
+    const a = load(); if(!a.length){ toast('ストックは空です'); return; }
+    const blob = new Blob([JSON.stringify(a, null, 2)], {type:'application/json'});
+    const url = URL.createObjectURL(blob); const el = document.createElement('a');
+    el.href = url; el.download = 'news_stock.json'; el.click(); URL.revokeObjectURL(url);
+    toast('news_stock.json を書き出し');
+  };
+  document.getElementById('stock-clear').onclick = () => {
+    if(load().length && confirm('ストックを全部消しますか？')){ save([]); render(); }
+  };
+  render();
+});
+</script>
+
+</body>
+</html>
