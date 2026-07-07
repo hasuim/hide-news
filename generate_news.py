@@ -20,10 +20,11 @@ from datetime import datetime
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 CURATED_JSON = os.path.join(OUT_DIR, "curated_news.json")
+KNOWLEDGE_JSON = os.path.join(OUT_DIR, "knowledge.json")
 OUT_HTML = os.path.join(OUT_DIR, "index.html")
 
-# Google Drive の知識庫（Knowledge フォルダ）へのリンク。
-KNOWLEDGE_URL = "https://drive.google.com/drive/folders/1PGy_bRqcLc2cQOIX2gCEHDTRdiea6ymw"
+# ページに表示する更新タイミング。
+UPDATE_SCHEDULE = "月・水・金の朝に自動更新"
 
 # Display order: (theme name, accent color, short label for the jump nav).
 THEME_ORDER = [
@@ -113,13 +114,20 @@ ul.feed .summary { font-size: 12.5px; color: var(--text-secondary); margin-top: 
 .watch .summary { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
 .watch .tag { font-size: 10px; color: #1baf7a; border: 1px solid #1baf7a; border-radius: 4px; padding: 0 5px; margin-left: 6px; white-space: nowrap; }
 
-/* 知識庫リンク */
-.linkbox { border: 1px solid var(--border); border-radius: 10px; background: var(--surface-1);
-  padding: 16px 18px; margin: 40px 0 10px; }
-.linkbox a { font-size: 14px; font-weight: 700; color: var(--text-primary); text-decoration: none;
-  display: inline-flex; align-items: center; gap: 8px; }
-.linkbox a:hover { text-decoration: underline; }
-.linkbox p { font-size: 12px; color: var(--text-muted); margin: 6px 0 0; }
+/* 知識庫（サイト内表示） */
+.kb-note { border: 1px solid var(--border); border-radius: 10px; background: var(--surface-1);
+  margin-bottom: 8px; overflow: hidden; }
+.kb-note > summary { cursor: pointer; list-style: none; padding: 12px 16px; }
+.kb-note > summary::-webkit-details-marker { display: none; }
+.kb-note > summary::after { content: "＋"; float: right; color: var(--text-muted); font-size: 15px; }
+.kb-note[open] > summary::after { content: "−"; }
+.kb-note .kb-title { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+.kb-note .kb-meta { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.kb-note .kb-date { font-size: 11px; color: var(--text-muted); }
+.kb-tag { font-size: 10px; color: var(--text-secondary); border: 1px solid var(--border);
+  border-radius: 999px; padding: 1px 8px; }
+.kb-note ul { margin: 4px 16px 14px; padding-left: 18px; }
+.kb-note li { font-size: 12.5px; color: var(--text-secondary); margin-bottom: 4px; }
 
 /* stock panel */
 #stock-panel { border: 1px solid var(--border); border-radius: 10px; background: var(--surface-1);
@@ -250,6 +258,11 @@ def render():
     picks = data.get("picks", [])
     sections = data.get("sections", {})
 
+    kb_notes = []
+    if os.path.exists(KNOWLEDGE_JSON):
+        with open(KNOWLEDGE_JSON, encoding="utf-8") as fh:
+            kb_notes = json.load(fh).get("notes", [])
+
     gen = datetime.now().strftime("%Y-%m-%d %H:%M")
     watch_n = len(watch["items"]) if watch else 0
     total = watch_n + len(picks) + sum(len(v) for v in sections.values())
@@ -319,20 +332,37 @@ def render():
 
     body = "\n".join(parts)
 
+    # --- 📚 知識庫（サイト内表示・最下部から2番目） ---
+    if kb_notes:
+        nav.append(("📚 知識庫", "#898781", "knowledge"))
+        note_html = []
+        for n in kb_notes:
+            tags = "".join(f'<span class="kb-tag">{esc(t)}</span>' for t in n.get("tags", []))
+            pts = "".join(f"<li>{esc(p)}</li>" for p in n.get("points", []))
+            note_html.append(
+                '<details class="kb-note">'
+                f'<summary><span class="kb-title">{esc(n["title"])}</span>'
+                f'<div class="kb-meta"><span class="kb-date">{esc(n.get("date"))}</span>{tags}</div>'
+                "</summary>"
+                f"<ul>{pts}</ul>"
+                "</details>"
+            )
+        knowledge_html = (
+            f'<h2 class="section" id="knowledge" style="border-bottom-color:#898781">'
+            f'📚 知識庫 <span class="count">{len(kb_notes)}件</span></h2>'
+            '<p style="font-size:12px;color:var(--text-muted);margin:-4px 0 12px">'
+            "ストックした記事をClaudeが規格ノート化して蓄積。見出しをタップで要点を表示。</p>"
+            + "".join(note_html)
+        )
+    else:
+        knowledge_html = ""
+
     # jump nav chips
     nav.append(("📌 ストック", "#898781", "stock-panel"))
     nav_html = '<nav class="jump" aria-label="セクション">' + "".join(
         f'<a href="#{anchor}"><span class="d" style="background:{color}"></span>{esc(label)}</a>'
         for label, color, anchor in nav
     ) + "</nav>"
-
-    # 知識庫リンク（最下部から2番目）
-    knowledge_html = (
-        '<section class="linkbox">'
-        f'<a href="{KNOWLEDGE_URL}" target="_blank" rel="noopener">📚 知識庫（Google Drive）を開く</a>'
-        "<p>ストックした記事はここに規格ノートとして蓄積されます。</p>"
-        "</section>"
-    )
 
     # 📌 ストック（最下部）
     stock_panel = (
@@ -359,7 +389,8 @@ def render():
 <div class="wrap">
 <header class="top">
   <h1>Hide専用ニュース</h1>
-  <div class="meta">更新 {gen} ／ 全{total}件 ／ 各記事の ＋ でストック（最下部で管理）</div>
+  <div class="meta">最終更新 {gen} ／ {UPDATE_SCHEDULE} ／ 全{total}件</div>
+  <div class="meta" style="margin-top:2px">各記事の ＋ でストック（最下部で管理）</div>
 </header>
 {nav_html}
 {body}
