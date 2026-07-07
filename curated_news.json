@@ -5,34 +5,22 @@
     "thesis": "botが弾かれる根本は「機械がコンテンツに小額を払う手段が無い」こと。ステーブルコインはM2Mマイクロ決済に唯一フィットする通貨で、「弾く」を「払えば通す」に変える鍵。ただし支払い(ステーブルコイン)＋身元(デジタルID/VC)の両輪で初めて成立し、政府系の非経済的な遮断は対象外。決済×Agentic Commerce×デジタルIDが交わる横断軸として定点観測する。",
     "items": [
       {
-        "source": "Finextra", "date": "2026-07-06", "theme": "Agentic Commerce",
-        "title": "BBVA、AIエージェントが起票した初のカード取引を完了",
-        "link": "https://www.finextra.com/pressarticle/110348/bbva-completes-first-agent-initiated-transaction",
-        "summary": "機械（AIエージェント）が実際に決済を実行した実例。「機械が払う」の起点となる事例。"
+        "source": "PaymentsDive", "date": "2026-07-06", "theme": "Agentic Commerce",
+        "title": "B2B決済基盤のギャップ——多くはエージェントAIを前提に作られていない",
+        "link": "https://www.paymentsdive.com/spons/the-b2b-payments-infrastructure-gap-most-platforms-werent-built-for-agent/824370/",
+        "summary": "既存のB2B決済インフラは自動化には対応してもエージェントAIには非対応。機械が払うための基盤刷新の必要性を指摘。"
       },
       {
-        "source": "Finextra", "date": "2026-07-07", "theme": "決済・フィンテック",
-        "title": "決済インフラのNuvion、リップル系ステーブルコインを決済スタックに追加",
-        "link": "https://www.finextra.com/pressarticle/110353/nuvion-adds-ripple-stablecoin-to-payments-stack",
-        "summary": "決済処理会社がステーブルコイン(RLUSD)を標準搭載。機械が払うためのレールがまた一つ実装された。"
+        "source": "PaymentsDive", "date": "2026-07-02", "theme": "Agentic Commerce",
+        "title": "Nuvei、経営陣を刷新しエージェント型コマースに注力",
+        "link": "https://www.paymentsdive.com/news/nuvei-names-new-c-suite-executives/824358/",
+        "summary": "Payoneerを買収したNuveiがC-suiteを刷新し、エージェント型コマースへの賭けを強める。"
       },
       {
-        "source": "Finextra", "date": "2026-07-07", "theme": "決済・フィンテック",
-        "title": "アフリカ決済大手Flutterwave、ステーブルコイン発行体Circleの投資部門から出資",
-        "link": "https://www.finextra.com/pressarticle/110359/flutterwave-secures-investment-from-circle-ventures",
-        "summary": "USDC発行元CircleがアフリカのFlutterwaveに出資。新興国決済網とステーブルコインの結びつきが強まる。"
-      },
-      {
-        "source": "PaymentsDive", "date": "2026-07-01", "theme": "決済・フィンテック",
-        "title": "カード大手・銀行・フィンテックが「低コスト」ステーブルコイン標準で提携",
-        "link": "https://www.paymentsdive.com/news/stablecoin-open-standard-bridge-abrams-bny-stripe-mastercard-visa-coinbase-adyen/824223/",
-        "summary": "M2Mマイクロ決済の前提となる低コストのステーブルコイン共通規格。機械が払うための「レール」側の動き。"
-      },
-      {
-        "source": "ペイメントナビ", "date": "2026-07-05", "theme": "決済・フィンテック",
-        "title": "デジタル通貨の分類：ステーブルコイン と CBDC",
-        "link": "https://paymentnavi.com/paymentnews/175828.html",
-        "summary": "ステーブルコインとCBDCの違いを整理した日本語解説。M2M決済の担い手を考える基礎知識。"
+        "source": "ペイメントナビ", "date": "2026-07-06", "theme": "決済・フィンテック",
+        "title": "「WebX 2026」が7月13・14日に開催、ステーブルコイン・AI・トークン化などを議論",
+        "link": "https://paymentnavi.com/paymentnews/176661.html",
+        "summary": "国内最大級のWeb3カンファレンスが7月中旬開催。ステーブルコインやAIエージェント、資産のトークン化が主要議題に。"
       }
     ]
   },
@@ -44,10 +32,10 @@
       "summary": "欧州中央銀行がユーロ圏の銀行にAI起因のサイバーリスクへの対応計画提出を義務付け。AI活用の規制対応が本格化。"
     },
     {
-      "theme": "Agentic Commerce", "rating": 3, "source": "Finextra", "date": "2026-07-06",
-      "title": "BBVA、AIエージェントが起票した初のカード取引を完了",
-      "link": "https://www.finextra.com/pressarticle/110348/bbva-completes-first-agent-initiated-transaction",
-      "summary": "BBVAがカード会員に代わりAIエージェントが開始した取引を完了。エージェントが実際に決済を実行するAgentic Commerceが実運用フェーズに入った象徴。"
+      "theme": "Agentic Commerce", "rating": 3, "source": "PaymentsDive", "date": "2026-07-06",
+      "title": "B2B決済基盤のギャップ——多くはエージェントAIを前提に作られていない",
+      "link": "https://www.paymentsdive.com/spons/the-b2b-payments-infrastructure-gap-most-platforms-werent-built-for-agent/824370/",
+      "summary": "既存のB2B技術は自動化には対応してもエージェントAIには非対応。エージェント商取引に向けた基盤刷新の必要性を指摘。"
     },
     {
       "theme": "デジタルアイデンティティ/VC", "rating": 2, "source": "PaymentsDive", "date": "2026-07-06",
@@ -62,16 +50,16 @@
       "summary": "LINEヤフーがLINEを本格的な買い物アプリへ転換。PayPayと連携し1億人規模のユーザー基盤を囲い込む狙い。"
     },
     {
-      "theme": "コンサル/政策", "rating": 1, "source": "金融庁", "date": "2026-07-07",
-      "title": "「犯罪収益移転防止法」対象国指定の改正案パブリックコメント結果を公表",
-      "link": "https://www.fsa.go.jp/news/r8/sonota/20260707-2/20260707-2.html",
-      "summary": "マネロン対策で警戒対象とする国・地域の指定見直しへの意見公募結果を公表。国際AML規制対応の一環。"
-    },
-    {
       "theme": "コンサル/政策", "rating": 2, "source": "デジタル庁", "date": "2026-07-06",
       "title": "「行政の進化と革新のための生成AIの調達・利活用に係るガイドライン（第2.0版）」を策定",
       "link": "https://www.digital.go.jp/news/decb64eb-f26e-41cb-8d37-f3dd173108b8",
       "summary": "政府が行政における生成AI活用の指針を改訂。公共部門でのAI導入ルールが整備段階から実装段階へ。"
+    },
+    {
+      "theme": "コンサル/政策", "rating": 1, "source": "金融庁", "date": "2026-07-07",
+      "title": "「犯罪収益移転防止法」対象国指定の改正案パブリックコメント結果を公表",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260707-2/20260707-2.html",
+      "summary": "マネロン対策で警戒対象とする国・地域の指定見直しへの意見公募結果を公表。国際AML規制対応の一環。"
     }
   ],
   "sections": {
@@ -89,10 +77,10 @@
         "summary": "後払い(BNPL)大手クラーナが米国で銀行免許を申請。BNPLから銀行業へ踏み込み収益源の多様化を狙う。"
       },
       {
-        "source": "Finextra", "date": "2026-07-06",
-        "title": "スタンダードチャータード、機関投資家向けにUSDCの発行・償還を提供",
-        "link": "https://www.finextra.com/pressarticle/110349/standard-chartered-enables-institutional-clients-to-access-usdc-minting-and-redemption",
-        "summary": "大手銀SCが機関顧客にステーブルコインUSDCの発行・償還機能を提供開始。伝統銀行のステーブルコイン参入が加速。"
+        "source": "PaymentsDive", "date": "2026-07-07",
+        "title": "クラーナ、米国市場での破壊的展開を目指す",
+        "link": "https://www.paymentsdive.com/news/klarna-seeks-to-disrupt-us-market/824582/",
+        "summary": "銀行免許申請と合わせ、クラーナが米国での事業拡大に強い意欲。BNPL大手の米市場攻略が加速。"
       },
       {
         "source": "Finextra", "date": "2026-07-07",
@@ -101,10 +89,10 @@
         "summary": "英デジタル銀行がスマホの動きを検知し盗難時に口座を自動保護する新機能を展開。不正利用対策の新手法。"
       },
       {
-        "source": "Finextra", "date": "2026-07-07",
-        "title": "ビットコイン・スイス、アブダビで規制当局の認可を取得",
-        "link": "https://www.finextra.com/pressarticle/110356/bitcoin-suisse-receives-regulatory-approval-in-abu-dhabi",
-        "summary": "スイスの暗号資産大手がUAEアブダビで金融ライセンスを取得。中東での機関投資家向け暗号資産事業を拡大。"
+        "source": "Finextra", "date": "2026-07-05",
+        "title": "クレディ・アグリコル、Worldlineから加盟店決済JVの持分を買収",
+        "link": "https://www.finextra.com/newsarticle/48040/crdit-agricole-buys-worldline-out-of-merchant-payments-jv",
+        "summary": "仏大手銀が決済JVのパートナー持分を買い取り完全子会社化。加盟店決済事業の主導権を強める動き。"
       },
       {
         "source": "PaymentsDive", "date": "2026-07-07",
@@ -113,36 +101,18 @@
         "summary": "FedNowやRTPなど米国の即時決済網の普及状況を分析。銀行・フィンテック・消費者への広がり方を整理。"
       },
       {
-        "source": "ペイメントナビ", "date": "2026-07-04",
-        "title": "MOLTSが「Unifi Pay」導入、JPYC決済開始で最大8%還元",
-        "link": "https://paymentnavi.com/paymentnews/176452.html",
-        "summary": "円建てステーブルコインJPYCが実サービスの決済手段として使われ始めた具体事例。規制整備と合わせ注目度が高い。"
-      },
-      {
-        "source": "ペイメントナビ", "date": "2026-07-05",
-        "title": "JCBのタッチ決済が台湾・台北MRTで利用開始、台新銀行と協業",
-        "link": "https://paymentnavi.com/paymentnews/176617.html",
-        "summary": "日系決済ブランドのアジア公共交通での面展開。訪日・訪台双方のインバウンド取り込みに効く。"
+        "source": "ペイメントナビ", "date": "2026-07-06",
+        "title": "「永久不滅ポイント」を暗号資産に交換できるサービス開始（クレディセゾン）",
+        "link": "https://paymentnavi.com/paymentnews/176351.html",
+        "summary": "クレディセゾンがカードポイントを暗号資産に交換できる新サービスを開始。ポイント経済圏と暗号資産の接続が進む。"
       }
     ],
     "Agentic Commerce": [
       {
-        "source": "PaymentsDive", "date": "2026-07-06",
-        "title": "B2B決済基盤のギャップ——多くはエージェントAIを前提に作られていない",
-        "link": "https://www.paymentsdive.com/spons/the-b2b-payments-infrastructure-gap-most-platforms-werent-built-for-agent/824370/",
-        "summary": "既存のB2B決済インフラは自動化には対応してもエージェントAIには非対応。基盤刷新の必要性を指摘。"
-      },
-      {
-        "source": "Finextra", "date": "2026-07-13",
-        "title": "「副操縦士から自動操縦へ」——エージェントAIが企業財務に与える影響",
-        "link": "https://www.finextra.com/event-info/620/from-copilot-to-autopilot-exploring-agentic-ais-impact-on-treasury",
-        "summary": "エージェントAIが銀行・企業のトレジャリー（資金管理）をどこまで自律化するかを論じるイベント。"
-      },
-      {
-        "source": "PaymentsDive", "date": "2026-07-02",
-        "title": "Nuvei、経営陣を刷新しエージェント型コマースに注力",
-        "link": "https://www.paymentsdive.com/news/nuvei-names-new-c-suite-executives/824358/",
-        "summary": "Payoneerを買収したNuveiがC-suiteを刷新し、エージェント型コマースへの賭けを強める。"
+        "source": "Finextra", "date": "2026-07-06",
+        "title": "サンタンデール銀行、AIプロジェクトをGitHubで公開",
+        "link": "https://www.finextra.com/newsarticle/48044/santander-publishes-ai-projects-on-github",
+        "summary": "大手銀が社内AI開発の一部をオープンソースとして公開。金融機関のAI活用の透明性・再利用性を高める動き。"
       },
       {
         "source": "Finextra", "date": "2026-07-06",
@@ -151,10 +121,16 @@
         "summary": "英金融規制当局が消費者向け金融でのAI活用の実態と影響を初の本格調査。規制の方向性を占う材料。"
       },
       {
-        "source": "Finextra", "date": "2026-07-07",
-        "title": "銀行の外部接続性（コネクティビティ）がAI活用の成否を左右する",
-        "link": "https://www.finextra.com/blogposting/32204/bank-connectivity-is-key-for-ai-readiness",
-        "summary": "銀行のAPI・データ連携基盤の成熟度が、AIエージェント時代への対応力を左右すると指摘する論考。"
+        "source": "McKinsey", "date": "2026-07-06",
+        "title": "「オペレーティングモデル」の優位性——AIで勝つ企業はなぜ組織を作り替えるのか",
+        "link": "https://www.mckinsey.com/industries/industrials/our-insights/the-operating-model-advantage-why-ai-winners-are-rewiring-their-organizations",
+        "summary": "AI活用で成果を出す企業は、ツール導入だけでなく組織構造・意思決定プロセス自体を作り替えている。"
+      },
+      {
+        "source": "PaymentsDive", "date": "2026-07-06",
+        "title": "現代の決済を支えるオペレーションをどう簡素化するか",
+        "link": "https://www.paymentsdive.com/spons/simplifying-the-operations-behind-modern-payments/823602/",
+        "summary": "決済処理の裏側にある運用の複雑さを解消する動き。自動化・標準化が競争力の差になりつつある。"
       }
     ],
     "デジタルアイデンティティ/VC": [
@@ -166,27 +142,15 @@
       },
       {
         "source": "デジタル庁", "date": "2026-07-02",
-        "title": "カード代替電磁的記録（属性証明機能）の関連資料を更新",
-        "link": "https://www.digital.go.jp/policies/mynumber/mynumbercard-mdoc",
-        "summary": "スマホにマイナ機能を載せる「カード代替電磁的記録」制度の技術・運用資料をアップデート。"
+        "title": "医療費助成オンライン資格確認の導入医療機関・薬局リストを更新",
+        "link": "https://www.digital.go.jp/policies/health/public-medical-hub",
+        "summary": "マイナ保険証を使った医療費助成のオンライン資格確認について、対応医療機関・薬局の最新リストを公開。"
       },
       {
-        "source": "Finextra", "date": "2026-06-30",
-        "title": "2026年決済の主要トレンドとデジタルユーロの工程表",
-        "link": "https://www.finextra.com/videoarticle/3536/key-trends-in-2026-payments--the-digital-euro-timeline",
-        "summary": "EBAday 2026より、2026年の決済トレンドとデジタルユーロ（CBDC）の導入スケジュールを解説。"
-      },
-      {
-        "source": "Finextra", "date": "2026-07-01",
-        "title": "欧州の新決済スキーム「Wero」を理解する——欧州決済への影響",
-        "link": "https://www.finextra.com/videoarticle/3537/what-you-need-to-know-about-wero-and-its-impact-on-european-payments",
-        "summary": "欧州発の新しい決済・送金スキームWeroの仕組みと、既存カード網への影響を解説する動画コンテンツ。"
-      },
-      {
-        "source": "総務省", "date": "2026-07-05",
-        "title": "「利用者情報に関するワーキンググループ」第41回を開催",
-        "link": "https://www.soumu.go.jp/main_sosiki/kenkyu/ICT_services/02kiban18_02000491.html",
-        "summary": "通信サービス利用者のデータ・プライバシー保護ルールを議論する会合。デジタルID/データ活用の規制土台。"
+        "source": "デジタル庁", "date": "2026-07-06",
+        "title": "医療DXに関するダッシュボードを公開",
+        "link": "https://www.digital.go.jp/resources/govdashboard/healthcare-dx",
+        "summary": "電子カルテ普及率など医療DXの進捗を可視化するダッシュボードを新設。マイナ保険証を軸にした医療データ基盤の一部。"
       }
     ],
     "コンサル/政策": [
@@ -213,6 +177,12 @@
         "title": "大手金融機関グループ等の取組状況（運用力向上・ガバナンス強化等）を更新",
         "link": "https://www.fsa.go.jp/policy/pjlamc/initiativesbythefinancialindustry/20240124.html",
         "summary": "メガバンク・大手金融グループの資産運用力向上やガバナンス強化に関する取り組み状況を公表・更新。"
+      },
+      {
+        "source": "Finextra", "date": "2026-07-06",
+        "title": "英決済規制当局PSR、APP詐欺被害補償ポリシーの成果を評価",
+        "link": "https://www.finextra.com/newsarticle/48042/psr-lauds-results-of-app-fraud-reimbursement-policy",
+        "summary": "英国の即時振込詐欺(APP fraud)被害者への補償制度について、規制当局が導入後の実績を高く評価。"
       },
       {
         "source": "総務省", "date": "2026-07-06",
