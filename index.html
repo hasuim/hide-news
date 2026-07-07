@@ -25,9 +25,14 @@ body {
 .wrap { max-width: 880px; margin: 0 auto; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 5px; }
 
-header.top { margin-bottom: 4px; }
+header.top { margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 header.top h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: .01em; }
 header.top .meta { font-size: 12px; color: var(--text-muted); }
+#refresh { flex-shrink: 0; font-size: 13px; font-weight: 600; color: var(--text-secondary);
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+  padding: 7px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+#refresh:hover { background: var(--grid); color: var(--text-primary); }
+#refresh .ic { font-size: 15px; line-height: 1; }
 
 /* jump nav */
 nav.jump { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 26px; }
@@ -136,9 +141,13 @@ ul.feed .summary { font-size: 12.5px; color: var(--text-secondary); margin-top: 
 <body>
 <div class="wrap">
 <header class="top">
-  <h1>Hide専用ニュース</h1>
-  <div class="meta">最終更新 2026-07-08 00:48 ／ 月・水・金の朝に自動更新 ／ 全35件</div>
-  <div class="meta" style="margin-top:2px">各記事の ＋ でストック（最下部で管理）</div>
+  <div>
+    <h1>Hide専用ニュース</h1>
+    <div class="meta">最終更新 2026-07-08 00:53 ／ 月・水・金の朝に自動更新 ／ 全35件</div>
+    <div class="meta" style="margin-top:2px">各記事の ＋ でストック（最下部で管理）</div>
+  </div>
+  <button type="button" id="refresh" title="最新の公開版を再読み込み（キャッシュ回避）" aria-label="最新の公開版を再読み込み">
+    <span class="ic">⟳</span>更新</button>
 </header>
 <nav class="jump" aria-label="セクション"><a href="#picks"><span class="d" style="background:#eda100"></span>注目</a><a href="#watch"><span class="d" style="background:#1baf7a"></span>🔭 ウォッチ</a><a href="#sec-0"><span class="d" style="background:#2a78d6"></span>決済</a><a href="#sec-1"><span class="d" style="background:#e34948"></span>Agentic</a><a href="#sec-2"><span class="d" style="background:#4a3aa7"></span>ID・VC</a><a href="#sec-3"><span class="d" style="background:#eda100"></span>コンサル</a><a href="#knowledge"><span class="d" style="background:#898781"></span>📚 知識庫</a><a href="#stock-panel"><span class="d" style="background:#898781"></span>📌 ストック</a></nav>
 <h2 class="section" id="picks" style="border-bottom-color:#eda100">今日の注目 <span class="count">6件</span></h2>
@@ -240,6 +249,8 @@ function toMarkdown(a){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const rf = document.getElementById('refresh');
+  if(rf){ rf.onclick = () => { location.href = location.pathname + '?t=' + Date.now(); }; }
   document.querySelectorAll('.stock-btn').forEach(b => {
     b.onclick = () => { try { toggle(JSON.parse(b.dataset.item)); } catch(e){ console.error(e); } };
   });

@@ -57,9 +57,14 @@ body {
 .wrap { max-width: 880px; margin: 0 auto; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 5px; }
 
-header.top { margin-bottom: 4px; }
+header.top { margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 header.top h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: .01em; }
 header.top .meta { font-size: 12px; color: var(--text-muted); }
+#refresh { flex-shrink: 0; font-size: 13px; font-weight: 600; color: var(--text-secondary);
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+  padding: 7px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+#refresh:hover { background: var(--grid); color: var(--text-primary); }
+#refresh .ic { font-size: 15px; line-height: 1; }
 
 /* jump nav */
 nav.jump { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 26px; }
@@ -217,6 +222,8 @@ function toMarkdown(a){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const rf = document.getElementById('refresh');
+  if(rf){ rf.onclick = () => { location.href = location.pathname + '?t=' + Date.now(); }; }
   document.querySelectorAll('.stock-btn').forEach(b => {
     b.onclick = () => { try { toggle(JSON.parse(b.dataset.item)); } catch(e){ console.error(e); } };
   });
@@ -449,9 +456,13 @@ def render():
 <body>
 <div class="wrap">
 <header class="top">
-  <h1>Hide専用ニュース</h1>
-  <div class="meta">最終更新 {gen} ／ {UPDATE_SCHEDULE} ／ 全{total}件</div>
-  <div class="meta" style="margin-top:2px">各記事の ＋ でストック（最下部で管理）</div>
+  <div>
+    <h1>Hide専用ニュース</h1>
+    <div class="meta">最終更新 {gen} ／ {UPDATE_SCHEDULE} ／ 全{total}件</div>
+    <div class="meta" style="margin-top:2px">各記事の ＋ でストック（最下部で管理）</div>
+  </div>
+  <button type="button" id="refresh" title="最新の公開版を再読み込み（キャッシュ回避）" aria-label="最新の公開版を再読み込み">
+    <span class="ic">⟳</span>更新</button>
 </header>
 {nav_html}
 {body}
