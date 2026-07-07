@@ -128,6 +128,19 @@ ul.feed .summary { font-size: 12.5px; color: var(--text-secondary); margin-top: 
   border-radius: 999px; padding: 1px 8px; }
 .kb-note ul { margin: 4px 16px 14px; padding-left: 18px; }
 .kb-note li { font-size: 12.5px; color: var(--text-secondary); margin-bottom: 4px; }
+.kb-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+#kb-search { flex: 1; min-width: 200px; font-size: 13px; padding: 8px 12px; border: 1px solid var(--border);
+  border-radius: 8px; background: var(--surface-1); color: var(--text-primary); }
+#kb-search:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+#kb-tagbar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+#kb-tagbar button { font-size: 11px; border: 1px solid var(--border); background: var(--surface-1);
+  color: var(--text-secondary); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+#kb-tagbar button:hover { background: var(--grid); }
+#kb-tagbar button.active { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
+#kb-list { max-height: 62vh; overflow-y: auto; overscroll-behavior: contain;
+  border: 1px solid var(--border); border-radius: 10px; padding: 8px 8px 2px; background: var(--page); }
+#kb-list .kb-note { margin-bottom: 8px; }
+#kb-empty { font-size: 12px; color: var(--text-muted); padding: 20px; text-align: center; }
 
 /* stock panel */
 #stock-panel { border: 1px solid var(--border); border-radius: 10px; background: var(--surface-1);
@@ -224,6 +237,57 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   render();
 });
+</script>
+"""
+
+
+KB_JS_TEMPLATE = """
+<script>
+(() => {
+  const KB = __KB_DATA__;
+  const TOP_TAGS = 12;
+  const esc = s => (s==null?'':String(s)).replace(/[&<>"']/g,
+    c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const search = document.getElementById('kb-search');
+  const tagbar = document.getElementById('kb-tagbar');
+  const list = document.getElementById('kb-list');
+  const count = document.getElementById('kb-count');
+  let activeTag = null;
+
+  const freq = {};
+  KB.forEach(n => (n.tags||[]).forEach(t => freq[t] = (freq[t]||0)+1));
+  const topTags = Object.keys(freq).sort((a,b)=>freq[b]-freq[a]).slice(0, TOP_TAGS);
+  const mkBtn = (label, tag) => {
+    const b = document.createElement('button'); b.type='button'; b.textContent = label;
+    b._tag = tag;
+    b.onclick = () => { activeTag = (activeTag===tag) ? null : tag; syncTags(); render(); };
+    return b;
+  };
+  tagbar.appendChild(mkBtn('すべて', null));
+  topTags.forEach(t => tagbar.appendChild(mkBtn('#'+t, t)));
+  function syncTags(){ [...tagbar.children].forEach(b => b.classList.toggle('active', b._tag===activeTag)); }
+
+  function noteHTML(n){
+    const tags = (n.tags||[]).map(t=>`<span class="kb-tag">${esc(t)}</span>`).join('');
+    const pts = (n.points||[]).map(p=>`<li>${esc(p)}</li>`).join('');
+    return `<details class="kb-note"><summary><span class="kb-title">${esc(n.title)}</span>`
+      + `<div class="kb-meta"><span class="kb-date">${esc(n.date)}</span>${tags}</div></summary>`
+      + `<ul>${pts}</ul></details>`;
+  }
+  function render(){
+    const q = search.value.toLowerCase().trim();
+    const res = KB.filter(n => {
+      if(activeTag && !(n.tags||[]).includes(activeTag)) return false;
+      if(!q) return true;
+      return (n.title+' '+(n.tags||[]).join(' ')+' '+(n.points||[]).join(' ')).toLowerCase().includes(q);
+    });
+    count.textContent = res.length + '件';
+    list.innerHTML = res.length ? res.map(noteHTML).join('')
+      : '<div id="kb-empty">該当するノートがありません</div>';
+  }
+  search.addEventListener('input', render);
+  syncTags(); render();
+})();
 </script>
 """
 
@@ -332,27 +396,24 @@ def render():
 
     body = "\n".join(parts)
 
-    # --- 📚 知識庫（サイト内表示・最下部から2番目） ---
+    # --- 📚 知識庫（サイト内・検索/タグ絞り込み・高さ固定スクロール） ---
+    kb_js = ""
     if kb_notes:
         nav.append(("📚 知識庫", "#898781", "knowledge"))
-        note_html = []
-        for n in kb_notes:
-            tags = "".join(f'<span class="kb-tag">{esc(t)}</span>' for t in n.get("tags", []))
-            pts = "".join(f"<li>{esc(p)}</li>" for p in n.get("points", []))
-            note_html.append(
-                '<details class="kb-note">'
-                f'<summary><span class="kb-title">{esc(n["title"])}</span>'
-                f'<div class="kb-meta"><span class="kb-date">{esc(n.get("date"))}</span>{tags}</div>'
-                "</summary>"
-                f"<ul>{pts}</ul>"
-                "</details>"
-            )
+        kb_sorted = sorted(kb_notes, key=lambda n: n.get("date") or "", reverse=True)
         knowledge_html = (
-            f'<h2 class="section" id="knowledge" style="border-bottom-color:#898781">'
-            f'📚 知識庫 <span class="count">{len(kb_notes)}件</span></h2>'
+            '<h2 class="section" id="knowledge" style="border-bottom-color:#898781">'
+            '📚 知識庫 <span class="count" id="kb-count"></span></h2>'
             '<p style="font-size:12px;color:var(--text-muted);margin:-4px 0 12px">'
-            "ストックした記事をClaudeが規格ノート化して蓄積。見出しをタップで要点を表示。</p>"
-            + "".join(note_html)
+            "ストックした記事をClaudeが規格ノート化して蓄積。検索・タグで絞り込み、見出しをタップで要点。</p>"
+            '<div class="kb-controls">'
+            '<input id="kb-search" type="search" autocomplete="off" '
+            'placeholder="キーワードで検索（タイトル・タグ・要点）" aria-label="知識庫を検索"></div>'
+            '<div id="kb-tagbar" aria-label="タグで絞り込み"></div>'
+            '<div id="kb-list"></div>'
+        )
+        kb_js = KB_JS_TEMPLATE.replace(
+            "__KB_DATA__", json.dumps(kb_sorted, ensure_ascii=False)
         )
     else:
         knowledge_html = ""
@@ -398,6 +459,7 @@ def render():
 {stock_panel}
 </div>
 {JS}
+{kb_js}
 </body>
 </html>
 """

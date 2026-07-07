@@ -96,6 +96,19 @@ ul.feed .summary { font-size: 12.5px; color: var(--text-secondary); margin-top: 
   border-radius: 999px; padding: 1px 8px; }
 .kb-note ul { margin: 4px 16px 14px; padding-left: 18px; }
 .kb-note li { font-size: 12.5px; color: var(--text-secondary); margin-bottom: 4px; }
+.kb-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+#kb-search { flex: 1; min-width: 200px; font-size: 13px; padding: 8px 12px; border: 1px solid var(--border);
+  border-radius: 8px; background: var(--surface-1); color: var(--text-primary); }
+#kb-search:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+#kb-tagbar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+#kb-tagbar button { font-size: 11px; border: 1px solid var(--border); background: var(--surface-1);
+  color: var(--text-secondary); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+#kb-tagbar button:hover { background: var(--grid); }
+#kb-tagbar button.active { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
+#kb-list { max-height: 62vh; overflow-y: auto; overscroll-behavior: contain;
+  border: 1px solid var(--border); border-radius: 10px; padding: 8px 8px 2px; background: var(--page); }
+#kb-list .kb-note { margin-bottom: 8px; }
+#kb-empty { font-size: 12px; color: var(--text-muted); padding: 20px; text-align: center; }
 
 /* stock panel */
 #stock-panel { border: 1px solid var(--border); border-radius: 10px; background: var(--surface-1);
@@ -124,7 +137,7 @@ ul.feed .summary { font-size: 12.5px; color: var(--text-secondary); margin-top: 
 <div class="wrap">
 <header class="top">
   <h1>Hide専用ニュース</h1>
-  <div class="meta">最終更新 2026-07-08 00:42 ／ 月・水・金の朝に自動更新 ／ 全35件</div>
+  <div class="meta">最終更新 2026-07-08 00:48 ／ 月・水・金の朝に自動更新 ／ 全35件</div>
   <div class="meta" style="margin-top:2px">各記事の ＋ でストック（最下部で管理）</div>
 </header>
 <nav class="jump" aria-label="セクション"><a href="#picks"><span class="d" style="background:#eda100"></span>注目</a><a href="#watch"><span class="d" style="background:#1baf7a"></span>🔭 ウォッチ</a><a href="#sec-0"><span class="d" style="background:#2a78d6"></span>決済</a><a href="#sec-1"><span class="d" style="background:#e34948"></span>Agentic</a><a href="#sec-2"><span class="d" style="background:#4a3aa7"></span>ID・VC</a><a href="#sec-3"><span class="d" style="background:#eda100"></span>コンサル</a><a href="#knowledge"><span class="d" style="background:#898781"></span>📚 知識庫</a><a href="#stock-panel"><span class="d" style="background:#898781"></span>📌 ストック</a></nav>
@@ -172,7 +185,7 @@ ul.feed .summary { font-size: 12.5px; color: var(--text-secondary); margin-top: 
 <li><button type="button" class="stock-btn" data-link="https://www.soumu.go.jp/menu_news/s-news/01gyosei04_02000159.html" data-item="{&quot;title&quot;: &quot;「地方自治体におけるAIトランスフォーメーションに関する研究会」を開催&quot;, &quot;link&quot;: &quot;https://www.soumu.go.jp/menu_news/s-news/01gyosei04_02000159.html&quot;, &quot;source&quot;: &quot;総務省&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;コンサル/政策&quot;, &quot;summary&quot;: &quot;自治体業務へのAI導入を検討する有識者研究会を新設。地方行政のデジタル化・省力化を後押し。&quot;}" aria-label="ストックに追加" aria-pressed="false">＋</button><div class="body"><a class="title" href="https://www.soumu.go.jp/menu_news/s-news/01gyosei04_02000159.html" target="_blank" rel="noopener">「地方自治体におけるAIトランスフォーメーションに関する研究会」を開催</a><span class="src">総務省 · 2026-07-06</span><div class="summary">自治体業務へのAI導入を検討する有識者研究会を新設。地方行政のデジタル化・省力化を後押し。</div></div></li>
 <li><button type="button" class="stock-btn" data-link="https://www.soumu.go.jp/menu_news/s-news/01toukei07_01000288.html" data-item="{&quot;title&quot;: &quot;家計調査報告（二人以上の世帯）2026年5月分を公表&quot;, &quot;link&quot;: &quot;https://www.soumu.go.jp/menu_news/s-news/01toukei07_01000288.html&quot;, &quot;source&quot;: &quot;総務省&quot;, &quot;date&quot;: &quot;2026-07-06&quot;, &quot;theme&quot;: &quot;コンサル/政策&quot;, &quot;summary&quot;: &quot;5月の家計消費支出データを公表。物価高が続く中での消費者の財布事情を示す一次統計。&quot;}" aria-label="ストックに追加" aria-pressed="false">＋</button><div class="body"><a class="title" href="https://www.soumu.go.jp/menu_news/s-news/01toukei07_01000288.html" target="_blank" rel="noopener">家計調査報告（二人以上の世帯）2026年5月分を公表</a><span class="src">総務省 · 2026-07-06</span><div class="summary">5月の家計消費支出データを公表。物価高が続く中での消費者の財布事情を示す一次統計。</div></div></li>
 </ul>
-<h2 class="section" id="knowledge" style="border-bottom-color:#898781">📚 知識庫 <span class="count">8件</span></h2><p style="font-size:12px;color:var(--text-muted);margin:-4px 0 12px">ストックした記事をClaudeが規格ノート化して蓄積。見出しをタップで要点を表示。</p><details class="kb-note"><summary><span class="kb-title">機械が払うWeb：アイデンティティとステーブルコインが揃って初めて成立する</span><div class="kb-meta"><span class="kb-date">2026-07-07</span><span class="kb-tag">AgenticCommerce</span><span class="kb-tag">デジタルID</span><span class="kb-tag">ステーブルコイン</span><span class="kb-tag">Cloudflare</span><span class="kb-tag">決済</span></div></summary><ul><li>AIエージェント時代に欠けた2ピースは identity（誰の代理で何を許されるか）と stablecoin（機械が払える現金）。</li><li>Cloudflareが体現：Pay per Crawl（HTTP 402課金）＋Web Bot Auth（署名付きbot検証）で「弾く/通す」を『確かめて払わせて通す』へ。</li><li>カード網はM2Mマイクロ決済に不向き。stablecoinはプログラム可能・即時・限界コストほぼゼロの決済レール。</li><li>identityはVC／再利用可能ID（EUDIウォレット、Signicat等）が担い、認可・不正防止の前提。</li><li>Agentic Commerce×デジタルID/VC×stablecoinは別物でなく『エージェント・ネイティブWebの決済＋認可レイヤー』の1スタック。</li></ul></details><details class="kb-note"><summary><span class="kb-title">BNPL大手クラーナ、米国の銀行免許を申請</span><div class="kb-meta"><span class="kb-date">2026-07-06</span><span class="kb-tag">決済</span><span class="kb-tag">BNPL</span><span class="kb-tag">銀行</span><span class="kb-tag">規制</span></div></summary><ul><li>スウェーデンのフィンテック大手Klarna（BNPL）が米国の銀行免許を申請。</li><li>BNPL専業から銀行業（預金・与信）へ踏み込み、収益源の多様化と規制対応を狙う。</li><li>BNPL各社が『銀行化』していく流れの象徴。</li></ul></details><details class="kb-note"><summary><span class="kb-title">B2B決済基盤のギャップ——多くはエージェントAIを前提に作られていない</span><div class="kb-meta"><span class="kb-date">2026-07-06</span><span class="kb-tag">AgenticCommerce</span><span class="kb-tag">決済</span><span class="kb-tag">B2B</span></div></summary><ul><li>既存のB2B決済／技術スタックは『自動化』対応で設計され、今日の『エージェントAI』には非対応との指摘。</li><li>エージェントが自律的に発注・支払いする世界には基盤の作り替えが要る。</li><li>ベンダー視点（スポンサード）の論考である点に留意。</li></ul></details><details class="kb-note"><summary><span class="kb-title">Signicatとトラステック、欧州デジタルウォレットに『再利用可能なID』を提供へ提携</span><div class="kb-meta"><span class="kb-date">2026-07-03</span><span class="kb-tag">デジタルID</span><span class="kb-tag">VC</span><span class="kb-tag">eKYC</span><span class="kb-tag">ウォレット</span><span class="kb-tag">規制</span></div></summary><ul><li>欧州デジタルID大手Signicatと、デジタル信頼基盤企業TrustTechが提携（2026-07-03）。</li><li>規制対象事業者が『私設ウォレット経済圏』経由で再利用可能な本人確認（reusable identity＝VC的な仕組み）を構築できるようにする。</li><li>TrustTechの領域は本人確認・再利用可能なコンプライアンスチェック・信頼された電子署名。</li></ul></details><details class="kb-note"><summary><span class="kb-title">シンガポール金融庁(MAS)と銀行、AIエージェントの安全策で連携</span><div class="kb-meta"><span class="kb-date">2026-07-03</span><span class="kb-tag">AgenticCommerce</span><span class="kb-tag">規制</span><span class="kb-tag">決済</span><span class="kb-tag">銀行</span></div></summary><ul><li>MAS（シンガポール金融通貨庁）が大手金融機関・フィンテックと連携し、AIエージェント利用の安全策（ガードレール）を公表。</li><li>エージェントが取引・決済を実行する前提での規制・監督設計の初期の動き。</li><li>トップダウン規制ではなく官民協調型でルールを形成。</li></ul></details><details class="kb-note"><summary><span class="kb-title">Nuvei、経営陣を刷新しエージェント型コマースに注力</span><div class="kb-meta"><span class="kb-date">2026-07-02</span><span class="kb-tag">AgenticCommerce</span><span class="kb-tag">決済</span><span class="kb-tag">カード</span></div></summary><ul><li>カナダの決済処理大手Nuveiが経営幹部（C-suite）を刷新。</li><li>米ニューヨーク拠点のPayoneerを買収済みで、統合後に組織を再編。</li><li>エージェント型コマース（agentic commerce）への賭けを強める方針。</li></ul></details><details class="kb-note"><summary><span class="kb-title">犯収法施行規則の改正による本人確認方法の厳格化</span><div class="kb-meta"><span class="kb-date">2026-07-05</span><span class="kb-tag">規制</span><span class="kb-tag">eKYC</span><span class="kb-tag">デジタルID</span><span class="kb-tag">生体認証</span><span class="kb-tag">決済</span></div></summary><ul><li>犯罪収益移転防止法の施行規則改正は3段階で、2027年4月1日に全面施行。</li><li>非対面の旧ホ方式（自撮り＋書類画像の照合）は原則廃止。ICチップ読取（JPKI等）が原則に。</li><li>対面も写真付き書類の目視だけでは不足、ICチップ読取が必須化。</li><li>準備期間は実質約1年。全特定事業者がシステム改修・規程整備を迫られる。</li></ul></details><details class="kb-note"><summary><span class="kb-title">ECB年次報告書2025</span><div class="kb-meta"><span class="kb-date">2026-07-05</span><span class="kb-tag">中央銀行</span><span class="kb-tag">金融政策</span><span class="kb-tag">決済</span><span class="kb-tag">規制</span></div></summary><ul><li>ユーロ圏実質GDP成長率1.4%、インフレ(HICP)2.1%、2025年前半に計100bp利下げ・預金ファシリティ金利2.00%。</li><li>即時決済(TIPS)の1日平均件数が2025年に385万件超へ倍増（+132%）。</li><li>デジタルユーロは2027年試験運用・2029年本格導入を目指し次段階へ。</li><li>ブルガリアが2026年にユーロ圏21番目の加盟国に。ユーロ支持率83%（過去最高）。</li></ul></details>
+<h2 class="section" id="knowledge" style="border-bottom-color:#898781">📚 知識庫 <span class="count" id="kb-count"></span></h2><p style="font-size:12px;color:var(--text-muted);margin:-4px 0 12px">ストックした記事をClaudeが規格ノート化して蓄積。検索・タグで絞り込み、見出しをタップで要点。</p><div class="kb-controls"><input id="kb-search" type="search" autocomplete="off" placeholder="キーワードで検索（タイトル・タグ・要点）" aria-label="知識庫を検索"></div><div id="kb-tagbar" aria-label="タグで絞り込み"></div><div id="kb-list"></div>
 <details id="stock-panel" hidden open><summary>📌 ストック（<span id="stock-count">0</span>件）</summary><div class="actions"><button type="button" id="stock-copy">⧉ コピー（Claude用）</button><button type="button" id="stock-export">⤓ 書き出し(JSON)</button><button type="button" id="stock-clear">全消去</button></div><ul id="stock-list"></ul></details>
 </div>
 
@@ -247,6 +260,55 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   render();
 });
+</script>
+
+
+<script>
+(() => {
+  const KB = [{"title": "機械が払うWeb：アイデンティティとステーブルコインが揃って初めて成立する", "date": "2026-07-07", "tags": ["AgenticCommerce", "デジタルID", "ステーブルコイン", "Cloudflare", "決済"], "points": ["AIエージェント時代に欠けた2ピースは identity（誰の代理で何を許されるか）と stablecoin（機械が払える現金）。", "Cloudflareが体現：Pay per Crawl（HTTP 402課金）＋Web Bot Auth（署名付きbot検証）で「弾く/通す」を『確かめて払わせて通す』へ。", "カード網はM2Mマイクロ決済に不向き。stablecoinはプログラム可能・即時・限界コストほぼゼロの決済レール。", "identityはVC／再利用可能ID（EUDIウォレット、Signicat等）が担い、認可・不正防止の前提。", "Agentic Commerce×デジタルID/VC×stablecoinは別物でなく『エージェント・ネイティブWebの決済＋認可レイヤー』の1スタック。"]}, {"title": "BNPL大手クラーナ、米国の銀行免許を申請", "date": "2026-07-06", "tags": ["決済", "BNPL", "銀行", "規制"], "points": ["スウェーデンのフィンテック大手Klarna（BNPL）が米国の銀行免許を申請。", "BNPL専業から銀行業（預金・与信）へ踏み込み、収益源の多様化と規制対応を狙う。", "BNPL各社が『銀行化』していく流れの象徴。"]}, {"title": "B2B決済基盤のギャップ——多くはエージェントAIを前提に作られていない", "date": "2026-07-06", "tags": ["AgenticCommerce", "決済", "B2B"], "points": ["既存のB2B決済／技術スタックは『自動化』対応で設計され、今日の『エージェントAI』には非対応との指摘。", "エージェントが自律的に発注・支払いする世界には基盤の作り替えが要る。", "ベンダー視点（スポンサード）の論考である点に留意。"]}, {"title": "犯収法施行規則の改正による本人確認方法の厳格化", "date": "2026-07-05", "tags": ["規制", "eKYC", "デジタルID", "生体認証", "決済"], "points": ["犯罪収益移転防止法の施行規則改正は3段階で、2027年4月1日に全面施行。", "非対面の旧ホ方式（自撮り＋書類画像の照合）は原則廃止。ICチップ読取（JPKI等）が原則に。", "対面も写真付き書類の目視だけでは不足、ICチップ読取が必須化。", "準備期間は実質約1年。全特定事業者がシステム改修・規程整備を迫られる。"]}, {"title": "ECB年次報告書2025", "date": "2026-07-05", "tags": ["中央銀行", "金融政策", "決済", "規制"], "points": ["ユーロ圏実質GDP成長率1.4%、インフレ(HICP)2.1%、2025年前半に計100bp利下げ・預金ファシリティ金利2.00%。", "即時決済(TIPS)の1日平均件数が2025年に385万件超へ倍増（+132%）。", "デジタルユーロは2027年試験運用・2029年本格導入を目指し次段階へ。", "ブルガリアが2026年にユーロ圏21番目の加盟国に。ユーロ支持率83%（過去最高）。"]}, {"title": "Signicatとトラステック、欧州デジタルウォレットに『再利用可能なID』を提供へ提携", "date": "2026-07-03", "tags": ["デジタルID", "VC", "eKYC", "ウォレット", "規制"], "points": ["欧州デジタルID大手Signicatと、デジタル信頼基盤企業TrustTechが提携（2026-07-03）。", "規制対象事業者が『私設ウォレット経済圏』経由で再利用可能な本人確認（reusable identity＝VC的な仕組み）を構築できるようにする。", "TrustTechの領域は本人確認・再利用可能なコンプライアンスチェック・信頼された電子署名。"]}, {"title": "シンガポール金融庁(MAS)と銀行、AIエージェントの安全策で連携", "date": "2026-07-03", "tags": ["AgenticCommerce", "規制", "決済", "銀行"], "points": ["MAS（シンガポール金融通貨庁）が大手金融機関・フィンテックと連携し、AIエージェント利用の安全策（ガードレール）を公表。", "エージェントが取引・決済を実行する前提での規制・監督設計の初期の動き。", "トップダウン規制ではなく官民協調型でルールを形成。"]}, {"title": "Nuvei、経営陣を刷新しエージェント型コマースに注力", "date": "2026-07-02", "tags": ["AgenticCommerce", "決済", "カード"], "points": ["カナダの決済処理大手Nuveiが経営幹部（C-suite）を刷新。", "米ニューヨーク拠点のPayoneerを買収済みで、統合後に組織を再編。", "エージェント型コマース（agentic commerce）への賭けを強める方針。"]}];
+  const TOP_TAGS = 12;
+  const esc = s => (s==null?'':String(s)).replace(/[&<>"']/g,
+    c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const search = document.getElementById('kb-search');
+  const tagbar = document.getElementById('kb-tagbar');
+  const list = document.getElementById('kb-list');
+  const count = document.getElementById('kb-count');
+  let activeTag = null;
+
+  const freq = {};
+  KB.forEach(n => (n.tags||[]).forEach(t => freq[t] = (freq[t]||0)+1));
+  const topTags = Object.keys(freq).sort((a,b)=>freq[b]-freq[a]).slice(0, TOP_TAGS);
+  const mkBtn = (label, tag) => {
+    const b = document.createElement('button'); b.type='button'; b.textContent = label;
+    b._tag = tag;
+    b.onclick = () => { activeTag = (activeTag===tag) ? null : tag; syncTags(); render(); };
+    return b;
+  };
+  tagbar.appendChild(mkBtn('すべて', null));
+  topTags.forEach(t => tagbar.appendChild(mkBtn('#'+t, t)));
+  function syncTags(){ [...tagbar.children].forEach(b => b.classList.toggle('active', b._tag===activeTag)); }
+
+  function noteHTML(n){
+    const tags = (n.tags||[]).map(t=>`<span class="kb-tag">${esc(t)}</span>`).join('');
+    const pts = (n.points||[]).map(p=>`<li>${esc(p)}</li>`).join('');
+    return `<details class="kb-note"><summary><span class="kb-title">${esc(n.title)}</span>`
+      + `<div class="kb-meta"><span class="kb-date">${esc(n.date)}</span>${tags}</div></summary>`
+      + `<ul>${pts}</ul></details>`;
+  }
+  function render(){
+    const q = search.value.toLowerCase().trim();
+    const res = KB.filter(n => {
+      if(activeTag && !(n.tags||[]).includes(activeTag)) return false;
+      if(!q) return true;
+      return (n.title+' '+(n.tags||[]).join(' ')+' '+(n.points||[]).join(' ')).toLowerCase().includes(q);
+    });
+    count.textContent = res.length + '件';
+    list.innerHTML = res.length ? res.map(noteHTML).join('')
+      : '<div id="kb-empty">該当するノートがありません</div>';
+  }
+  search.addEventListener('input', render);
+  syncTags(); render();
+})();
 </script>
 
 </body>
