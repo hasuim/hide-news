@@ -51,6 +51,9 @@ WATCHES = {
     ],
 }
 
+# 1ソースあたりの最大採用件数。プールを小さく保ち、毎朝の要約(LLM)コストを抑える。
+PER_SOURCE_LIMIT = 10
+
 _TAG_RE = re.compile(r"<[^>]+>")
 
 
@@ -109,7 +112,7 @@ def fetch_all():
                 continue
 
             seen.add(key)
-            summary = clean_text(entry.get("summary") or entry.get("description"))
+            summary = clean_text(entry.get("summary") or entry.get("description"), limit=200)
             articles.append(
                 {
                     "theme": theme,
@@ -122,6 +125,8 @@ def fetch_all():
                 }
             )
             kept += 1
+            if kept >= PER_SOURCE_LIMIT:
+                break
 
         status = "ok" if entries else f"EMPTY (bozo={parsed.get('bozo')})"
         report.append((source, len(entries), kept, status))
