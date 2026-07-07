@@ -21,6 +21,18 @@
         "title": "Anthropic、「Claude Cowork」をモバイル・Web版で提供開始",
         "link": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-launches-mobile-access-for-claude-cowork/",
         "summary": "エージェント型AI「Claude Cowork」がMaxプラン向けにモバイル対応。AIエージェントの行動範囲拡大が加速。"
+      },
+      {
+        "source": "CoinDesk", "date": "2026-07-07", "theme": "決済・フィンテック",
+        "title": "元Tether投資責任者、保有株の一部売却を検討—Bloomberg報道",
+        "link": "https://www.coindesk.com/business/2026/07/07/former-tether-investment-chief-is-looking-to-sell-part-of-his-stake-in-the-stablecoin-giant-bloomberg",
+        "summary": "Tetherの元投資責任者が保有株式の一部売却を模索と判明。ステーブルコイン企業の株主構成に変化の兆し。"
+      },
+      {
+        "source": "PaymentsDive", "date": "2026-07-06", "theme": "Agentic Commerce",
+        "title": "B2B決済インフラの死角、多くの基盤はエージェント型AIを想定していない",
+        "link": "https://www.paymentsdive.com/spons/the-b2b-payments-infrastructure-gap-most-platforms-werent-built-for-agent/824370/",
+        "summary": "従来のB2B決済基盤は自動化には対応済みでも、自律的に判断・実行するエージェント型AIには未対応と指摘。"
       }
     ]
   },
@@ -32,10 +44,10 @@
       "summary": "米大手銀2行がFiservのデビット決済網の買収を協議中と判明。決済インフラの寡占再編が進む可能性。"
     },
     {
-      "theme": "決済・フィンテック", "rating": 3, "source": "CoinDesk", "date": "2026-07-07",
-      "title": "暗号資産取引所Kraken、欧州で銀行化を目指す",
-      "link": "https://www.coindesk.com/business/2026/07/07/crypto-exchange-kraken-is-trying-to-become-a-bank-in-europe",
-      "summary": "Krakenが欧州で銀行免許取得を模索。暗号資産企業が規制された銀行業へ本格進出する動きが加速。"
+      "theme": "Agentic Commerce", "rating": 3, "source": "PYMNTS", "date": "2026-07-07",
+      "title": "銀行のAI導入、セキュリティ対策が追いつかず—MCP採用が拡大",
+      "link": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-are-racing-into-ai-faster-than-security-can-follow/",
+      "summary": "AnthropicのMCP等でAIエージェントが基幹システムに接続する一方、セキュリティ体制整備が後手に。"
     },
     {
       "theme": "決済・フィンテック", "rating": 2, "source": "ペイメントナビ", "date": "2026-07-07",
@@ -44,43 +56,31 @@
       "summary": "三菱UFJ銀行とJCBがASEANで「ザ・クラス」級カードを共同発行へ。アジア富裕層市場での日系金融の攻勢。"
     },
     {
-      "theme": "Agentic Commerce", "rating": 2, "source": "PYMNTS", "date": "2026-07-07",
-      "title": "銀行のAI導入、セキュリティ対策が追いつかず—MCP採用が拡大",
-      "link": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-are-racing-into-ai-faster-than-security-can-follow/",
-      "summary": "AnthropicのMCP等でAIエージェントが基幹システムに接続する一方、セキュリティ体制整備が後手に。"
+      "theme": "決済・フィンテック", "rating": 2, "source": "CoinDesk", "date": "2026-07-07",
+      "title": "BlackRock出資のSecuritize、SPAC上場後に株価40%下落—トークン化ブームの中でも",
+      "link": "https://www.coindesk.com/markets/2026/07/07/blackrock-backed-securitize-slides-40-after-spac-debut-despite-tokenization-boom",
+      "summary": "トークン化資産の代表格Securitizeが上場直後に急落。市場の熱狂とファンダメンタルズの乖離が露呈。"
     },
     {
-      "theme": "デジタルアイデンティティ/VC", "rating": 1, "source": "Biometric Update", "date": "2026-07-07",
-      "title": "Amadeusの生体認証なりすまし検知、BixeLabの認証試験に合格",
-      "link": "https://www.biometricupdate.com/202607/amadeus-liveness-detection-for-biometric-travel-passes-bixelab-level-1-and-2-pad-tests",
-      "summary": "空港向け生体認証技術がPAD（なりすまし検知）の国際基準試験をクリア。旅行分野の生体認証実装が前進。"
+      "theme": "デジタルアイデンティティ/VC", "rating": 2, "source": "Biometric Update", "date": "2026-07-07",
+      "title": "米国境警備のデジタルID化、南方国境へと拡大",
+      "link": "https://www.biometricupdate.com/202607/washingtons-biometric-border-moves-south",
+      "summary": "米国が国境管理を、対外援助や二国間データ共有を通じた分散型ID体制へ再構築。国境管理の質的転換。"
     },
     {
-      "theme": "決済・フィンテック", "rating": 1, "source": "Finextra", "date": "2026-07-07",
-      "title": "イタリアのSatispay、Mastercardと提携しデビットカード発行へ",
-      "link": "https://www.finextra.com/newsarticle/48051/italian-fintech-satispay-partners-mastercard-for-debit-card-launch",
-      "summary": "フィンテック・ユニコーンSatispayがMastercardと組み「スーパーアプリ」化を加速、株式投資機能も追加。"
+      "theme": "コンサル/政策", "rating": 2, "source": "McKinsey", "date": "2026-07-06",
+      "title": "オペレーティングモデルの優位性——AIの勝者はなぜ組織を作り変えるのか",
+      "link": "https://www.mckinsey.com/industries/industrials/our-insights/the-operating-model-advantage-why-ai-winners-are-rewiring-their-organizations",
+      "summary": "真のAI優位性は仕事の進め方と意思決定の再設計から生まれる。技術だけでなく人と組織モデルが成否を分ける。"
     }
   ],
   "sections": {
     "決済・フィンテック": [
       {
         "source": "CoinDesk", "date": "2026-07-07",
-        "title": "SpaceXのIPOがトークン化株式取引を押し上げ、6月は過去最高の38.6億ドル",
-        "link": "https://www.coindesk.com/markets/2026/07/07/spacex-ipo-powers-record-usd3-86-billion-in-tokenized-equities-trading-in-june",
-        "summary": "SpaceX上場を契機にトークン化株式の取引額が月間最高を更新。伝統証券のオンチェーン化が現実の規模に。"
-      },
-      {
-        "source": "CoinDesk", "date": "2026-07-07",
-        "title": "米SEC、新興企業の資金調達を後押しする暗号資産規則を今月にも提案へ",
-        "link": "https://www.coindesk.com/policy/2026/07/07/u-s-sec-to-propose-crypto-rule-as-soon-as-this-month-to-ease-startups-fundraising",
-        "summary": "米証券取引委員会がスタートアップの資金調達を容易にする暗号資産規制の新提案を準備中と報じられる。"
-      },
-      {
-        "source": "CoinDesk", "date": "2026-07-07",
-        "title": "バンガード、デジタル資産部門責任者の採用を開始",
-        "link": "https://www.coindesk.com/markets/2026/07/07/vanguard-opens-search-for-digital-assets-leader-in-sign-of-evolving-crypto-strategy",
-        "summary": "資産運用大手バンガードが暗号資産戦略を主導する幹部の採用に着手。伝統的運用会社の姿勢転換を示す。"
+        "title": "暗号資産取引所Kraken、欧州で銀行化を目指す",
+        "link": "https://www.coindesk.com/business/2026/07/07/crypto-exchange-kraken-is-trying-to-become-a-bank-in-europe",
+        "summary": "Krakenが欧州で銀行免許取得を模索。暗号資産企業が規制された銀行業へ本格進出する動きが加速。"
       },
       {
         "source": "PaymentsDive", "date": "2026-07-07",
@@ -89,30 +89,42 @@
         "summary": "BNPL大手クラーナが銀行免許申請と合わせ、サウスウエスト航空との提携などで米国事業拡大を加速。"
       },
       {
-        "source": "ペイメントナビ", "date": "2026-07-06",
-        "title": "Checkout.comがAgodaと提携、バーチャルカード発行を強化",
-        "link": "https://paymentnavi.com/paymentnews/176443.html",
-        "summary": "決済大手Checkout.comが旅行予約大手Agodaと連携。旅行分野向けバーチャルカード発行機能を拡充。"
+        "source": "Finextra", "date": "2026-07-06",
+        "title": "英FCA、AIが小売金融サービスに与える影響について画期的な調査結果を公表",
+        "link": "https://www.finextra.com/newsarticle/48043/fca-publisheslandmark-review-into-impact-of-ai-on-retail-financial-services",
+        "summary": "英金融行動監視機構がAIによる金融サービス変革の可能性を広範に調査。技術革新の推進力になると評価。"
       },
       {
-        "source": "ペイメントナビ", "date": "2026-07-06",
-        "title": "ミニストップでviviONポイントの販売開始、モバイルPOSAを活用",
-        "link": "https://paymentnavi.com/paymentnews/176692.html",
-        "summary": "コンビニ店頭でのデジタルポイント販売がモバイルPOSA技術で拡大。オンラインギフト経済圏の実店舗接続が進む。"
+        "source": "Finextra", "date": "2026-07-07",
+        "title": "ECB、銀行にAIサイバー脅威への対応計画提出を要請",
+        "link": "https://www.finextra.com/newsarticle/48049/ecb-tells-banks-to-submit-plans-to-address-ai-cyber-threats",
+        "summary": "欧州中央銀行がAI悪用型サイバー攻撃への備えを銀行に指示。AnthropicのMythos等新型モデルのリスクにも言及。"
+      },
+      {
+        "source": "CoinDesk", "date": "2026-07-07",
+        "title": "SpaceXのIPOがトークン化株式取引を押し上げ、6月は過去最高の38.6億ドル",
+        "link": "https://www.coindesk.com/markets/2026/07/07/spacex-ipo-powers-record-usd3-86-billion-in-tokenized-equities-trading-in-june",
+        "summary": "SpaceX上場を契機にトークン化株式の取引額が月間最高を更新。伝統証券のオンチェーン化が現実の規模に。"
       },
       {
         "source": "CoinDesk", "date": "2026-07-07",
         "title": "円安を背景に、日本企業がビットコイン・XRPで財務多様化",
         "link": "https://www.coindesk.com/markets/2026/07/07/bitcoin-xrp-draw-japanese-firms-as-weak-yen-drives-treasury-diversification",
         "summary": "円安が続く中、日本企業が外貨建て資産の代替として暗号資産を財務戦略に組み込む動きが表面化。"
+      },
+      {
+        "source": "ペイメントナビ", "date": "2026-07-06",
+        "title": "Checkout.comがAgodaと提携、バーチャルカード発行を強化",
+        "link": "https://paymentnavi.com/paymentnews/176443.html",
+        "summary": "決済大手Checkout.comが旅行予約大手Agodaと連携。旅行分野向けバーチャルカード発行機能を拡充。"
       }
     ],
     "Agentic Commerce": [
       {
         "source": "PYMNTS", "date": "2026-07-07",
-        "title": "ブラックロック、AI投資ブームの拡大にはプライベートクレジットが必要と指摘",
-        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/blackrock-says-hyperscalers-need-private-credit-to-fund-ai-boom/",
-        "summary": "BlackRock幹部が、AIインフラ投資の拡大には銀行融資だけでなく民間信用市場の活用が不可欠と発言。"
+        "title": "マイクロソフト、Office機能の一部を自社AIへ静かに切り替え",
+        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-quietly-shifts-thousands-of-office-prompts-to-in-house-ai/",
+        "summary": "ExcelやOutlookの一部処理がMAI（自社モデル）経由に。OpenAI・Anthropic依存からの脱却を模索。"
       },
       {
         "source": "PYMNTS", "date": "2026-07-07",
@@ -122,30 +134,24 @@
       },
       {
         "source": "PYMNTS", "date": "2026-07-07",
-        "title": "マイクロソフト、Office機能の一部を自社AIへ静かに切り替え",
-        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-quietly-shifts-thousands-of-office-prompts-to-in-house-ai/",
-        "summary": "ExcelやOutlookの一部処理がMAI（自社モデル）経由に。OpenAI・Anthropic依存からの脱却を模索。"
-      },
-      {
-        "source": "PYMNTS", "date": "2026-07-07",
-        "title": "中国、海外向け先端AIモデルへのアクセス制限を検討",
-        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/china-weighs-blocking-foreign-access-to-top-ai-models/",
-        "summary": "ロイター報道によれば、中国が自国の最先端AIモデルへの海外アクセス禁止を検討中。AI地政学の緊張が拡大。"
-      },
-      {
-        "source": "PYMNTS", "date": "2026-07-07",
         "title": "B2B物流の新たな競争軸は「コスト削減」から「早期警告」へ",
         "link": "https://www.pymnts.com/shipping/2026/the-new-procurement-edge-isnt-lower-cost-its-earlier-warning/",
         "summary": "サプライチェーン管理で、輸送速度よりも異常の早期検知が競争力の源泉に。データ活用型物流の高度化。"
+      },
+      {
+        "source": "PYMNTS", "date": "2026-07-07",
+        "title": "米各州、FDAが後退する中でAI医師の免許制度導入へ",
+        "link": "https://www.pymnts.com/healthcare/2026/states-move-to-license-ai-doctors-as-the-fda-steps-back/",
+        "summary": "ユタ州はAIチャットボットによる慢性疾患薬の処方更新を先行導入。規制の空白を州が埋める構図が浮上。"
+      },
+      {
+        "source": "PYMNTS", "date": "2026-07-07",
+        "title": "ブラックロック、AI投資ブームの拡大にはプライベートクレジットが必要と指摘",
+        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/blackrock-says-hyperscalers-need-private-credit-to-fund-ai-boom/",
+        "summary": "BlackRock幹部が、AIインフラ投資の拡大には銀行融資だけでなく民間信用市場の活用が不可欠と発言。"
       }
     ],
     "デジタルアイデンティティ/VC": [
-      {
-        "source": "Biometric Update", "date": "2026-07-07",
-        "title": "米国境警備のデジタルID化、南方国境へと拡大",
-        "link": "https://www.biometricupdate.com/202607/washingtons-biometric-border-moves-south",
-        "summary": "米国が国境管理を、対外援助や二国間データ共有を通じた分散型ID体制へ再構築。国境管理の質的転換。"
-      },
       {
         "source": "Biometric Update", "date": "2026-07-07",
         "title": "モルディブ、デジタルID・DX関連法案の審議を前進",
@@ -166,6 +172,12 @@
       },
       {
         "source": "Biometric Update", "date": "2026-07-07",
+        "title": "英デジタルID諮問グループ、議事録非公開・予算未開示を継続",
+        "link": "https://www.biometricupdate.com/202607/uk-digital-id-advisory-group-will-not-publish-minutes-disclose-budget-details",
+        "summary": "英政府のデジタルID諮問グループが議事録公開や予算詳細の開示を拒否。政策決定の透明性に疑問符。"
+      },
+      {
+        "source": "Biometric Update", "date": "2026-07-07",
         "title": "クリアビューAIのDC顔認証逮捕への関与、裁判所が開示命令",
         "link": "https://www.biometricupdate.com/202607/judge-orders-disclosure-of-clearview-ai-role-in-dc-facial-recognition-arrest",
         "summary": "ワシントンDCの裁判官が捜査での顔認証技術活用の透明性確保を検察に命令。法執行のAI利用に司法の目。"
@@ -175,38 +187,32 @@
         "title": "バーレーン、行政サービスのデジタル化とMyGov統合がほぼ完了",
         "link": "https://www.biometricupdate.com/202607/bahrain-nears-complete-public-service-digitalization-and-mygov-integration",
         "summary": "バーレーンの行政サービスの95%がオンライン化、生体認証IDと連携。中東における電子政府の先進事例。"
+      },
+      {
+        "source": "Biometric Update", "date": "2026-07-07",
+        "title": "Experian、英国のDVS・GPG45準拠を支援する「Identity Connect」を発表",
+        "link": "https://www.biometricupdate.com/202607/experian-identity-connect-supports-compliance-with-dvs-gpg45",
+        "summary": "生体認証・書類確認・不正検知を統合した本人確認製品を提供開始。英国の本人確認基準への対応を後押し。"
       }
     ],
     "コンサル/政策": [
       {
-        "source": "総務省", "date": "2026-07-06",
-        "title": "令和8年度地方財政審議会（7月3日）議事要旨を公表",
-        "link": "https://www.soumu.go.jp/main_sosiki/singi/chizai/02zaisei02_04001397_00936.html",
-        "summary": "地方財政のあり方を議論する審議会の議事要旨を公表。地方交付税など制度設計の方向性を示す一次資料。"
-      },
-      {
-        "source": "総務省", "date": "2026-07-06",
-        "title": "公共サービス改革基本方針を変更",
-        "link": "https://www.soumu.go.jp/menu_news/s-news/01shingi06_01000048.html",
-        "summary": "官民競争入札など公共サービス改革の基本方針を改定。行政サービスの民間開放ルールが見直される。"
-      },
-      {
-        "source": "金融庁", "date": "2026-07-06",
-        "title": "「マネー・ローンダリング等及び金融犯罪対策の取組と課題（2026年7月）」を公表",
-        "link": "https://www.fsa.go.jp/news/r8/260703/20260703.html",
-        "summary": "金融庁がAML/CFT対応の現状と課題を整理した最新報告を公表。金融犯罪対策の政策優先度を示す。"
+        "source": "McKinsey", "date": "2026-07-05",
+        "title": "AI時代における迅速な経営資源再配分の重要性",
+        "link": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/why-accelerated-resource-allocation-matters-in-the-age-of-ai",
+        "summary": "AI破壊が加速する時代、勝者は未来予測の精度ではなく学習と資源再配分の速さで競合に差をつけると分析。"
       },
       {
         "source": "McKinsey", "date": "2026-07-05",
-        "title": "中小企業の生産性に光を当てる——チリの機会",
-        "link": "https://www.mckinsey.com/featured-insights/americas/a-microscope-on-small-businesses-chiles-productivity-opportunity",
-        "summary": "チリの中小企業が規模の壁を越え生産性を高めるための連携戦略をマッキンゼーが分析。新興国の生産性論。"
+        "title": "米国のイノベーションエンジンを築く——デビッド・レブリク氏インタビュー",
+        "link": "https://www.mckinsey.com/industries/public-sector/our-insights/building-americas-innovation-engine-an-interview-with-david-lebryk",
+        "summary": "元米財務省高官が、危機時の政府の実行力と官民連携が次の成長を生む鍵になると語る。"
       },
       {
-        "source": "McKinsey", "date": "2026-07-05",
-        "title": "Covistaはいかに医療従事者教育を変えているか",
-        "link": "https://www.mckinsey.com/capabilities/transformation/our-insights/how-covista-is-changing-education-for-healthcare-professionals",
-        "summary": "医療教育企業CovistaのCEOが、多年にわたる組織変革を通じた事業モデル転換の過程を語る。"
+        "source": "McKinsey", "date": "2026-07-02",
+        "title": "欧州化学業界における「二重の変革」アジェンダ",
+        "link": "https://www.mckinsey.com/industries/chemicals/our-insights/a-dual-transformation-agenda-for-europes-chemicals-industry",
+        "summary": "欧州化学企業の変革は業績改善とポートフォリオ・資本配分の抜本的再構築を同時に進める難易度の高い挑戦。"
       },
       {
         "source": "McKinsey", "date": "2026-07-01",
@@ -219,6 +225,12 @@
         "title": "連続的にイノベーションを生む企業が勝つ理由",
         "link": "https://www.mckinsey.com/capabilities/business-building/our-insights/the-serial-builder-advantage-why-repeat-innovators-win",
         "summary": "新規事業創出を一度きりでなく反復的に行う企業ほど成果が高いとする最新調査。組織的な事業創造力を分析。"
+      },
+      {
+        "source": "総務省", "date": "2026-07-06",
+        "title": "「地方自治体におけるAIトランスフォーメーションに関する研究会」を開催",
+        "link": "https://www.soumu.go.jp/menu_news/s-news/01gyosei04_02000159.html",
+        "summary": "総務省が自治体のAI活用推進に向けた有識者研究会を新設。行政DXの次段階として自治体AI導入を後押し。"
       }
     ]
   }
