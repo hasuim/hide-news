@@ -10,6 +10,7 @@ import html
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -28,17 +29,24 @@ UA = (
 # How far back to keep articles. Undated entries are always kept.
 MAX_AGE_DAYS = 10
 
-# (theme, source name, feed url). Verified reachable 2026-07-07.
+# (theme, source name, feed url). Verified reachable 2026-07-07 / 2026-07-08.
+# 政府系はHTML記事がbot遮断でもRSS/XMLは通ることが多い（経産省は.rdfは403だがAtom版は可）。
 FEEDS = [
     ("投資・株", "東洋経済オンライン", "https://toyokeizai.net/list/feed/rss"),
     ("決済・フィンテック", "ペイメントナビ", "https://paymentnavi.com/feed"),
     ("決済・フィンテック", "金融庁", "https://www.fsa.go.jp/fsaNewsListAll_rss2.xml"),
     ("決済・フィンテック", "デジタル庁", "https://www.digital.go.jp/rss/news.xml"),
+    ("決済・フィンテック", "日本銀行", "https://www.boj.or.jp/rss/whatsnew.xml"),
     ("決済・フィンテック", "Finextra", "https://www.finextra.com/rss/headlines.aspx"),
     ("決済・フィンテック", "PaymentsDive", "https://www.paymentsdive.com/feeds/news/"),
+    ("決済・フィンテック", "CoinDesk", "https://www.coindesk.com/arc/outboundfeeds/rss/"),
+    ("Agentic Commerce", "PYMNTS", "https://www.pymnts.com/feed/"),
+    ("デジタルアイデンティティ/VC", "Biometric Update", "https://www.biometricupdate.com/feed"),
     ("コンサル/政策", "総務省", "https://www.soumu.go.jp/news.rdf"),
     ("コンサル/政策", "McKinsey Insights", "https://www.mckinsey.com/insights/rss"),
 ]
+# 注: 経産省(meti.go.jp)のRSS/Atomは間欠的にWAFが202空を返すため不採用。
+# 官公庁枠は 金融庁・デジタル庁・総務省・日本銀行 でカバー。
 
 # 横断ウォッチ軸: テーマを越えて追いたいレンズ。該当キーワードを含む記事に印を付け、
 # 収集時に候補を炙り出す（採否は curated_news.json 編集時にClaudeが判断）。
@@ -55,6 +63,23 @@ WATCHES = {
 PER_SOURCE_LIMIT = 10
 
 _TAG_RE = re.compile(r"<[^>]+>")
+
+
+def fetch_feed(url):
+    """Fetch a feed. Prefer curl (bypasses WAFs / 308 redirects that block
+    feedparser's own HTTP client); fall back to feedparser if curl yields nothing."""
+    try:
+        data = subprocess.run(
+            ["curl", "-sS", "-L", "--max-time", "20", "-A", UA, url],
+            capture_output=True, timeout=30,
+        ).stdout
+        if data:
+            parsed = feedparser.parse(data)
+            if parsed.get("entries"):
+                return parsed
+    except Exception:
+        pass
+    return feedparser.parse(url, agent=UA)
 
 
 def match_watches(text):
@@ -95,7 +120,7 @@ def fetch_all():
     report = []
 
     for theme, source, url in FEEDS:
-        parsed = feedparser.parse(url, agent=UA)
+        parsed = fetch_feed(url)
         entries = parsed.get("entries", [])
         kept = 0
         for entry in entries:
