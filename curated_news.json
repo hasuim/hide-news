@@ -5,226 +5,232 @@
     "thesis": "botが弾かれる根本は「機械がコンテンツに小額を払う手段が無い」こと。ステーブルコインはM2Mマイクロ決済に唯一フィットする通貨で、「弾く」を「払えば通す」に変える鍵。ただし支払い(ステーブルコイン)＋身元(デジタルID/VC)の両輪で初めて成立し、政府系の非経済的な遮断は対象外。決済×Agentic Commerce×デジタルIDが交わる横断軸として定点観測する。",
     "items": [
       {
-        "source": "ペイメントナビ", "date": "2026-07-14", "theme": "決済・フィンテック",
-        "title": "JCB、Circleとステーブルコイン活用の協業検討で基本合意（MOU）を締結",
-        "link": "https://paymentnavi.com/paymentnews/176994.html",
-        "summary": "国内カード大手JCBがUSDC発行元Circle関連会社と協業検討で合意。日本の決済網にステーブルコインが接続する布石。"
+        "source": "PaymentsDive", "date": "2026-07-17", "theme": "Agentic Commerce",
+        "title": "Visa・Stripe、AI決済プロトコルの標準化団体に参加",
+        "link": "https://www.paymentsdive.com/news/visa-stripe-join-ai-protocol-project/825499/",
+        "summary": "AIとソフトが自律的に支払う仕組みの共通規格づくりに大手が集結。機械が払うWebの決済レール標準化が本格化。"
       },
       {
-        "source": "PYMNTS", "date": "2026-07-14", "theme": "Agentic Commerce",
-        "title": "Velocity、3800万ドルを調達——ステーブルコインが企業財務の主流を再構築",
-        "link": "https://www.pymnts.com/cryptocurrency/2026/velocity-raises-38-million-dollars-stablecoins-reshape-mainstream-business-finance/",
-        "summary": "企業向けステーブルコイン決済・財務基盤に資金流入。M2M決済の本命通貨が大企業の実務に食い込み始めた。"
+        "source": "ペイメントナビ", "date": "2026-07-17", "theme": "決済・フィンテック",
+        "title": "（5）欧米のステーブルコインの法規制——StablecoinとCBDCを読み解く",
+        "link": "https://paymentnavi.com/paymentnews/175795.html",
+        "summary": "米欧のステーブルコイン法制を体系整理。M2M決済の本命通貨が制度面で使える段階へ近づく現状を示す。"
       },
       {
-        "source": "CoinDesk", "date": "2026-07-14", "theme": "決済・フィンテック",
-        "title": "JPモルガン、Hyperliquidの台頭がCircleのUSDC経済圏を脅かすと分析",
-        "link": "https://www.coindesk.com/business/2026/07/14/jpmorgan-says-hyperliquid-s-rise-threatens-circle-s-usdc-economics",
-        "summary": "分散型取引基盤の勢いがUSDCの収益構造を揺さぶると指摘。機械が払う通貨の覇権争いが新局面に入る。"
+        "source": "CoinDesk", "date": "2026-07-20", "theme": "決済・フィンテック",
+        "title": "韓国銀行、9行と9月にCBDCの本番取引を開始へ",
+        "link": "https://www.coindesk.com/business/2026/07/20/bank-of-korea-prepares-for-live-cbdc-transactions-with-nine-banks-in-september",
+        "summary": "韓国が主要9行とCBDC実取引を9月に稼働予定。中央銀行デジタル通貨が実運用フェーズに入り機械決済の基盤が拡張。"
       },
       {
-        "source": "McKinsey", "date": "2026-07-12", "theme": "コンサル/政策",
-        "title": "そのAIエージェントに価値はあるか——エージェント経済と現代のオペレーティングモデル",
-        "link": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/is-that-ai-agent-worth-it-agentic-economics-and-the-modern-operating-model",
-        "summary": "膨らむAIコストに気を取られ本当の果実を見失うなと警鐘。機械が働き払う時代の経済計測を問い直す。"
+        "source": "McKinsey", "date": "2026-07-15", "theme": "コンサル/政策",
+        "title": "B2B営業の未来——成長企業はエージェント型AIで戦い方を再配線する",
+        "link": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-future-of-b2b-sales-how-growth-champions-rewire-their-playbooks-with-ai",
+        "summary": "AI実証は溢れるが価値は出ていないと指摘。エージェント型AIが商談プロセスを自律実行する未来像を描く。"
       },
       {
-        "source": "Biometric Update", "date": "2026-07-14", "theme": "デジタルアイデンティティ/VC",
-        "title": "OpenAI、機微なAI機能へのアクセスにハードウェア型パスキーを義務化",
-        "link": "https://www.biometricupdate.com/202607/openai-requires-hardware-backed-passkeys-for-trusted-cyber-access",
-        "summary": "9月から高リスク用途の利用者に物理鍵ベースの本人確認を要求。機械時代の「誰がアクセスするか」を強く担保。"
+        "source": "Biometric Update", "date": "2026-07-20", "theme": "デジタルアイデンティティ/VC",
+        "title": "Hopae、ConnectをGoogleウォレットのクレデンシャルに対応拡張",
+        "link": "https://www.biometricupdate.com/202607/hopae-extends-connect-with-google-wallet-credential-support",
+        "summary": "既存APIのままGoogleウォレットの本人確認情報を扱えるように。機械時代の「誰が払うか」を担保するID基盤が拡充。"
       }
     ]
   },
   "picks": [
     {
-      "theme": "決済・フィンテック", "rating": 3, "source": "Finextra", "date": "2026-07-14",
-      "title": "ECB、デジタルユーロ試験フェーズに36の決済事業者（PSP）を選定",
-      "link": "https://www.finextra.com/newsarticle/48084/ecb-selects-36-psps-for-digital-euro-pilot-phase?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "summary": "ユーロ圏36社をデジタルユーロ試験に選定。米のCBDC禁止と対照的に欧州はCBDC実装を着実に前進させる。"
+      "theme": "決済・フィンテック", "rating": 3, "source": "Finextra", "date": "2026-07-17",
+      "title": "PayPal取締役会、Stripe・Adventの530億ドル買収提案を「不十分」と判断",
+      "link": "https://www.finextra.com/newsarticle/48116/paypal-board-considers-53bn-stripe-advent-offer-inadequate---reuters?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "summary": "決済巨大再編の観測。PayPal側は過小評価かつ規制の壁も懸念と報道。決済業界の勢力図を一変させ得る大型ディール。"
     },
     {
-      "theme": "決済・フィンテック", "rating": 3, "source": "ペイメントナビ", "date": "2026-07-14",
-      "title": "JCB、Circleとステーブルコイン活用の協業検討で基本合意（MOU）を締結",
-      "link": "https://paymentnavi.com/paymentnews/176994.html",
-      "summary": "国内カード大手がUSDC発行元と協業検討で合意。日本の決済インフラにステーブルコインが接続する契機に。"
+      "theme": "コンサル/政策", "rating": 3, "source": "McKinsey", "date": "2026-07-19",
+      "title": "知能のコスト——CIOはAI需要をどう規模で管理するか",
+      "link": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-cost-of-intelligence-how-cios-can-manage-ai-demand-at-scale",
+      "summary": "AIコストが膨張する中、コストではなく成果で最適化せよと提言。企業のAI投資規律が競争力を左右する局面に。"
     },
     {
-      "theme": "決済・フィンテック", "rating": 3, "source": "CoinDesk", "date": "2026-07-14",
-      "title": "米英、世界最大級の金融市場をまたぐトークン化金融のルール整合へ動く",
-      "link": "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets",
-      "summary": "米英が資産トークン化の規制協調に着手。国境を越えるデジタル金融の制度基盤づくりが大きく前進する。"
+      "theme": "決済・フィンテック", "rating": 2, "source": "Finextra", "date": "2026-07-16",
+      "title": "Mastercard、開発者向けのモバイルウォレット構築サービスを提供開始",
+      "link": "https://www.finextra.com/newsarticle/48108/mastercard-rolls-out-service-to-help-developers-build-mobile-wallets?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "summary": "銀行やフィンテックが自社アプリに非接触決済を組み込みやすく。決済大手がウォレット開発の裾野を広げる。"
     },
     {
-      "theme": "Agentic Commerce", "rating": 2, "source": "PYMNTS", "date": "2026-07-14",
-      "title": "新QR標準「X9.150」が米国の即時決済をレジで解放",
-      "link": "https://www.pymnts.com/real-time-payments/2026/new-x9-150-qr-standard-unlocks-us-instant-payments-at-checkout/",
-      "summary": "米国に不足していた即時決済の共通入口をQR標準が提供。店頭でのリアルタイム決済普及の鍵となる。"
+      "theme": "決済・フィンテック", "rating": 2, "source": "PaymentsDive", "date": "2026-07-16",
+      "title": "Bottomline、CFO向けスイートにステーブルコイン機能を追加",
+      "link": "https://www.paymentsdive.com/news/fintech-bottomline-brings-stablecoin-capabilities-cfo-suite/825337/",
+      "summary": "企業の決済・財務・流動性業務でステーブルコインが普及すると賭ける。法人実務への浸透を先取りする一手。"
     },
     {
-      "theme": "デジタルアイデンティティ/VC", "rating": 2, "source": "Biometric Update", "date": "2026-07-14",
-      "title": "カリフォルニア州、モバイル運転免許の対象を4倍に拡大",
-      "link": "https://www.biometricupdate.com/202607/california-quadruples-access-to-mobile-drivers-licenses",
-      "summary": "登録上限を15%から60%へ引き上げ数百万人が対象に。米国でのデジタルIDの日常利用が一気に広がる。"
+      "theme": "デジタルアイデンティティ/VC", "rating": 2, "source": "Biometric Update", "date": "2026-07-17",
+      "title": "ドイツ連邦議会、連邦警察によるライブ顔認証の使用を承認",
+      "link": "https://www.biometricupdate.com/202607/german-lawmakers-approve-live-facial-recognition-use-by-federal-police",
+      "summary": "緊急時に公共空間でのリアルタイム顔認証を法的に許可。欧州で監視技術と人権のせめぎ合いが新段階に。"
     },
     {
-      "theme": "コンサル/政策", "rating": 2, "source": "McKinsey", "date": "2026-07-14",
-      "title": "変革におけるCEOの役割",
-      "link": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-role-in-transformation",
-      "summary": "縦割りや誘因のズレで頓挫しがちな変革を、CEOだけが解ける立場にあると論じる。組織変革の要諦を提示。"
+      "theme": "決済・フィンテック", "rating": 2, "source": "ペイメントナビ", "date": "2026-07-16",
+      "title": "「エアウォレット」で「ことら送金」が利用可能に（ことら）",
+      "link": "https://paymentnavi.com/paymentnews/177100.html",
+      "summary": "RMBのエアウォレットがことら送金に対応し提携先が35超に。銀行間の少額無料送金網が着実に広がる。"
     }
   ],
   "sections": {
     "決済・フィンテック": [
       {
-        "source": "Finextra", "date": "2026-07-14",
-        "title": "英国、後払い（BNPL）規制が発効",
-        "link": "https://www.finextra.com/newsarticle/48090/uk-bnpl-regulations-come-into-force?utm_medium=rssfinextra&utm_source=finextrafeed",
-        "summary": "透明性・返済能力審査・延滞者支援を事業者に義務付け。急拡大したBNPLに消費者保護のルールが及ぶ。"
+        "source": "Finextra", "date": "2026-07-20",
+        "title": "ACI Worldwide、請求部門の売却を15億ドル評価で検討と報道",
+        "link": "https://www.finextra.com/newsarticle/48121/aci-worldwide-explores-sale-of-billing-division?utm_medium=rssfinextra&utm_source=finextrafeed",
+        "summary": "決済大手が請求（ビリング）事業の切り離しを模索。コア決済への選択と集中が業界再編を促す。"
       },
       {
-        "source": "Finextra", "date": "2026-07-14",
-        "title": "Visa、銀行アプリ組込み型のAIアシスタントを発表",
-        "link": "https://www.finextra.com/newsarticle/48094/visa-unveils-ai-assistant-for-banking-apps?utm_medium=rssfinextra&utm_source=finextrafeed",
-        "summary": "米銀が自社アプリに組み込み利用者へ家計インサイトを提供。決済大手が銀行UXのAI化を後押しする。"
+        "source": "PaymentsDive", "date": "2026-07-15",
+        "title": "PayPal買収はStripeにどう効くか",
+        "link": "https://www.paymentsdive.com/news/how-paypal-may-benefit-stripe/825309/",
+        "summary": "Stripeが老舗PayPalの一部取得を模索と報道。実現すれば巨大プロセッサーが誕生し得ると分析。"
       },
       {
-        "source": "Finextra", "date": "2026-07-14",
-        "title": "Emirates NBD、Partior網でブロックチェーン型クロスボーダー決済を稼働",
-        "link": "https://www.finextra.com/newsarticle/48087/emirates-nbd-enables-blockchain-based-cross-border-payments-on-partior-network?utm_medium=rssfinextra&utm_source=finextrafeed",
-        "summary": "リアルタイムのドル国際送金をブロックチェーンで実現。銀行主導のトークン化決済網が実運用段階に入る。"
+        "source": "PaymentsDive", "date": "2026-07-16",
+        "title": "1セント硬貨の廃止が「端数丸め」の難題を突きつける",
+        "link": "https://www.paymentsdive.com/news/pennys-end-poses-rounding-challenge/825398/",
+        "summary": "現金商取引で端数処理の標準化を求める声。米国の硬貨廃止が決済オペレーションに実務課題を生む。"
       },
       {
-        "source": "CoinDesk", "date": "2026-07-14",
-        "title": "みずほ、Circleを「アンダーパフォーム」に格下げ——Open USDの脅威で目標株価50ドルに",
-        "link": "https://www.coindesk.com/business/2026/07/14/mizuho-downgrades-circle-to-underperform-cuts-price-target-to-usd50-on-open-usd-threat",
-        "summary": "新興ステーブルコインの競合台頭を理由に格下げ。USDCの独走に陰りが差し市場競争が激化する。"
+        "source": "Finextra", "date": "2026-07-17",
+        "title": "Alipay+、アルゼンチン渡航者向けにQRコード決済を開放",
+        "link": "https://www.finextra.com/newsarticle/48112/alipay-enables-qr-code-payments-for-travellers-to-argentina?utm_medium=rssfinextra&utm_source=finextrafeed",
+        "summary": "旅行者がAlipay+経由でQR決済を利用可能に。クロスボーダーのモバイル決済圏がさらに拡大する。"
       },
       {
-        "source": "PaymentsDive", "date": "2026-07-13",
-        "title": "FedNow、課題を越えて前進",
-        "link": "https://www.paymentsdive.com/news/fednow-advances-over-hurdles/825071/",
-        "summary": "FRBの即時決済網が参加行・口座を増やすも用途拡大が課題。米国リアルタイム決済の普及度が焦点に。"
+        "source": "ペイメントナビ", "date": "2026-07-17",
+        "title": "「請求書立替払いサービス」を請求書カード払い協会準拠にアップデート（リクルート）",
+        "link": "https://paymentnavi.com/paymentnews/177098.html",
+        "summary": "リクルートが業界ガイドラインに準拠し運営体制を刷新。請求書カード払いの健全化・標準化が進む。"
       },
       {
-        "source": "Finextra", "date": "2026-07-14",
-        "title": "AI投資ブームは反動の恐れ——BISが警告論文",
-        "link": "https://www.finextra.com/newsarticle/48088/ai-investment-boom-could-turn-to-bust-warns-bis-paper?utm_medium=rssfinextra&utm_source=finextrafeed",
-        "summary": "1兆ドル規模のAI投資が反動で世界経済を傷つける恐れと国際決済銀行が指摘。過熱への警鐘を鳴らす。"
+        "source": "ペイメントナビ", "date": "2026-07-20",
+        "title": "セブン銀行の親子向けVisaプリペイド「money ring カード」発行支援（ライフカード）",
+        "link": "https://paymentnavi.com/paymentnews/177131.html",
+        "summary": "教育サービス「money ring」向けカードをライフカードが発行支援。金融教育とキャッシュレスが融合する動き。"
       },
       {
-        "source": "PaymentsDive", "date": "2026-07-14",
-        "title": "Amexとデルタの提携カード、利用額が急伸",
-        "link": "https://www.paymentsdive.com/news/amex-delta-card-spending-soars/825180/",
-        "summary": "デルタ航空提携カード保有者の支出増がAmexを押し上げ。旅行需要が提携カード経済を牽引する。"
+        "source": "Finextra", "date": "2026-07-19",
+        "title": "Lumin Digital、自社の顧客から7000万ドル超を調達",
+        "link": "https://www.finextra.com/newsarticle/48118/lumin-digital-raises-70-million-from-its-clients?utm_medium=rssfinextra&utm_source=finextrafeed",
+        "summary": "クラウド型バンキング基盤が顧客銀行から出資を獲得。プラットフォームと導入先の一体化が進む。"
       }
     ],
     "Agentic Commerce": [
       {
-        "source": "PYMNTS", "date": "2026-07-14",
-        "title": "Citiの1兆ドル規模トレジャリー事業が四半期の主役に",
-        "link": "https://www.pymnts.com/earnings/2026/citi-1trillion-treasury-franchise-steals-the-quarter/",
-        "summary": "大手銀決算でCitiの企業向け資金管理事業が存在感。決済・トレジャリーが銀行収益の柱に育つ。"
+        "source": "PYMNTS", "date": "2026-07-20",
+        "title": "住宅市場、より多くの意思決定をAIに委ね始める",
+        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/the-housing-market-hands-more-decisions-to-ai/",
+        "summary": "書類審査・与信スコア・リスク判断をAIエージェントが担当。人が握っていた融資判断が機械へ移り始める。"
       },
       {
-        "source": "PYMNTS", "date": "2026-07-14",
-        "title": "米国の起業申請が24%増——AIが起業コストを押し下げ",
-        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/business-applications-jump-24percent-as-ai-lowers-startup-costs/",
-        "summary": "ChatGPT登場以降で新規事業申請が24%増と分析。AIが起業のハードルを下げ商流の裾野を広げる。"
+        "source": "PYMNTS", "date": "2026-07-19",
+        "title": "垂直特化SaaS企業が決済を自ら掌握する理由",
+        "link": "https://www.pymnts.com/news/b2b-payments/2026/why-vertical-saas-companies-are-taking-control-of-payments/",
+        "summary": "業務ソフトに収益化と決済一体化を求める顧客が増加。SaaSが決済を取り込みマネタイズ源に変える。"
       },
       {
-        "source": "PYMNTS", "date": "2026-07-14",
-        "title": "AIがホテル業界の「新しい支配人」になりつつある",
-        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-is-becoming-the-hotel-industrys-new-manager/",
-        "summary": "人件費が営業費の5割を占めるホテルでAIが運営を代替。エージェント型AIが現場運営に踏み込む。"
+        "source": "PYMNTS", "date": "2026-07-20",
+        "title": "誰が決めるのか——開発者と技術チームがAP決済の未来を作り替える",
+        "link": "https://www.pymnts.com/tracker_posts/who-decides-now-how-developers-and-tech-teams-are-reshaping-the-future-of-ap-payments/",
+        "summary": "支払業務の意思決定が財務部門から開発チームへ移行。決済自動化の主導権が技術側に移る変化を指摘。"
       },
       {
-        "source": "PYMNTS", "date": "2026-07-14",
-        "title": "OpenAI、個性を持つ携帯型スマートスピーカーを計画",
-        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-plans-portable-smart-speaker-with-personality/",
-        "summary": "OpenAI初のデバイスはAI相棒となる携帯スピーカーと報道。対話AIが生活の接点を握る次の一手。"
+        "source": "PYMNTS", "date": "2026-07-19",
+        "title": "Dun & Bradstreet、企業がビジネスの兆候に早く動けるよう支援",
+        "link": "https://www.pymnts.com/loans/working-capital/2026/db-helps-companies-act-earlier-on-business-signals/",
+        "summary": "数週間かかった与信判断をAIで高速化。商業信用の意思決定がアナリスト速度の制約から解き放たれる。"
       },
       {
-        "source": "Finextra", "date": "2026-07-13",
-        "title": "Monzo共同創業者ブロムフィールド氏、Anthropicに参画",
-        "link": "https://www.finextra.com/newsarticle/48080/monzo-co-founder-blomfield-joins-anthropic?utm_medium=rssfinextra&utm_source=finextrafeed",
-        "summary": "英ネオバンクMonzo創業者がAI大手Anthropicへ。フィンテック人材がAIフロンティアへ流れる象徴。"
+        "source": "PYMNTS", "date": "2026-07-20",
+        "title": "OnePayとUpgrade、個人ローンプログラムで提携",
+        "link": "https://www.pymnts.com/consumer-finance/2026/onepay-and-upgrade-team-to-launch-personal-loan-program/",
+        "summary": "ウォルマート系OnePayが消費者ローンを投入。フィンテック連携で金融アクセスの選択肢を広げる。"
       },
       {
-        "source": "PYMNTS", "date": "2026-07-14",
-        "title": "FRBバウマン理事、AI監督の最適化が金融包摂を促すと発言",
-        "link": "https://www.pymnts.com/news/artificial-intelligence/2026/feds-bowman-says-tailored-ai-supervision-drives-financial-inclusion/",
-        "summary": "銀行のAI導入を監督が妨げるべきでないと理事が主張。金融包摂の観点からAI活用を後押しする姿勢。"
+        "source": "PYMNTS", "date": "2026-07-19",
+        "title": "BNPL利用者の74%が複数プロバイダーを使い分け",
+        "link": "https://www.pymnts.com/bnpl/2026/74-percent-of-bnpl-users-choose-more-than-one-provider/",
+        "summary": "一社への忠誠ではなく用途で後払いを選ぶ利用行動が定着。BNPL市場の競争が一段と激化する。"
       }
     ],
     "デジタルアイデンティティ/VC": [
       {
-        "source": "Biometric Update", "date": "2026-07-14",
-        "title": "米控訴裁、Clearview AIの生体データ収集を巡る和解を破棄し訴訟を再開",
-        "link": "https://www.biometricupdate.com/202607/court-rejects-deal-reopens-clearview-ai-lawsuit-over-biometric-data-collection",
-        "summary": "顔認証大手の異例の和解を第7巡回区控訴裁が却下。生体データ収集の是非が再び法廷で問われる。"
+        "source": "Biometric Update", "date": "2026-07-17",
+        "title": "EUDIって何？——ウォレットの期限迫るも認知は依然低調",
+        "link": "https://www.biometricupdate.com/202607/eudi-what-as-wallet-deadline-looms-awareness-remains-low",
+        "summary": "仏独の消費者で欧州デジタルIDウォレットの認知は約半数のみ。義務化期限を前に普及の課題が浮き彫りに。"
       },
       {
-        "source": "Biometric Update", "date": "2026-07-14",
-        "title": "英政府、SNS利用は16歳以上と法的な線引き",
-        "link": "https://www.biometricupdate.com/202607/uk-government-draws-legal-line-in-the-sand-on-social-media-age-minimum",
-        "summary": "SNSを16歳未満に制限する新法を提示。年齢確認（Age Assurance）の需要が制度側から押し上げられる。"
+        "source": "Biometric Update", "date": "2026-07-18",
+        "title": "生体認証による年齢確認市場、ルール明確化で急拡大の構え",
+        "link": "https://www.biometricupdate.com/202607/biometric-age-assurance-market-gears-up-for-rapid-expansion-as-rules-clarify",
+        "summary": "子どもを特定アプリから守る規制が各国で整備進行。年齢確認（Age Assurance）が急成長市場に化ける。"
       },
       {
-        "source": "Biometric Update", "date": "2026-07-14",
-        "title": "年齢確認の国際標準、検査システムの分析に関する新ドラフトで拡充",
-        "link": "https://www.biometricupdate.com/202607/age-assurance-standard-builds-out-with-new-draft-on-analysis-of-age-check-systems",
-        "summary": "ISO/IEC 27566の整備が進み年齢確認の評価枠組みが具体化。オンライン安全規制の技術基盤が固まる。"
+        "source": "Biometric Update", "date": "2026-07-18",
+        "title": "年齢確認を解説——インターネットを作り替える法律群",
+        "link": "https://www.biometricupdate.com/202607/age-assurance-explained-the-laws-reshaping-the-internet",
+        "summary": "英オンライン安全法などで年齢確認が主流論点に浮上。ネットの利用前提そのものが法規制で変わりつつある。"
       },
       {
-        "source": "Biometric Update", "date": "2026-07-14",
-        "title": "英デジタルID業界、HMLRの適格電子署名の運用に異議",
-        "link": "https://www.biometricupdate.com/202607/hmlr-missing-the-net-with-qualified-electronic-signatures-says-uk-digital-id-sector",
-        "summary": "英土地登記局の電子署名運用が業界の期待とずれると指摘。公的手続きのデジタルID活用に課題が残る。"
+        "source": "Biometric Update", "date": "2026-07-19",
+        "title": "米Grocery Outlet、万引き容疑者特定にSAFR顔認証を導入",
+        "link": "https://www.biometricupdate.com/202607/grocery-outlet-stores-deploy-safr-facial-recognition-to-id-suspected-shoplifters",
+        "summary": "小売店舗が来店客をウォッチリストと照合開始。民間の顔認証利用拡大がプライバシー論争を呼ぶ。"
       },
       {
-        "source": "Biometric Update", "date": "2026-07-14",
-        "title": "資金不足でスリランカのデジタルID計画が見直しに",
-        "link": "https://www.biometricupdate.com/202607/funding-gap-puts-sri-lankas-digital-id-project-under-review",
-        "summary": "見積もりが助成額を超過しSL-UDI計画が財政の壁に直面。新興国のデジタルID構築の難しさを示す。"
+        "source": "Biometric Update", "date": "2026-07-19",
+        "title": "視界内飛行の解禁へ——警官個人配備のドローンが現実味",
+        "link": "https://www.biometricupdate.com/202607/within-line-of-sight-personal-issue-police-drones-are-on-the-horizon",
+        "summary": "ロンドン警視庁が全32区でドローン展開を表明。警察装備の常時監視化が新たな段階に入る。"
       },
       {
-        "source": "Biometric Update", "date": "2026-07-14",
-        "title": "NZの警察法改正案、生体情報権限の拡大に議員が警戒",
-        "link": "https://www.biometricupdate.com/202607/nz-policing-bill-raises-mps-alarm-over-expanded-biometric-powers",
-        "summary": "生体情報の収集拡大を含む法案に委員会が深い懸念を表明。監視と人権のバランスが論点に浮上する。"
+        "source": "Biometric Update", "date": "2026-07-17",
+        "title": "都市が「買わずに済む」監視ネットワークの台頭",
+        "link": "https://www.biometricupdate.com/202607/the-surveillance-networks-cities-do-not-have-to-buy",
+        "summary": "契約外で広がる民間カメラ網が都市監視の新層に。公的調達の外側で監視インフラが拡張する。"
       }
     ],
     "コンサル/政策": [
       {
-        "source": "McKinsey", "date": "2026-07-13",
-        "title": "エージェント時代に向けた顧客体験の再配線",
-        "link": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/rewiring-customer-experience-for-the-agentic-era",
-        "summary": "AIエージェントが判断を担う中、固定的な導線から動的なオーケストレーションへCXを再設計すべきと説く。"
+        "source": "McKinsey", "date": "2026-07-19",
+        "title": "直感からリアルタイムの洞察へ——AIで鉄鋼営業を変える",
+        "link": "https://www.mckinsey.com/capabilities/mckinsey-technology/overview/from-instinct-to-real-time-insight-transforming-steel-sales-with-ai",
+        "summary": "アルセロール・ミッタルが生成AIで営業導線を再設計。現場の摩擦を除き価値創造に集中させた事例。"
       },
       {
-        "source": "McKinsey", "date": "2026-07-13",
-        "title": "消費者が描くモビリティの未来",
-        "link": "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/how-consumers-are-reshaping-the-future-of-mobility",
-        "summary": "手頃さ・持続性・技術への期待が高まり新ブランドへの開放度も上昇。移動サービスの優先順位が変わる。"
+        "source": "McKinsey", "date": "2026-07-16",
+        "title": "飛ぶか、凍りつくか——創業者が100億ドル超の企業を築く方法",
+        "link": "https://www.mckinsey.com/industries/private-capital/our-insights/will-you-fly-or-freeze-how-founders-can-build-enduring-companies-beyond-10-billion-dollars",
+        "summary": "多くの創業者企業が10億〜100億ドルで停滞。5つの転換点で事業と自らを作り替える企業が飛躍すると説く。"
       },
       {
-        "source": "McKinsey", "date": "2026-07-13",
-        "title": "AI時代の専門性構築——次世代を誰が育てるのか",
-        "link": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/building-expertise-in-the-age-of-ai-who-trains-the-next-generation",
-        "summary": "AIが初級業務を変える中、知識管理・役割設計・学習を一体化して専門性を育てよと提言する。"
+        "source": "McKinsey", "date": "2026-07-16",
+        "title": "流通における価格設定——戦略的な成長エンジン",
+        "link": "https://www.mckinsey.com/industries/industrials/our-insights/pricing-in-distribution-a-strategic-growth-engine",
+        "summary": "価格設定は流通業者の価値創出の要と位置づけ。プライシング力を解き放つ4つの能力を提示する。"
       },
       {
-        "source": "総務省", "date": "2026-07-13",
-        "title": "「自動運転社会を支える通信インフラ戦略」を公表",
-        "link": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000794.html",
-        "summary": "自動運転を支える通信インフラの整備方針を総務省が提示。次世代モビリティの土台づくりが動き出す。"
+        "source": "デジタル庁", "date": "2026-07-17",
+        "title": "マイナンバーカードの普及・利用推進 関係省庁連絡会議（第8回）議事概要を公開",
+        "link": "https://www.digital.go.jp/councils/mynumbercard-promotion/18e0dbef-510b-43f9-882f-3e09d811dde9",
+        "summary": "政府横断でマイナカードの普及・利活用策を議論。デジタルID基盤の官側推進が継続していることを示す。"
       },
       {
-        "source": "デジタル庁", "date": "2026-07-13",
-        "title": "第5回先進的AI利活用アドバイザリーボードの会議資料を公開",
-        "link": "https://www.digital.go.jp/councils/ai-advisory-board/770d4c48-7f40-49a6-a49d-56a763800a42",
-        "summary": "政府の先進的AI活用を議論する会議資料を公開。行政のAI導入方針づくりが継続的に進む。"
+        "source": "デジタル庁", "date": "2026-07-17",
+        "title": "行政手続のデジタル完結に向けた工程表のフォローアップ結果を公表",
+        "link": "https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee",
+        "summary": "行政手続きの完全オンライン化に向けた進捗を点検。デジタル完結の実装ロードマップが検証される。"
+      },
+      {
+        "source": "デジタル庁", "date": "2026-07-17",
+        "title": "【ガバメントAI 源内活用事例】冨安デジタル審議官が語る「源内は相棒」",
+        "link": "https://www.digital.go.jp/policies/genai/movie_20260717",
+        "summary": "行政向け生成AI「源内」の活用実例を幹部が紹介。政府内でのAI実務利用が具体段階に入っている。"
       }
     ]
   }

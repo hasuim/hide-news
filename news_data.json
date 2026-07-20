@@ -1,194 +1,1046 @@
 {
-  "generated_at": "2026-07-15T12:18:29.220508+09:00",
+  "generated_at": "2026-07-20T23:50:45.812702+09:00",
   "count": 120,
   "articles": [
     {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "Hopae extends Connect with Google Wallet credential support",
+      "link": "https://www.biometricupdate.com/202607/hopae-extends-connect-with-google-wallet-credential-support",
+      "published": "2026-07-20T05:47:56+00:00",
+      "summary": "Hopae has added support for Google Wallet credentials to its Connect platform , allowing customers to access Google Wallet identity credentials through the same API they already use for digital ID sys…",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "Brazilian Securities Watchdog Takes Closer Look at Tokenization",
+      "link": "https://www.pymnts.com/blockchain/2026/brazilian-securities-watchdog-takes-closer-look-at-tokenization/",
+      "published": "2026-07-20T05:42:32+00:00",
+      "summary": "Brazil’s securities regulator has established a working group to explore tokenized securities. This working group, the Comissão de Valores Mobiliários (CVM) announced Friday (July 17), will draft an e…",
+      "watches": []
+    },
+    {
       "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "調達,入札公告等を更新しました。",
-      "link": "https://www.fsa.go.jp/choutatu/choutatu_j/nyusatu_menu.html",
-      "published": "2026-07-15T02:00:00+00:00",
+      "source": "CoinDesk",
+      "title": "Inside Cardano's 'Van Rossum' hard fork, and what it means for users",
+      "link": "https://www.coindesk.com/markets/2026/07/20/inside-cardano-s-van-rossum-hard-fork-and-what-it-means-for-users",
+      "published": "2026-07-20T05:31:23+00:00",
       "summary": "",
       "watches": []
     },
     {
       "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "その他,金融仲介機能の発揮に向けたプログレスレポートについて公表しました。",
-      "link": "https://www.fsa.go.jp/news/r8/ginkou/20260715/20260715.html",
-      "published": "2026-07-15T01:00:00+00:00",
+      "source": "CoinDesk",
+      "title": "Exodus to cut 25% of global workforce in payments shift",
+      "link": "https://www.coindesk.com/business/2026/07/20/exodus-to-cut-25-of-global-workforce-in-payments-shift",
+      "published": "2026-07-20T04:53:08+00:00",
       "summary": "",
       "watches": []
     },
     {
       "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "記者会見,片山財務大臣兼内閣府特命担当大臣閣議後記者会見の概要（令和８年７月10日）について掲載しました。",
-      "link": "https://www.fsa.go.jp/common/conference/minister/2026b/20260710-1.html",
-      "published": "2026-07-15T01:00:00+00:00",
+      "source": "CoinDesk",
+      "title": "Hut 8 surges on $9.8 billion AI data-center lease, lifting compute sector",
+      "link": "https://www.coindesk.com/business/2026/07/20/hut-8-surges-on-usd9-8-billion-ai-data-center-lease-lifting-compute-sector",
+      "published": "2026-07-20T04:49:24+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "Governments Weigh Ransomware Payment Bans as Hackers Grow Bolder",
+      "link": "https://www.pymnts.com/cybersecurity/2026/governments-weigh-ransomware-payment-bans-as-hackers-grow-bolder/",
+      "published": "2026-07-20T04:10:37+00:00",
+      "summary": "Governments have reportedly begun banning ransomware payments to hackers as demand amounts continue to rise. That’s according to a report Monday (July 20) from the Financial Times (FT), which cites th…",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "CoinDesk",
+      "title": "Tom Lee's Bitmine slowed ether purchases as it bought back $86 million in stock",
+      "link": "https://www.coindesk.com/business/2026/07/20/tom-lee-s-bitmine-slowed-ether-purchases-as-it-bought-back-usd86-million-in-stock",
+      "published": "2026-07-20T03:55:36+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "CoinDesk",
+      "title": "Saylor's Strategy raises cash reserves to $3.2 billion, leaving bitcoin holdings unchanged",
+      "link": "https://www.coindesk.com/business/2026/07/20/saylor-s-strategy-raises-cash-reserves-to-usd3-225-billion-leaving-bitcoin-holdings-unchanged",
+      "published": "2026-07-20T03:35:02+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "Finextra",
+      "title": "ACI Worldwide explores sale of billing division",
+      "link": "https://www.finextra.com/newsarticle/48121/aci-worldwide-explores-sale-of-billing-division?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-20T03:28:00+00:00",
+      "summary": "Payments powerhouse ACI Worldwide is reportedly exploring a sale of its billing division at a $1.5 billion valuation.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "CoinDesk",
+      "title": "Brazil’s securities regulator sets up task force with 60-day deadline for tokenization proposal",
+      "link": "https://www.coindesk.com/policy/2026/07/20/brazil-s-securities-regulator-sets-up-task-force-with-60-day-deadline-for-tokenization-proposal",
+      "published": "2026-07-20T03:02:28+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "CoinDesk",
+      "title": "A bitcoin 'volmageddon' may be brewing, key indicator suggests",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/20/a-bitcoin-volmageddon-may-be-brewing-key-indicator-suggests",
+      "published": "2026-07-20T02:15:57+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "CoinDesk",
+      "title": "Bank of Korea prepares for live CBDC transactions with 9 banks in September",
+      "link": "https://www.coindesk.com/business/2026/07/20/bank-of-korea-prepares-for-live-cbdc-transactions-with-nine-banks-in-september",
+      "published": "2026-07-20T02:10:07+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "OnePay and Upgrade Team on Personal Loan Program",
+      "link": "https://www.pymnts.com/consumer-finance/2026/onepay-and-upgrade-team-to-launch-personal-loan-program/",
+      "published": "2026-07-20T02:00:15+00:00",
+      "summary": "Walmart-backed OnePay has teamed with fellow FinTech Upgrade to launch a consumer loan program. OnePay’s Personal Loans offering, announced Monday (July 20), is aimed at addressing what the company de…",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "CoinDesk",
+      "title": "Crypto market slips even as equities advance. Pump surges on social-media chatter",
+      "link": "https://www.coindesk.com/markets/2026/07/20/crypto-market-slips-even-as-equities-advance-pump-surges-on-social-media-chatter",
+      "published": "2026-07-20T01:33:14+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "CoinDesk",
+      "title": "Hyperliquid plans to add decentralized prediction markets in upgrade to HIP-4",
+      "link": "https://www.coindesk.com/business/2026/07/20/hyperliquid-plans-to-add-decentralized-prediction-markets-in-upgrade-to-hip-4",
+      "published": "2026-07-20T01:04:25+00:00",
       "summary": "",
       "watches": []
     },
     {
       "theme": "投資・株",
       "source": "東洋経済オンライン",
-      "title": "導入から3カ月…｢共同親権｣どうなった？｢申し立てが嫌なら面会増やせ｣AI活用で申し立てのハードル下がり､交渉材料にも | ライフ | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/951314?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T18:00:00+00:00",
-      "summary": "離婚後の共同親権制度が施行されて､およそ3カ月。期待や懸念が錯綜する中､現場では家事事件の増加や申し立ての変化､そして制度の\"交渉カード化\"といった新たな課題が浮上しています。",
+      "title": "【配当収入「年間800万円超」でFIRE達成】低年収&株売買の才能ナシでもできた／「増配株」が今アツい理由／銘柄選び「3つのステップ」／\"自分に甘い”投資家だった／「高配当株」と「増配株」は違う | ビジネス | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/952068?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-20T01:00:00+00:00",
+      "summary": "元高校球児でフリーアナウンサーの上重聡がお送りする資産運用をテーマにした動画シリーズ。いつか「億り人」になれる日を目指して、資産運用の先輩からさまざまな極意を学んでいきます。今回のゲストは「増配株」…",
       "watches": []
     },
     {
-      "theme": "投資・株",
-      "source": "東洋経済オンライン",
-      "title": "【今すぐ成績を上げる方法】｢勉強しても成績が上がらないのはなぜ？｣の謎は｢たった一つの質問｣で解明する | キャリア・教育 | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/950727?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T17:30:00+00:00",
-      "summary": "｢毎日勉強しているのに成績が上がらない…｣そんな悩みは､知識を\"点\"で覚えることが原因かもしれません。重要なのは知識同士を結びつけ､\"面\"として理解する力です。思考力や応用力を伸ばす秘訣とは？詳しく…",
+      "theme": "決済・フィンテック",
+      "source": "PaymentsDive",
+      "title": "The next competitive edge is the payout experience",
+      "link": "https://www.paymentsdive.com/spons/the-next-competitive-edge-is-the-payout-experience/824913/",
+      "published": "2026-07-20T00:00:00+00:00",
+      "summary": "Spending is instant. Getting paid back is not. Learn why that payout gap will impact your business.",
       "watches": []
     },
     {
-      "theme": "投資・株",
-      "source": "東洋経済オンライン",
-      "title": "アップルがOpenAIを提訴､元アップル伝説デザイナーと開発する初デバイスを揺るがす訴状の全容 | ビジネス | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/951255?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T17:00:00+00:00",
-      "summary": "OpenAIと元Appleの重鎮デザイナー､ジョニー･アイブ氏による初の消費者向けデバイス開発の裏で､アップルが営業秘密の不正流用などでOpenAIらを提訴した。400人超の元Apple社員が関わる…",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "OpenAI Plans Portable Smart Speaker With Personality",
-      "link": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-plans-portable-smart-speaker-with-personality/",
-      "published": "2026-07-14T16:41:19+00:00",
-      "summary": "OpenAI’s first device will be a portable smart speaker that serves as an artificial intelligence companion, Bloomberg reported Tuesday (July 14), citing unnamed sources. The device, which is still und…",
-      "watches": []
-    },
-    {
-      "theme": "投資・株",
-      "source": "東洋経済オンライン",
-      "title": "｢ママなんか大嫌い！｣は本音じゃない→子どもの\"ひどい言葉\"に振り回されないために知ってほしいこと | キャリア・教育 | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/950520?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T16:30:00+00:00",
-      "summary": "｢うちの子､もしかして普通と違う？｣そんな小さな違和感や悩みが積み重なり､子育てに疲れ切っていませんか。子どもの荒れた言葉には､本当の気持ちが隠れていることも。正しい返事よりも､脳に届く言葉選びで､…",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "Fed’s Bowman Says Tailored AI Supervision Drives Financial Inclusion",
-      "link": "https://www.pymnts.com/news/artificial-intelligence/2026/feds-bowman-says-tailored-ai-supervision-drives-financial-inclusion/",
-      "published": "2026-07-14T16:25:15+00:00",
-      "summary": "Federal Reserve supervision should not hinder banks’ implementation of artificial intelligence (AI), because the technology can contribute to financial inclusion, Federal Reserve Vice Chair for Superv…",
-      "watches": []
-    },
-    {
-      "theme": "投資・株",
-      "source": "東洋経済オンライン",
-      "title": "心地よい眠気を導くカギは｢腸｣にあった､寝る前に押したい腸と脳を整えるツボ《疲れているはずなのに寝つけないとき》 | ライフ | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/951005?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T16:15:00+00:00",
-      "summary": "｢寝なきゃ｣と焦るほど眠れない——そんな経験はありませんか？ 実は快眠のカギは､腸と脳が密接に連携する｢腸脳相関｣にありました。",
-      "watches": []
-    },
-    {
-      "theme": "投資・株",
-      "source": "東洋経済オンライン",
-      "title": "〈NHKのネット配信〉事業は2つのサービスに収斂､今後のカギは｢テレビを観ない層｣へのアピール | ビジネス | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/951296?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T16:02:00+00:00",
-      "summary": "スマホ世代やテレビを持たない層へどこまでリーチできるのか。これが今後の大きな課題です。",
-      "watches": []
-    },
-    {
-      "theme": "投資・株",
-      "source": "東洋経済オンライン",
-      "title": "〈NHK受信料〉収支均衡達成に向けて受信料｢下げ止まり｣対策を強化､支払い督促の申立件数は過去最多に | ビジネス | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/951293?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T16:01:00+00:00",
-      "summary": "受信料収入の減少が続くNHKは､収支均衡を目指して｢未収対策｣に本腰を入れています。",
-      "watches": []
-    },
-    {
-      "theme": "投資・株",
-      "source": "東洋経済オンライン",
-      "title": "井上会長が語るNHKの未来…｢スポーツ･エンタメは公共放送の重要な役割､配信も含めて質の高い番組を提供していく｣ | ビジネス | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/951268?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T16:00:00+00:00",
-      "summary": "――NHKは今年のサッカーワールドカップ北中米大会で、日本代表の全試合を地上波とBS（衛星放送）で生中継し、録画を含めると全104試合を放送しています。ここまで力を注いだ理由は何ですか。NHKがサッ…",
-      "watches": []
-    },
-    {
-      "theme": "投資・株",
-      "source": "東洋経済オンライン",
-      "title": "｢外国勢力による関与の痕跡｣｢選挙介入も｣情報操作が容易な令和､専門家が進言する｢制度的対策｣の中身 | キャリア・教育 | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/950354?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T16:00:00+00:00",
-      "summary": "デマやフェイク情報が社会を席巻する中､2025年の参議院選挙では外国勢力による選挙介入が現実味を帯びてきました。AIとボットによる情報操作が世論形成に与える影響､その背後に潜むリスクとは。私たちは今…",
-      "watches": []
-    },
-    {
-      "theme": "投資・株",
-      "source": "東洋経済オンライン",
-      "title": "なぜ男性の｢チビ･デブ･ハゲ｣は\"いじっていい\"ことになるのか…｢傷つかないだろう｣の思い込みの下で､相手は黙って耐えている | ライフ | 東洋経済オンライン",
-      "link": "https://toyokeizai.net/articles/-/949873?utm_source=rss&utm_medium=http&utm_campaign=link_back",
-      "published": "2026-07-14T15:30:00+00:00",
-      "summary": "私たちは気づかないうちに､男性にも厳しいルッキズムを押し付けているかもしれません。たとえば､｢男なら大きく､強くなければ｣という無言の圧力。｢男性は傷つかない｣と思いがちな偏見の中で､笑顔の裏に隠さ…",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "AI Is Becoming the Hotel Industry’s New Manager",
-      "link": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-is-becoming-the-hotel-industrys-new-manager/",
-      "published": "2026-07-14T15:25:20+00:00",
-      "summary": "Labor accounts for 51.7% of hotel operating expenses and 32.4% of total revenue at U.S. hotels, according to CBRE Group’s “Trends in the Hotel Industry” report, which analyzed 2,456 properties using 2…",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "Credit Unions Ask Fed to Freeze Debit Interchange Plan Until Courts Rule",
-      "link": "https://www.pymnts.com/credit-unions/2026/credit-unions-ask-fed-to-freeze-debit-interchange-plan-until-courts-rule/",
-      "published": "2026-07-14T15:04:25+00:00",
-      "summary": "America’s Credit Unions has called on the Federal Reserve to withdraw its 2023 proposed Regulation II changes to debit interchange until legal challenges have been resolved. The organization shared th…",
+      "theme": "決済・フィンテック",
+      "source": "PaymentsDive",
+      "title": "Retail media was the first wave. Financial services may define the next one.",
+      "link": "https://www.paymentsdive.com/spons/retail-media-was-the-first-wave-financial-services-may-define-the-next-one/825477/",
+      "published": "2026-07-20T00:00:00+00:00",
+      "summary": "Retail media changed advertising. Financial services could define what comes next.",
       "watches": []
     },
     {
       "theme": "決済・フィンテック",
       "source": "Finextra",
-      "title": "Founded by Netflix payments duo, Dutch startup Nopan bags €7.2 million",
-      "link": "https://www.finextra.com/newsarticle/48086/founded-by-netflix-payments-duo-dutch-startup-nopan-bags-72-million?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-14T15:01:00+00:00",
-      "summary": "Nopan, an Amsterdam-based startup founded by two former members of Netflix's payments team, has bagged €7.2 million in funding to build a performance layer for account-to-account and wallet payments.",
+      "title": "Georgia's five largest banks to modernise treasury operations with Nasdaq Calypso",
+      "link": "https://www.finextra.com/newsarticle/48119/georgias-five-largest-banks-to-modernise-treasury-operations-with-nasdaq-calypso?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-19T23:49:00+00:00",
+      "summary": "Nasdaq has struck a deal with the National Bank of Georgia to modernise the treasury and financial markets infrastructure across the country's banking sector.",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "Who Decides Now: How Developers and Tech Teams Are Reshaping the Future of AP Payments",
+      "link": "https://www.pymnts.com/tracker_posts/who-decides-now-how-developers-and-tech-teams-are-reshaping-the-future-of-ap-payments/",
+      "published": "2026-07-19T23:03:28+00:00",
+      "summary": "Something fundamental is changing about who decides how organizations pay their suppliers. For years, payments automation was evaluated primarily by finance leaders focused on efficiency gains, cost s…",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "Why Vertical SaaS Companies Are Taking Control of Payments",
+      "link": "https://www.pymnts.com/news/b2b-payments/2026/why-vertical-saas-companies-are-taking-control-of-payments/",
+      "published": "2026-07-19T23:02:25+00:00",
+      "summary": "Watch more: Summer School With Worldpay’s Billi Jo Wright Merchants now expect business software to do more than manage workflows. They want it to drive revenue, accelerate cash flow, simplify payment…",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "The Housing Market Hands More Decisions to AI",
+      "link": "https://www.pymnts.com/news/artificial-intelligence/2026/the-housing-market-hands-more-decisions-to-ai/",
+      "published": "2026-07-19T23:00:47+00:00",
+      "summary": "For most of the history of consumer credit, the loan decision sat with a human. That model is changing. This week in the Prompt Economy™ AI agents are now handling document review, credit scoring, ris…",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "Manual Debit Reviews Can Cost Banks $2.4 Million a Year",
+      "link": "https://www.pymnts.com/next-gen-debit/2026/manual-debit-reviews-can-cost-banks-2-4-million-a-year/",
+      "published": "2026-07-19T23:00:43+00:00",
+      "summary": "A difference of just 0.50 percentage points in debit authorization performance can turn into a five-figure monthly revenue leak for an issuer. The PYMNTS Intelligence report “The Hidden P&L of Legacy…",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "74% of BNPL Users Choose More Than One Provider",
+      "link": "https://www.pymnts.com/bnpl/2026/74-percent-of-bnpl-users-choose-more-than-one-provider/",
+      "published": "2026-07-19T23:00:37+00:00",
+      "summary": "Buy now, pay later users are no longer choosing one provider and staying loyal. They are building a payment toolkit, selecting different installment options for different purchases. That shift defines…",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "Velera CEO Chuck Fagan Exits With a Challenge to Credit Unions",
+      "link": "https://www.pymnts.com/credit-unions/2026/velera-chuck-fagan-exits-with-challenge-credit-unions/",
+      "published": "2026-07-19T23:00:28+00:00",
+      "summary": "Watch more: Need to Know With Velera’s Chuck Fagan Chuck Fagan has spent more than three decades watching technology reshape financial services. Along the way, he has seen credit unions adapt to onlin…",
+      "watches": []
+    },
+    {
+      "theme": "Agentic Commerce",
+      "source": "PYMNTS",
+      "title": "D&B Helps Companies Act Earlier on Business Signals",
+      "link": "https://www.pymnts.com/loans/working-capital/2026/db-helps-companies-act-earlier-on-business-signals/",
+      "published": "2026-07-19T23:00:16+00:00",
+      "summary": "Commercial credit decisions have long moved at the speed of the analyst: a new scorecard takes weeks to design, months to validate and another cycle to clear regulatory sign-off. Dun & Bradstreet says…",
+      "watches": []
+    },
+    {
+      "theme": "投資・株",
+      "source": "東洋経済オンライン",
+      "title": "M-1準優勝のドンデコルテも参戦！｢ダブルインパクト2026｣優勝者は誰か？《見どころ徹底解説》 | ライフ | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/951491?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-19T22:00:00+00:00",
+      "summary": "7月20日（月）の夜に放送される｢ダブルインパクト｣。漫才とコントの頂点を同時に競う大会の｢今年の見どころ｣を徹底解説します。",
+      "watches": []
+    },
+    {
+      "theme": "投資・株",
+      "source": "東洋経済オンライン",
+      "title": "9歳で監督デビューまで…異能の子役｢永尾柚乃｣が切り開く新しい\"上がりルート\"《新時代･新世代の子役と評価も》 | ライフ | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/951611?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-19T20:00:00+00:00",
+      "summary": "9歳にして映画監督･脚本･主演も務める永尾柚乃。現場育ちの実力とプロ顔負けの姿勢､そして無邪気さを両立する彼女は､\"子役\"の常識を覆す存在です。",
+      "watches": []
+    },
+    {
+      "theme": "投資・株",
+      "source": "東洋経済オンライン",
+      "title": "AI攻撃が誰の手にも渡る日は近い､ソフトバンクが実演した2時間で崩れる企業防衛の現実 | ビジネス | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/951692?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-19T19:30:00+00:00",
+      "summary": "AIが人類の知能を超え､社会や経済構造が激変する未来が現実味を帯びてきた。ソフトバンク孫正義氏が語る｢止められない進化｣と､AIによるサイバー攻撃の実態､そして取るべき対策とは。",
+      "watches": []
+    },
+    {
+      "theme": "投資・株",
+      "source": "東洋経済オンライン",
+      "title": "優秀なのに嫌な人物｢ブリリアント･ジャーク｣が引き起こす\"組織崩壊\" 初期症状のサインと､最後に残される人物の恐怖 | ライフ | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/949523?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-19T19:00:00+00:00",
+      "summary": "｢たかがため息｣｢たかがあいさつ｣。しかしその小さな無礼が積み重なったとき､組織は静かに､しかし確実に壊れ始めます。優秀だけど嫌な人\"ブリリアント･ジャーク\"が引き起こす組織崩壊の初期症状と､最後に…",
+      "watches": []
+    },
+    {
+      "theme": "投資・株",
+      "source": "東洋経済オンライン",
+      "title": "【受験生の親必見】子どもに｢今日どうだった？｣はNG 記述式の問題が得意な子どもの家庭に共通する\"ある特徴\" | キャリア・教育 | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/950744?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-19T18:30:00+00:00",
+      "summary": "選択問題は得意でも､記述問題になると手が止まる――そんな悩みを持つ家庭が増えています。実は､子どもの記述力には親子の\"質問の仕方\"が大きく関係しているのです。家庭でできる記述力アップの秘訣､そのポイ…",
+      "watches": []
+    },
+    {
+      "theme": "投資・株",
+      "source": "東洋経済オンライン",
+      "title": "沖縄ドライブ旅で走りたい｢沖縄自動車道｣へ！4つのSA／PAの沖縄らしさとグルメをチェック | ライフ | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/951764?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-19T18:00:00+00:00",
+      "summary": "本土より一足早く梅雨明けを迎え､夏本番の観光シーズンを迎えた沖縄。那覇から名護を結ぶ沖縄自動車道は本島の大動脈として重要な役割を担い､沿線のサービスエリアには沖縄ならではの魅力が詰まっています。",
+      "watches": []
+    },
+    {
+      "theme": "投資・株",
+      "source": "東洋経済オンライン",
+      "title": "老朽化で道路陥没…Z世代｢年収500万でもブルーカラーは嫌｣が引き起こす｢インフラ整備は後回し｣の実情 | キャリア・教育 | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/950210?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-19T17:30:00+00:00",
+      "summary": "建設業界では､年収や労働環境が大きく改善されているにもかかわらず､若者の応募は驚くほど少ない現実があります。インフラの老朽化や人手不足が地域社会に深刻な影響を及ぼす今､なぜ若者は建設業界を避けるので…",
+      "watches": []
+    },
+    {
+      "theme": "投資・株",
+      "source": "東洋経済オンライン",
+      "title": "《国家滅亡寸前》だったローマがなぜ大帝国になれたのか…天才ハンニバルに追い詰められた後に起きた｢驚きの逆転劇｣ | ライフ | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/951345?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-19T17:00:00+00:00",
+      "summary": "かつて地中海世界を支配した大帝国ローマも、始まりはわずか1つの小さな都市国家にすぎなかった。そのローマの運命を大きく変えたのが、北アフリカの強国カルタゴとの「ポエニ戦争」である。地中海の覇権をめぐる…",
+      "watches": []
+    },
+    {
+      "theme": "投資・株",
+      "source": "東洋経済オンライン",
+      "title": "転職採用で警戒される｢他責思考｣ 面接官の誘導に乗って墓穴を掘る人に共通する\"無自覚な回答\"とは？ | キャリア・教育 | 東洋経済オンライン",
+      "link": "https://toyokeizai.net/articles/-/949300?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+      "published": "2026-07-19T16:30:00+00:00",
+      "summary": "面接でよく問われる｢不平･不満｣や｢独断専行｣に関する質問。その裏には､入社後に問題社員化するリスクを見極めたいという企業側の狙いがあります。",
       "watches": []
     },
     {
       "theme": "決済・フィンテック",
       "source": "Finextra",
-      "title": "UK BNPL regulations come into force",
-      "link": "https://www.finextra.com/newsarticle/48090/uk-bnpl-regulations-come-into-force?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-14T15:01:00+00:00",
-      "summary": "The UK's new buy now, pay later regulatory regime has come into force, placing requirements on providers designed to improve transparency, affordability and support for customers in arrears.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "Finextra",
-      "title": "BBVA taps AI to measure customer experience",
-      "link": "https://www.finextra.com/newsarticle/48091/bbva-taps-ai-to-measure-customer-experience?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-14T15:01:00+00:00",
-      "summary": "BBVA has started using generative AI to analyse conversations between customers and relationship managers as it seeks to get a better understanding of the real user experience and improve service.",
+      "title": "Lumin Digital raises $70 million from its clients",
+      "link": "https://www.finextra.com/newsarticle/48118/lumin-digital-raises-70-million-from-its-clients?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-19T15:01:00+00:00",
+      "summary": "Cloud-native banking platform Lumin Digital has raised over $70 million in new capital from its own clients.",
       "watches": []
     },
     {
       "theme": "コンサル/政策",
       "source": "McKinsey Insights",
-      "title": "The CEO’s role in transformation",
-      "link": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-role-in-transformation",
-      "published": "2026-07-14T15:00:00+00:00",
-      "summary": "Transformations often falter due to internal dynamics that divide organizations, such as misaligned incentives, siloed efforts, and risk aversion. CEOs are uniquely positioned to address these challen…",
+      "title": "The cost of intelligence: How CIOs can manage AI demand at scale",
+      "link": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-cost-of-intelligence-how-cios-can-manage-ai-demand-at-scale",
+      "published": "2026-07-19T15:00:00+00:00",
+      "summary": "As AI costs spiral, CIOs need to manage enterprise AI demand to optimize for outcomes, not just cost.",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "McKinsey Insights",
+      "title": "From instinct to real-time insight: Transforming steel sales with AI",
+      "link": "https://www.mckinsey.com/capabilities/mckinsey-technology/overview/from-instinct-to-real-time-insight-transforming-steel-sales-with-ai",
+      "published": "2026-07-19T15:00:00+00:00",
+      "summary": "ArcelorMittal Brazil partnered with McKinsey to redesign its sales journey. A gen AI–powered tool removed the friction of everyday selling, freeing salespeople to focus on what mattered most: creating…",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "McKinsey Insights",
+      "title": "Author Talks: How a CEO got faster in his 40s",
+      "link": "https://www.mckinsey.com/featured-insights/mckinsey-on-books/author-talks-how-a-ceo-got-faster-in-his-40s",
+      "published": "2026-07-19T15:00:00+00:00",
+      "summary": "CEO Nick Thompson ran marathons at the same pace for a decade—until the right coach, mindset, and routine helped him break through. Here’s what he learned about life and leadership from getting faster…",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "McKinsey Insights",
+      "title": "Partnership for the decades ahead",
+      "link": "https://www.mckinsey.com/pl/en/our-insights/partnership-for-the-decades-ahead",
+      "published": "2026-07-19T15:00:00+00:00",
+      "summary": "Economic relations between Poland and the United States have entered a new phase. Over the past three decades, cooperation has expanded beyond trade to encompass investment, technology, infrastructure…",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "セブン銀行のVisaプリペイドカード「money ring カード」発行を支援（ライフカード）",
+      "link": "https://paymentnavi.com/paymentnews/177131.html",
+      "published": "2026-07-19T13:00:37+00:00",
+      "summary": "2026年7月20日7:00 ライフカードは、セブン銀行が2026年7月16日より提供を開始した親子向け教育サービス「money ring」におけるVisaプリペイドカード「money ring カード」の発行を支援して […] The post セブン銀行のVisaプリペイドカード「money ring カード」発行を支援（ライフカード） first appeared on ペイメントナビ .",
+      "watches": []
+    },
+    {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "Grocery Outlet stores deploy SAFR facial recognition to ID suspected shoplifters",
+      "link": "https://www.biometricupdate.com/202607/grocery-outlet-stores-deploy-safr-facial-recognition-to-id-suspected-shoplifters",
+      "published": "2026-07-19T11:05:20+00:00",
+      "summary": "Facial recognition systems are scanning shoppers as they enter a growing number of Grocery Outlet stores in the San Francisco Bay Area, comparing their faces against watchlists of people suspected of…",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "令和8年7月20日付 総務省人事",
+      "link": "https://www.soumu.go.jp/menu_news/s-news/01kanbo01_02001151.html",
+      "published": "2026-07-19T11:00:00+00:00",
+      "summary": "令和8年7月20日付 総務省人事",
+      "watches": []
+    },
+    {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "Federal audit finds major gaps in US aviation cybersecurity oversight",
+      "link": "https://www.biometricupdate.com/202607/federal-audit-finds-major-gaps-in-us-aviation-cybersecurity-oversight",
+      "published": "2026-07-19T10:53:55+00:00",
+      "summary": "The U.S. Federal Aviation Administration (FAA) has not fully carried out its strategy for protecting air traffic systems and other critical aviation networks while the Transportation Security Administ…",
+      "watches": []
+    },
+    {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "Within line of sight – personal issue police drones are on the horizon",
+      "link": "https://www.biometricupdate.com/202607/within-line-of-sight-personal-issue-police-drones-are-on-the-horizon",
+      "published": "2026-07-19T10:35:33+00:00",
+      "summary": "By Professor Fraser Sampson, former UK Biometrics & Surveillance Camera Commissioner The announcement by the Metropolitan Police Service that they are to deploy drones across all 32 London boroughs sh…",
+      "watches": []
+    },
+    {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "GoSerpent campaign used coordinated malware chain to steal government files",
+      "link": "https://www.biometricupdate.com/202607/goserpent-campaign-used-coordinated-malware-chain-to-steal-government-files",
+      "published": "2026-07-19T10:20:07+00:00",
+      "summary": "A previously undocumented malware campaign targeting government and diplomatic organizations in Southeast Asia used a succession of remote access, credential theft and data exfiltration tools designed…",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "自販機キャッシュレスアプリ「ジハンピ」 2,000万ダウンロード突破（サントリー）",
+      "link": "https://paymentnavi.com/paymentnews/177135.html",
+      "published": "2026-07-18T13:00:55+00:00",
+      "summary": "2026年7月19日7:00 サントリービバレッジソリューションが展開する自販機キャッシュレスアプリ「ジハンピ」のダウンロード数が、6月末時点で2,000万ダウンロードを突破した。また、「ジハンピ」対応自販機は、6月末時 […] The post 自販機キャッシュレスアプリ「ジハンピ」 2,000万ダウンロード突破（サントリー） first appeared on ペイメントナビ .",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "令和8年7月19日付 総務省人事",
+      "link": "https://www.soumu.go.jp/menu_news/s-news/01kanbo01_02001150.html",
+      "published": "2026-07-18T11:00:00+00:00",
+      "summary": "令和8年7月19日付 総務省人事",
+      "watches": []
+    },
+    {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "Biometric age assurance market gears up for rapid expansion as rules clarify",
+      "link": "https://www.biometricupdate.com/202607/biometric-age-assurance-market-gears-up-for-rapid-expansion-as-rules-clarify",
+      "published": "2026-07-18T08:17:36+00:00",
+      "summary": "Biometric age assurance was turned up to 11 this week, as in 11 different Biometric Update articles on efforts to keep children off of certain types of apps and websites. Among the highlights; the imp…",
+      "watches": []
+    },
+    {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "Age assurance explained: The laws reshaping the internet",
+      "link": "https://www.biometricupdate.com/202607/age-assurance-explained-the-laws-reshaping-the-internet",
+      "published": "2026-07-18T08:11:23+00:00",
+      "summary": "A year ago, age assurance was a niche topic and the biometrics industry was still anticipating the effect that the UK’s Online Safety Act would have on adult content sites. Today it sits at the center…",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "セブン銀行の+Connect「ATM 口座振替登録」サービス取扱開始（オリコ）",
+      "link": "https://paymentnavi.com/paymentnews/177127.html",
+      "published": "2026-07-17T13:00:51+00:00",
+      "summary": "2026年7月18日7:00 オリエントコーポレーション（オリコ）は、セブン銀行と提携し、2026年7月より、セブン銀行ATMを活用した「+Connect」(プラスコネクト)の「ATM口座振替登録」サービスの取り扱いを開 […] The post セブン銀行の+Connect「ATM 口座振替登録」サービス取扱開始（オリコ） first appeared on ペイメントナビ .",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "その他,「経済価値ベースのソルベンシー規制」の概要資料を更新しました。",
+      "link": "https://www.fsa.go.jp/policy/economic_value-based_solvency/index.html",
+      "published": "2026-07-17T08:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "令和８年３月期までにおいて、定時株主総会前に有価証券報告書を提出した上場会社について公表しました。",
+      "link": "https://www.fsa.go.jp/policy/kaiji/sokaimaekaiji.html",
+      "published": "2026-07-17T08:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "「公認会計士及び監査法人におけるマネー・ローンダリング、テロ資金供与及び拡散金融対策に関するガイドライン（案）」に対するパブリックコメントの結果等について公表しました。",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260717-3/20260717.html",
+      "published": "2026-07-17T08:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "「中小企業の事業再生等に関するガイドライン」の活用実績について公表しました。",
+      "link": "https://www.fsa.go.jp/news/r8/ginkou/20260717-2/20260717-2.html",
+      "published": "2026-07-17T08:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "EUDI What? As wallet deadline looms, awareness remains low",
+      "link": "https://www.biometricupdate.com/202607/eudi-what-as-wallet-deadline-looms-awareness-remains-low",
+      "published": "2026-07-17T07:39:53+00:00",
+      "summary": "New consumer research from IDnow shows that only about half of French and German customers have heard of the European Digital Identity Wallet (EUDI Wallet). To readers of Biometric Update , this may s…",
+      "watches": []
+    },
+    {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "The surveillance networks cities do not have to buy",
+      "link": "https://www.biometricupdate.com/202607/the-surveillance-networks-cities-do-not-have-to-buy",
+      "published": "2026-07-17T07:38:08+00:00",
+      "summary": "Private camera networks are beginning to emerge in cities across the U.S. which operate outside the boundaries of companies who provide surveillance cameras to local governments under contract. Rather…",
+      "watches": []
+    },
+    {
+      "theme": "デジタルアイデンティティ/VC",
+      "source": "Biometric Update",
+      "title": "German lawmakers approve live facial recognition use by federal police",
+      "link": "https://www.biometricupdate.com/202607/german-lawmakers-approve-live-facial-recognition-use-by-federal-police",
+      "published": "2026-07-17T07:35:29+00:00",
+      "summary": "Germany’s Federal Police appear on track to get new powers in a broad update of their governing rules, including a legal basis to use live facial recognition in public in certain emergency situations.…",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "その他,「ESG評価・データ提供機関に係る行動規範」の受入れを表明した評価機関等リスト（令和８年６月30日時点）について公表しました。",
+      "link": "https://www.fsa.go.jp/singi/esg_hyouka/list.html",
+      "published": "2026-07-17T07:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "「投資法人の計算に関する規則の一部を改正する内閣府令」の公布及びパブリックコメントの結果について公表しました。",
+      "link": "https://www.fsa.go.jp/news/r8/shouken/20260717/20260717.html",
+      "published": "2026-07-17T07:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "「保険会社向けの総合的な監督指針」等の一部改正（案）に対するパブリックコメントの結果等について公表しました。",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260717-2/20260717.html",
+      "published": "2026-07-17T07:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "「風水害リスクに関する金融機関の取組の動向や課題」について公表しました。",
+      "link": "https://www.fsa.go.jp/news/r8/sonota/20260717/20260717.html",
+      "published": "2026-07-17T07:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "Finextra",
+      "title": "Trump Media to sell traders instant access to market moving Truth Social posts",
+      "link": "https://www.finextra.com/newsarticle/48117/trump-media-to-sell-traders-instant-access-to-market-moving-truth-social-posts?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-17T06:22:00+00:00",
+      "summary": "President Donald Trump's media company is planning to charge traders for real-time access to Truth Social posts, possibly including his own.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "その他,「国際会計基準審議会等の国際会議への参加及び意見発信等」（令和７年度）の成果物について公表しました。",
+      "link": "https://www.fsa.go.jp/common/about/research/20260717/20260717.html",
+      "published": "2026-07-17T06:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "金融庁",
+      "title": "その他,「国際会計基準審議会の議論内容及び討議資料等の調査分析等」（令和７年度）の成果物について公表しました。",
+      "link": "https://www.fsa.go.jp/common/about/research/20260717-2/20260717-2.html",
+      "published": "2026-07-17T06:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "Finextra",
+      "title": "PayPal board considers $53bn Stripe-Advent offer inadequate - Reuters",
+      "link": "https://www.finextra.com/newsarticle/48116/paypal-board-considers-53bn-stripe-advent-offer-inadequate---reuters?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-17T05:52:00+00:00",
+      "summary": "The PayPal board thinks the $53 billion takeover offer from Stripe and Advent undervalues the payments firm and could also face pushback from regulators, according to Reuters.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "PaymentsDive",
+      "title": "Visa, Stripe join AI protocol project",
+      "link": "https://www.paymentsdive.com/news/visa-stripe-join-ai-protocol-project/825499/",
+      "published": "2026-07-17T04:48:00+00:00",
+      "summary": "A pack of major fintechs have joined a nonprofit seeking to standardize how payments are sent online using artificial intelligence and software.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "PaymentsDive",
+      "title": "Backing the president’s fintech order",
+      "link": "https://www.paymentsdive.com/news/backing-the-presidents-fintech-order/825493/",
+      "published": "2026-07-17T04:37:00+00:00",
+      "summary": "“Regulation should preserve confidence in the system, but it should not inhibit responsible innovation,” writes one financial services lawyer.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "Finextra",
+      "title": "ZA Bank employees will get an extra day of unpaid leave to celebrate World Cup final",
+      "link": "https://www.finextra.com/newsarticle/48114/za-bank-employees-will-get-an-extra-day-of-unpaid-leave-to-celebrate-world-cup-final?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-17T03:43:00+00:00",
+      "summary": "Hong Kong’s ZA Bank is bringing back “football hangover” leave for employees following Sunday’s FIFA World Cup final.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "Finextra",
+      "title": "NatureAlpha and The Nature Conservancy make geospatial conservation science data openly accessible",
+      "link": "https://www.finextra.com/newsarticle/48115/naturealpha-and-the-nature-conservancy-make-geospatial-conservation-science-data-openly-accessible?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-17T03:09:00+00:00",
+      "summary": "AI-powered nature intelligence platform NatureAlpha announced support for The Nature Conservancy’s pledge to make geospatial conservation science data accessible.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "Finextra",
+      "title": "Alipay+ enables QR code payments for travellers to Argentina",
+      "link": "https://www.finextra.com/newsarticle/48112/alipay-enables-qr-code-payments-for-travellers-to-argentina?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-17T01:12:00+00:00",
+      "summary": "Travellers to Argentina can now make QR code payments through payment gateway Alipay+.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "日本銀行",
+      "title": "気候変動対応を支援するための資金供給オペレーションの実施結果",
+      "link": "http://www.boj.or.jp/mopo/mpmdeci/mpr_2026/mpr260717a.pdf",
+      "published": "2026-07-16T22:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "ダッシュボードデザインの実践ガイドブックとデザインテンプレートにおいてカラーコードを更新しました",
+      "link": "https://www.digital.go.jp/resources/dashboard-guidebook",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "企画競争：補助申請及び運用経費最適化に向けた見積書・経費資料の確認観点整理業務を掲載しました",
+      "link": "https://www.digital.go.jp/procurement",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "令和8年7月17日付デジタル庁幹部一覧を掲載しました",
+      "link": "https://www.digital.go.jp/about/member",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "マイナンバーカードの普及・利用の推進に関する関係省庁連絡会議（第8回）の議事概要を掲載しました",
+      "link": "https://www.digital.go.jp/councils/mynumbercard-promotion/18e0dbef-510b-43f9-882f-3e09d811dde9",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "マイナンバーカード・インフォ（民間事業者向け情報）Vol.145を掲載しました",
+      "link": "https://www.digital.go.jp/policies/mynumber/private-business/info",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "【ガバメントAI 源内活用事例】冨安デジタル審議官が語る「源内は相棒」を掲載しました",
+      "link": "https://www.digital.go.jp/policies/genai/movie_20260717",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "行政手続のデジタル完結に向けた工程表のフォローアップ結果をまとめた資料を掲載しました",
+      "link": "https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "マイナンバーカード・インフォ（自治体向け情報）Vol.127を掲載しました",
+      "link": "https://www.digital.go.jp/policies/mynumber/local-government/info",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "「呪術廻戦×モンスト」渋谷モディで2m超の巨大レジィ・スターのレシートをひっぱり、QRコードから抽選するイベント実施",
+      "link": "https://paymentnavi.com/paymentnews/177146.html",
+      "published": "2026-07-16T17:40:38+00:00",
+      "summary": "2026年7月17日11:40 MIXIは、スマホアプリのひっぱりハンティングRPG「モンスターストライク」（以下モンスト）において、TVアニメ「呪術廻戦」との第3弾となるコラボを記念して、2026年7月17日から20日 […] The post 「呪術廻戦×モンスト」渋谷モディで2m超の巨大レジィ・スターのレシートをひっぱり、QRコードから抽選するイベント実施 first appeared on…",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "松本大臣記者会見（令和8年7月17日）動画を掲載しました",
+      "link": "https://www.digital.go.jp/speech/minister-260717-01",
+      "published": "2026-07-16T17:16:50+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "デジタル庁",
+      "title": "任期付職員の募集を掲載しました",
+      "link": "https://www.digital.go.jp/recruitment/fixed-term",
+      "published": "2026-07-16T15:58:30+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "Finextra",
+      "title": "HSBC joins digital gilt pilot as investor depository",
+      "link": "https://www.finextra.com/newsarticle/48107/hsbc-joins-digital-gilt-pilot-as-investor-depository?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-16T15:01:00+00:00",
+      "summary": "The London Stock Exchange Group and HSBC have come together to support HM Treasury's Digital Gilt Instrument (Digit) pilot issuance",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "Finextra",
+      "title": "Mastercard rolls out service to help developers build mobile wallets",
+      "link": "https://www.finextra.com/newsarticle/48108/mastercard-rolls-out-service-to-help-developers-build-mobile-wallets?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "published": "2026-07-16T15:01:00+00:00",
+      "summary": "Mastercard has introduced a set of software tools and services designed to make it easier for banks and fintechs to add contactless payments into their iOS and Android apps.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "日本銀行",
+      "title": "報告省令レート（8月分）",
+      "link": "http://www.boj.or.jp/about/services/tame/tame_rate/syorei/hou2608.htm",
+      "published": "2026-07-16T15:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "日本銀行",
+      "title": "基準外国為替相場及び裁定外国為替相場（8月分）",
+      "link": "http://www.boj.or.jp/about/services/tame/tame_rate/kijun/kiju2608.htm",
+      "published": "2026-07-16T15:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "McKinsey Insights",
+      "title": "AI in the Australian for-purpose sector: Laying a strong foundation",
+      "link": "https://www.mckinsey.com/au/our-insights/ai-in-the-australian-for-purpose-sector-laying-a-strong-foundation",
+      "published": "2026-07-16T15:00:00+00:00",
+      "summary": "AI adoption in Australian for-purpose organisations is growing, but without a considered approach, AI can add pressure and prioritise output over outcomes. How can leaders prepare their teams for more…",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "McKinsey Insights",
+      "title": "Pricing in distribution: A strategic growth engine",
+      "link": "https://www.mckinsey.com/industries/industrials/our-insights/pricing-in-distribution-a-strategic-growth-engine",
+      "published": "2026-07-16T15:00:00+00:00",
+      "summary": "Pricing is a critical value creation lever for distributors to respond to market challenges. Here are four capabilities critical to unlocking pricing’s power.",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "McKinsey Insights",
+      "title": "Will you fly—or freeze? How founders can build enduring companies beyond $10 billion",
+      "link": "https://www.mckinsey.com/industries/private-capital/our-insights/will-you-fly-or-freeze-how-founders-can-build-enduring-companies-beyond-10-billion-dollars",
+      "published": "2026-07-16T15:00:00+00:00",
+      "summary": "Many founder-led companies freeze at the $1 billion to $10 billion valuation stage. Those that scale reinvent their business, people—and themselves—at five key inflection points.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "日本銀行",
+      "title": "主要銀行貸出動向アンケート調査（7月）",
+      "link": "http://www.boj.or.jp/statistics/dl/loan/loos/release/loos2607.pdf",
+      "published": "2026-07-16T14:50:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "環境変化に対応し、進化し続けるペイメントカードのセキュリティ基準、PCI DSS。日本企業のより積極的な関与に期待（PCI SSC）",
+      "link": "https://paymentnavi.com/paymentnews/177113.html",
+      "published": "2026-07-16T14:30:59+00:00",
+      "summary": "2026年7月17日8:30 クレジットカードなどのセキュリティ基準である「PCI Data Security Standards（以下、「PCI DSS」）」を策定・管理するPCI SSC（PCI Security S […] The post 環境変化に対応し、進化し続けるペイメントカードのセキュリティ基準、PCI DSS。日本企業のより積極的な関与に期待（PCI SSC） first app…",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "（5）欧米のステーブルコインの法規制 ステーブルコイン（Stablecoin）とCBDC（Central Bank Digital Currency）",
+      "link": "https://paymentnavi.com/paymentnews/175795.html",
+      "published": "2026-07-16T14:00:53+00:00",
+      "summary": "2026年7月17日8:00 和田 文明 プロフィール キャッシュレス、電子マネー関連のジャーナリスト/ライター、主に欧米、アジアのセキュリティを含むキャッシュレス情報、カスタマーロイヤルティプログラム情報を取材 ステー […] The post （5）欧米のステーブルコインの法規制 ステーブルコイン（Stablecoin）とCBDC（Central Bank Digital Currency）…",
+      "watches": [
+        "機械が払うWeb"
+      ]
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "「請求書立替払いサービス」を請求書カード払い協会準拠にアップデート（リクルート）",
+      "link": "https://paymentnavi.com/paymentnews/177098.html",
+      "published": "2026-07-16T13:50:40+00:00",
+      "summary": "2026年7月17日7:50 リクルートは、事業者向けに提供する「請求書立替払いサービス」について、「請求書カード払い協会」に加盟し、同協会が策定する「請求書カード払い取引ガイドライン」に準拠したサービス運営体制へアップ […] The post 「請求書立替払いサービス」を請求書カード払い協会準拠にアップデート（リクルート） first appeared on ペイメントナビ .",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "「エアウォレット」で「ことら送金」が利用可能に（ことら）",
+      "link": "https://paymentnavi.com/paymentnews/177100.html",
+      "published": "2026-07-16T13:40:32+00:00",
+      "summary": "2026年7月17日7:40 ことらは、2026年7月15日より、リクルートMUFGビジネスが（RMB）提供する「エアウォレット」において、「ことら送金」が利用可能になったと発表した。これにより、「ことら送金」は現在35 […] The post 「エアウォレット」で「ことら送金」が利用可能に（ことら） first appeared on ペイメントナビ .",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "「Nudge」で「いきものカード Support for WWFジャパン」提供（ナッジ）",
+      "link": "https://paymentnavi.com/paymentnews/177102.html",
+      "published": "2026-07-16T13:30:26+00:00",
+      "summary": "2026年7月17日7:30 ナッジは、公益財団法人世界自然保護基金ジャパンと提携し、クレジットカード「Nudge（ナッジ、以下ナッジカード）」にて、「WWFジャパンカード」の提供を2026年7月15日より開始した。 同 […] The post 「Nudge」で「いきものカード Support for WWFジャパン」提供（ナッジ） first appeared on ペイメントナビ .",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "ペイメントナビ",
+      "title": "「d ポイント大還元祭 総額1億円山分けキャンペーン」開催（NTTドコモ）",
+      "link": "https://paymentnavi.com/paymentnews/177104.html",
+      "published": "2026-07-16T13:20:55+00:00",
+      "summary": "2026年7月17日7:20 NTTドコモ（以下、ドコモ）は、2026年8月1日から9月30日まで、「dポイント大還元祭 総額1 億円山分けキャンペーン」を開催する。同キャンペーンでは、キャンペーン期間中に対象のdポイン […] The post 「d ポイント大還元祭 総額1億円山分けキャンペーン」開催（NTTドコモ） first appeared on ペイメントナビ .",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "統計法等に関する研究会（第4回）",
+      "link": "https://www.soumu.go.jp/main_sosiki/kenkyu/tokeihoto/02toukatsu01_04000537.html",
+      "published": "2026-07-16T11:00:00+00:00",
+      "summary": "統計法等に関する研究会（第4回）",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "情報通信審議会 情報通信技術分科会 IPネットワーク設備委員会 電気通信事業におけるパブリッククラウドシステム利用に関する検討作業班（第6回）",
+      "link": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/policyreports/joho_tsusin/ipnet/02kiban05_04000792.html",
+      "published": "2026-07-16T11:00:00+00:00",
+      "summary": "情報通信審議会 情報通信技術分科会 IPネットワーク設備委員会 電気通信事業におけるパブリッククラウドシステム利用に関する検討作業班（第6回）",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "林総務大臣閣議後記者会見の概要",
+      "link": "https://www.soumu.go.jp/menu_news/kaiken/01koho01_02001558.html",
+      "published": "2026-07-16T11:00:00+00:00",
+      "summary": "林総務大臣閣議後記者会見の概要",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "消防防災科学技術研究推進制度の令和8年度第1期緊急枠研究開発課題の採択",
+      "link": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001241.html",
+      "published": "2026-07-16T11:00:00+00:00",
+      "summary": "消防防災科学技術研究推進制度の令和8年度第1期緊急枠研究開発課題の採択",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "「電気通信役務の安全・信頼性の確保に係るモニタリングの基本方針（案）」及び「電気通信役務の安全・信頼性の確保に係るモニタリングの年次計画（令和8年度）（案）」に対する意見募集の結果並びに基本方針及び年次計画（令和8年度）の公表",
+      "link": "https://www.soumu.go.jp/menu_news/s-news/01kiban05_02000404.html",
+      "published": "2026-07-16T11:00:00+00:00",
+      "summary": "「電気通信役務の安全・信頼性の確保に係るモニタリングの基本方針（案）」及び「電気通信役務の安全・信頼性の確保に係るモニタリングの年次計画（令和8年度）（案）」に対する意見募集の結果並びに基本方針及び年次計画（令和8年度）の公表",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "「令和7年度電気通信事故に関する検証報告」の公表",
+      "link": "https://www.soumu.go.jp/menu_news/s-news/01kiban05_02000403.html",
+      "published": "2026-07-16T11:00:00+00:00",
+      "summary": "「令和7年度電気通信事故に関する検証報告」の公表",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "情報通信審議会 情報通信技術分科会 電波利用環境委員会 CISPR F作業班（第31回）開催案内",
+      "link": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/policyreports/joho_tsusin/kaisai/02kiban16_04000951.html",
+      "published": "2026-07-16T11:00:00+00:00",
+      "summary": "情報通信審議会 情報通信技術分科会 電波利用環境委員会 CISPR F作業班（第31回）開催案内",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "総務省",
+      "title": "電波法関係手数料令の一部を改正する政令案等に対する意見募集の結果",
+      "link": "https://www.soumu.go.jp/menu_news/s-news/01kiban09_02000596.html",
+      "published": "2026-07-16T11:00:00+00:00",
+      "summary": "電波法関係手数料令の一部を改正する政令案等に対する意見募集の結果",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "PaymentsDive",
+      "title": "EWA backers push for CFPB move",
+      "link": "https://www.paymentsdive.com/news/ewa-backers-push-cfpb-move/825418/",
+      "published": "2026-07-16T05:57:00+00:00",
+      "summary": "Supporters of earned wage access aim to update national oversight this year, backing a new law and seeking to confirm a Trump policy change.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "PaymentsDive",
+      "title": "Bottomline adds stablecoin tools",
+      "link": "https://www.paymentsdive.com/news/fintech-bottomline-brings-stablecoin-capabilities-cfo-suite/825337/",
+      "published": "2026-07-16T05:36:00+00:00",
+      "summary": "The company is betting the new digital currency will gain traction across corporate payment, treasury and liquidity workflows.",
+      "watches": [
+        "機械が払うWeb"
+      ]
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "PaymentsDive",
+      "title": "Penny’s end poses rounding challenge",
+      "link": "https://www.paymentsdive.com/news/pennys-end-poses-rounding-challenge/825398/",
+      "published": "2026-07-16T05:32:00+00:00",
+      "summary": "Merchants press for passage of a bill to enact rounding standards as cash-handling businesses grapple with the cent’s gradual demise.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "日本銀行",
+      "title": "業態別の日銀当座預金残高（6月）",
+      "link": "http://www.boj.or.jp/statistics/boj/other/cabs/cabs.xlsx",
+      "published": "2026-07-15T23:00:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "日本銀行",
+      "title": "「生活意識に関するアンケート調査」（第106回）の結果",
+      "link": "http://www.boj.or.jp/research/o_survey/ishiki2607.htm",
+      "published": "2026-07-15T19:30:00+00:00",
+      "summary": "",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "McKinsey Insights",
+      "title": "Amid volatility, oil and gas M&A abounds. Here’s how to capture full value",
+      "link": "https://www.mckinsey.com/industries/oil-and-gas/our-insights/amid-volatility-oil-and-gas-m-and-a-abounds-heres-how-to-capture-full-value",
+      "published": "2026-07-15T15:00:00+00:00",
+      "summary": "Envisioning the deal’s full potential and sequencing integration initiatives makes the most of the current wave of oil and gas mergers and combinations.",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "McKinsey Insights",
+      "title": "What the 2026 World Cup reveals about the next generation of sports fans",
+      "link": "https://www.mckinsey.com/institute-for-economic-mobility/our-insights/what-the-2026-world-cup-reveals-about-the-next-generation-of-sports-fans",
+      "published": "2026-07-15T15:00:00+00:00",
+      "summary": "This year’s tournament offers a window into consumers’ changing behaviors, desire for community, and focus on identity—especially among Latino fans. Are business leaders paying attention?",
+      "watches": []
+    },
+    {
+      "theme": "コンサル/政策",
+      "source": "McKinsey Insights",
+      "title": "The future of B2B sales: How growth champions rewire their playbooks with AI",
+      "link": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-future-of-b2b-sales-how-growth-champions-rewire-their-playbooks-with-ai",
+      "published": "2026-07-15T15:00:00+00:00",
+      "summary": "AI pilots are everywhere, but value is not. Growth leaders rewire commercial impact journeys with agentic AI, enabling sellers to deepen customer relations and create real change.",
+      "watches": [
+        "機械が払うWeb"
+      ]
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "PaymentsDive",
+      "title": "How PayPal may benefit Stripe",
+      "link": "https://www.paymentsdive.com/news/how-paypal-may-benefit-stripe/825309/",
+      "published": "2026-07-15T05:56:00+00:00",
+      "summary": "The digital payments startup has reportedly made a bid for a stake in its older predecessor, potentially creating a massive processor.",
+      "watches": []
+    },
+    {
+      "theme": "決済・フィンテック",
+      "source": "PaymentsDive",
+      "title": "Is BNPL financing raising prices?",
+      "link": "https://www.paymentsdive.com/news/are-bnpl-loans-raising-prices-inflation-consumers-financing/825290/",
+      "published": "2026-07-15T05:18:10+00:00",
+      "summary": "Buy now, pay later financing impacts consumer prices as merchants pass along processing costs, a consumer advocate report asserts.",
       "watches": []
     },
     {
@@ -197,318 +1049,6 @@
       "title": "金融政策決定会合議事録等（2016年1月～6月開催分）",
       "link": "http://www.boj.or.jp/mopo/mpmsche_minu/record_2016/gjrk.htm",
       "published": "2026-07-14T14:50:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "松岡昌宏さんを起用した新 TVCM「Binanceって何だ？」篇を放映（Binance Japan）",
-      "link": "https://paymentnavi.com/paymentnews/177010.html",
-      "published": "2026-07-14T14:35:03+00:00",
-      "summary": "2026年7月15日8:34 ブロックチェーン・エコシステムおよび暗号資産インフラを提供する Binance の日本法人であるBinance Japanは、俳優の松岡昌宏さんを起用した新 TVCM「Binanceって何だ […] The post 松岡昌宏さんを起用した新 TVCM「Binanceって何だ？」篇を放映（Binance Japan） first appeared on ペイメントナビ…",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "「よりみち大阪〔第1弾〕東大阪市編」で「Pokepay」採用（DG/ポケットチェンジ）",
-      "link": "https://paymentnavi.com/paymentnews/176986.html",
-      "published": "2026-07-14T14:28:24+00:00",
-      "summary": "2026年7月15日8:28 デジタルガレージ（DG）と、そのグループ会社でオリジナル電子マネー発行事業を手掛けるポケットチェンジは、日本航空（JAL）、りそな銀行、東大阪市、一般社団法人東大阪観光協会の連携により企画さ […] The post 「よりみち大阪〔第1弾〕東大阪市編」で「Pokepay」採用（DG/ポケットチェンジ） first appeared on ペイメントナビ .",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "Ex-CFPB Enforcement Officials Launch Consumer-Focused Law Firm",
-      "link": "https://www.pymnts.com/legal/2026/ex-cfpb-enforcement-officials-launch-consumer-focused-law-firm/",
-      "published": "2026-07-14T14:28:24+00:00",
-      "summary": "Three former senior enforcement leaders from the Consumer Financial Protection Bureau (CFPB) have launched a public interest law firm that will focus on consumer rights, tenant rights, workers’ rights…",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "証券総合取引口座数300万口座突破（マネックス証券）",
-      "link": "https://paymentnavi.com/paymentnews/176988.html",
-      "published": "2026-07-14T14:24:57+00:00",
-      "summary": "2026年7月15日8:24 マネックス証券は、証券総合取引口座数が300万口座を突破したと発表した。 今回の300万口座突破は、単なる規模の拡大にとどまらず、新たなステージへと歩みを進めるマネックス証券にとって、非常に […] The post 証券総合取引口座数300万口座突破（マネックス証券） first appeared on ペイメントナビ .",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "「AEON Pay加盟店手数料無料キャンペーン」実施（イオンフィナンシャルサービス）",
-      "link": "https://paymentnavi.com/paymentnews/176990.html",
-      "published": "2026-07-14T14:22:27+00:00",
-      "summary": "2026年7月15日8:22 イオンフィナンシャルサービスは、スマホ決済サービス「AEON Pay（イオンペイ）」の加盟店拡大および中小事業者のキャッシュレス化支援を目的として、「AEON Pay決済手数料無料キャンペー […] The post 「AEON Pay加盟店手数料無料キャンペーン」実施（イオンフィナンシャルサービス） first appeared on ペイメントナビ .",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "「JRE手ぶら旅」、即日配送サービスを順次拡大へ（JR東日本）",
-      "link": "https://paymentnavi.com/paymentnews/176992.html",
-      "published": "2026-07-14T14:18:44+00:00",
-      "summary": "2026年7月15日8:18 JR東日本グループは、グループ経営ビジョン「勇翔 2034」で掲げるライフスタイル・トランスフォーメーション（LX）の実現を目指し、移動のストレスを解消する「JRE 手ぶら旅」を展開してきた […] The post 「JRE手ぶら旅」、即日配送サービスを順次拡大へ（JR東日本） first appeared on ペイメントナビ .",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "Circleとステーブルコイン活用の協業検討でMOUを締結（JCB）",
-      "link": "https://paymentnavi.com/paymentnews/176994.html",
-      "published": "2026-07-14T14:14:32+00:00",
-      "summary": "2026年7月15日8:14 ジェーシービー（JCB）は、Circle Internet Group, Inc.（以下：Circle）の関連会社との間で、ステーブルコインを活用した協業検討に関する基本合意書（MOU）を締 […] The post Circleとステーブルコイン活用の協業検討でMOUを締結（JCB） first appeared on ペイメントナビ .",
-      "watches": [
-        "機械が払うWeb"
-      ]
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "不正ゼロに向けた「au PAY マーケット」の安心・安全への取り組み AI活用と3DS 2.0全件導入で成果に手応え（auコマース＆ライフ）",
-      "link": "https://paymentnavi.com/paymentnews/176996.html",
-      "published": "2026-07-14T14:00:52+00:00",
-      "summary": "2026年7月15日8:00 「au PAY マーケット」は、「不正ゼロ」の安全・安心な売り場づくりを目指し、対策に力を入れる。クレジットカード不正利用対策として、全店舗・全取引で3DS 2.0による審査を実施し、チャー […] The post 不正ゼロに向けた「au PAY マーケット」の安心・安全への取り組み AI活用と3DS 2.0全件導入で成果に手応え（auコマース＆ライフ） first…",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "New QR Standard Unlocks US Instant Payments at Checkout",
-      "link": "https://www.pymnts.com/real-time-payments/2026/new-x9-150-qr-standard-unlocks-us-instant-payments-at-checkout/",
-      "published": "2026-07-14T13:58:49+00:00",
-      "summary": "The United States does not lack instant payment rails. It lacks a simple, universal front door to them. That is the larger significance of X9.150, a new American national standard for merchant-present…",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "Velocity Raises $38 Million as Stablecoins Reshape Mainstream Business Finance",
-      "link": "https://www.pymnts.com/cryptocurrency/2026/velocity-raises-38-million-dollars-stablecoins-reshape-mainstream-business-finance/",
-      "published": "2026-07-14T12:58:12+00:00",
-      "summary": "Velocity raised $38 million in a Series A funding round to expand its stablecoin payments and treasury platform designed for global enterprises, according to a Tuesday (July 14) press release. The com…",
-      "watches": [
-        "機械が払うWeb"
-      ]
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "Court rejects deal, reopens Clearview AI lawsuit over biometric data collection",
-      "link": "https://www.biometricupdate.com/202607/court-rejects-deal-reopens-clearview-ai-lawsuit-over-biometric-data-collection",
-      "published": "2026-07-14T12:55:54+00:00",
-      "summary": "A novel court settlement that resolved a legal complaint against the data collection practices of facial recognition provider Clearview AI has been thrown out by the U.S. Seventh Circuit Court of Appe…",
-      "watches": []
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "Funding gap puts Sri Lanka’s digital ID project under review",
-      "link": "https://www.biometricupdate.com/202607/funding-gap-puts-sri-lankas-digital-id-project-under-review",
-      "published": "2026-07-14T12:53:30+00:00",
-      "summary": "The Sri Lanka Unique Digital Identity ( SL-UDI ) project faces a budget gap , with quotes from Indian companies surpassing the Indian government's INR 3 billion grant (about LKR 10.5 billion) by more…",
-      "watches": []
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "Age assurance standard builds out with new draft on analysis of age check systems",
-      "link": "https://www.biometricupdate.com/202607/age-assurance-standard-builds-out-with-new-draft-on-analysis-of-age-check-systems",
-      "published": "2026-07-14T12:41:04+00:00",
-      "summary": "Work continues to create and refine a comprehensive standard for online age assurance. Published last year, ISO/IEC 27566 is the first international standard to describe age assurance systems – and it…",
-      "watches": []
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "UK government draws legal line in the sand on social media age minimum",
-      "link": "https://www.biometricupdate.com/202607/uk-government-draws-legal-line-in-the-sand-on-social-media-age-minimum",
-      "published": "2026-07-14T12:30:10+00:00",
-      "summary": "The UK government says it is giving childhood back to the nation’s children with its new legislation restricting social media platforms to users 16 and up. In a release that reads a bit like one of Ge…",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "Citi’s $1 Trillion Treasury Franchise Steals the Quarter",
-      "link": "https://www.pymnts.com/earnings/2026/citi-1trillion-treasury-franchise-steals-the-quarter/",
-      "published": "2026-07-14T12:24:54+00:00",
-      "summary": "Few signals across financial services are delivered as clearly and collectively as the ones on what’s become Wall Street’s own “Super Tuesday” for bank earnings. Five of Wall Street’s largest banks re…",
-      "watches": []
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "HMLR missing the net with Qualified Electronic Signatures, says UK digital ID sector",
-      "link": "https://www.biometricupdate.com/202607/hmlr-missing-the-net-with-qualified-electronic-signatures-says-uk-digital-id-sector",
-      "published": "2026-07-14T12:21:03+00:00",
-      "summary": "The UK’s digital identity sector is appealing to the HM Land Registry (HMLR), the government agency that registers ownership of land and property in England and Wales, over how HMLR uses qualified ele…",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "Business Applications Jump 24% as AI Lowers Startup Costs",
-      "link": "https://www.pymnts.com/news/artificial-intelligence/2026/business-applications-jump-24percent-as-ai-lowers-startup-costs/",
-      "published": "2026-07-14T12:10:58+00:00",
-      "summary": "New U.S. business applications hit 5.6 million in 2025 and have risen 24% since ChatGPT launched, Citadel Securities reported in a July research note, citing data from the U.S. Census Bureau. The medi…",
-      "watches": []
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "OpenAI requires hardware-backed passkeys for trusted cyber access",
-      "link": "https://www.biometricupdate.com/202607/openai-requires-hardware-backed-passkeys-for-trusted-cyber-access",
-      "published": "2026-07-14T11:51:09+00:00",
-      "summary": "OpenAI is requiring stronger account protection for users who access some of its most sensitive AI capabilities. Starting September 1, 2026, individual members of its Trusted Access for Cyber (TAC) pr…",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "U.S. CFTC moves to stop Kalshi from canceling trades as ordered by Michigan court",
-      "link": "https://www.coindesk.com/policy/2026/07/14/u-s-cftc-moves-to-stop-kalshi-from-canceling-trades-as-ordered-by-michigan-court",
-      "published": "2026-07-14T11:51:05+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "Agentic Commerce",
-      "source": "PYMNTS",
-      "title": "CPI Cooled but the Consumer Is Still Sweating",
-      "link": "https://www.pymnts.com/economy/2026/the-cpi-cooled-but-the-consumer-is-still-sweating/",
-      "published": "2026-07-14T11:50:21+00:00",
-      "summary": "The latest inflation report offers consumers something that has been absent for much of the past several years: a measurable decline in overall prices. Whether that translates into stronger spending,…",
-      "watches": []
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "California quadruples access to mobile driver’s licenses",
-      "link": "https://www.biometricupdate.com/202607/california-quadruples-access-to-mobile-drivers-licenses",
-      "published": "2026-07-14T11:02:04+00:00",
-      "summary": "California has opened its mobile driver’s license program to millions more residents under a new law that raises the enrollment limit from 15 percent to 60 percent of the state’s licensed drivers. Gov…",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "情報通信審議会 情報通信技術分科会 陸上無線通信委員会 公共業務用無線システム作業班（第1回）",
-      "link": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/policyreports/joho_tsusin/idou/kokyogyomuyomusen/02kiban13_04000102.html",
-      "published": "2026-07-14T11:00:00+00:00",
-      "summary": "情報通信審議会 情報通信技術分科会 陸上無線通信委員会 公共業務用無線システム作業班（第1回）",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "第34次地方制度調査会第7回専門小委員会",
-      "link": "https://www.soumu.go.jp/main_sosiki/singi/chihou_seido/singi/02gyosei01_04000511_00009.html",
-      "published": "2026-07-14T11:00:00+00:00",
-      "summary": "第34次地方制度調査会第7回専門小委員会",
-      "watches": []
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "NZ Policing Bill raises MPs alarm over expanded biometric powers",
-      "link": "https://www.biometricupdate.com/202607/nz-policing-bill-raises-mps-alarm-over-expanded-biometric-powers",
-      "published": "2026-07-14T10:53:49+00:00",
-      "summary": "New Zealand’s Policing Amendment Bill takes in expanded biometric collection. The country’s justice select committee has recommended the bill be passed, but its report displays deep unease about how f…",
-      "watches": []
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "LAPD’s withdrawal from Flock exposes deeper failures in camera oversight",
-      "link": "https://www.biometricupdate.com/202607/lapds-withdrawal-from-flock-exposes-deeper-failures-in-camera-oversight",
-      "published": "2026-07-14T10:33:49+00:00",
-      "summary": "The Los Angeles Police Department (LAPD) allowed its three-year agreement with Flock Safety to expire July 11 and suspended its use of the company’s automated license plate readers , adding one of the…",
-      "watches": []
-    },
-    {
-      "theme": "デジタルアイデンティティ/VC",
-      "source": "Biometric Update",
-      "title": "Griaule ranks among top fingerprint biometrics providers in MINEX III",
-      "link": "https://www.biometricupdate.com/202607/griaule-ranks-among-top-fingerprint-biometrics-providers-in-minex-iii",
-      "published": "2026-07-14T10:11:33+00:00",
-      "summary": "Brazil-based biometrics provider Griaule has placed sixth among global providers for fingerprint recognition accuracy, and first in Latin America, in an evaluation by NIST, according to a company anno…",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "Some U.S. Senate Democrats come out against Clarity Act, calling it a 'corrupt' bill",
-      "link": "https://www.coindesk.com/policy/2026/07/14/some-u-s-senate-democrats-come-out-against-clarity-act-calling-it-a-corrupt-bill",
-      "published": "2026-07-14T09:57:15+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "Finextra",
-      "title": "Visa unveils AI assistant for banking apps",
-      "link": "https://www.finextra.com/newsarticle/48094/visa-unveils-ai-assistant-for-banking-apps?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-14T09:25:00+00:00",
-      "summary": "Visa has taken the wraps off an AI assistant that US banks can embed into their own apps to provide cardholders with financial insights.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "Finextra",
-      "title": "AI private banking startup Flex raises $70m",
-      "link": "https://www.finextra.com/newsarticle/48092/ai-private-banking-startup-flex-raises-70m?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-14T08:50:00+00:00",
-      "summary": "Flex, an AI-native private banking platform for high-net-worth business owners, has raised $70 million in funding as it bids to go global.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "Binance bets on becoming a crypto 'super app' as stablecoins reshape growth",
-      "link": "https://www.coindesk.com/business/2026/07/14/binance-bets-on-becoming-a-crypto-super-app-as-stablecoins-reshape-growth",
-      "published": "2026-07-14T08:33:19+00:00",
-      "summary": "",
-      "watches": [
-        "機械が払うWeb"
-      ]
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "The Clarity Act isn't a ticket to sanctions evasion, actually",
-      "link": "https://www.coindesk.com/opinion/2026/07/14/the-clarity-act-isn-t-a-ticket-to-sanctions-evasion-actually",
-      "published": "2026-07-14T08:27:48+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "Mizuho downgrades Circle to underperform, cuts price target to $50 on Open USD threat",
-      "link": "https://www.coindesk.com/business/2026/07/14/mizuho-downgrades-circle-to-underperform-cuts-price-target-to-usd50-on-open-usd-threat",
-      "published": "2026-07-14T07:59:44+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "Wikipedia blackout could hurt how AI engines like ChatGPT understand crypto",
-      "link": "https://www.coindesk.com/policy/2026/07/14/wikipedia-blackout-could-hurt-how-ai-engines-like-chatgpt-understand-crypto",
-      "published": "2026-07-14T07:39:26+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "U.S., UK move to align rules for tokenized finance across world's largest financial markets",
-      "link": "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets",
-      "published": "2026-07-14T07:29:48+00:00",
       "summary": "",
       "watches": []
     },
@@ -523,147 +1063,10 @@
     },
     {
       "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "令和６年能登半島地震関連情報に関する特設ページを更新しました。（令和８年７月14日 15時00分時点）",
-      "link": "https://www.fsa.go.jp/ordinary/earthquake202401/press.html",
-      "published": "2026-07-14T06:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "Finextra",
-      "title": "AI investment boom could turn to bust, warns BIS paper",
-      "link": "https://www.finextra.com/newsarticle/48088/ai-investment-boom-could-turn-to-bust-warns-bis-paper?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-14T06:00:00+00:00",
-      "summary": "The trillion-dollar AI investment boom risks a bust that could damage the global economy, the Bank for International Settlements has warned.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "JPMorgan says Hyperliquid's rise threatens Circle's USDC economics",
-      "link": "https://www.coindesk.com/business/2026/07/14/jpmorgan-says-hyperliquid-s-rise-threatens-circle-s-usdc-economics",
-      "published": "2026-07-14T05:57:16+00:00",
-      "summary": "",
-      "watches": [
-        "機械が払うWeb"
-      ]
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "PaymentsDive",
-      "title": "Amex, Delta card spending soars",
-      "link": "https://www.paymentsdive.com/news/amex-delta-card-spending-soars/825180/",
-      "published": "2026-07-14T05:41:00+00:00",
-      "summary": "The card company is benefiting from a continuous rise in spending by consumers who hold Delta Air Lines branded cards.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "Ethereum Foundation spinout EthSystems targets banks with blockchain privacy technology",
-      "link": "https://www.coindesk.com/tech/2026/07/14/ethereum-foundation-spinout-ethsystems-targets-banks-with-blockchain-privacy-technology",
-      "published": "2026-07-14T05:31:44+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "CoinDesk",
-      "title": "For pension funds, tokenization’s real play is balance-sheet management, Fidelity’s Lai says",
-      "link": "https://www.coindesk.com/markets/2026/07/14/for-pension-funds-tokenization-s-real-play-is-balance-sheet-management-fidelity-s-lai-says",
-      "published": "2026-07-14T05:05:18+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "Finextra",
-      "title": "Emirates NBD enables blockchain-based cross-border payments on Partior network",
-      "link": "https://www.finextra.com/newsarticle/48087/emirates-nbd-enables-blockchain-based-cross-border-payments-on-partior-network?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-14T04:04:00+00:00",
-      "summary": "Emirates NBD has gone live on the Partior network for real-time blockchain-based cross-border US dollar payments.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "Finextra",
-      "title": "Ofcom to hold Big Tech accountable for scam adverts",
-      "link": "https://www.finextra.com/newsarticle/48085/ofcom-to-hold-big-tech-accountable-for-scam-adverts?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-14T02:04:00+00:00",
-      "summary": "Big Tech will be held accountable for tackling scam ads on their platforms, under proposed new fraud-fighting rules announced by Ofcom, the independent regulatory and competition authority for the UK’…",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "Finextra",
-      "title": "ECB selects 36 PSPs for digital euro pilot phase",
-      "link": "https://www.finextra.com/newsarticle/48084/ecb-selects-36-psps-for-digital-euro-pilot-phase?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-14T01:52:00+00:00",
-      "summary": "The European Central Bank (ECB) has selected 36 payment service providers (PSP) from across the euro area to participate in the digital euro pilot.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
       "source": "日本銀行",
       "title": "日本銀行が保有する国債の銘柄別残高",
       "link": "http://www.boj.or.jp/statistics/boj/other/mei/release/2026/mei260710.xlsx",
       "published": "2026-07-13T23:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "第5回先進的AI利活用アドバイザリーボードの会議資料等を掲載しました",
-      "link": "https://www.digital.go.jp/councils/ai-advisory-board/770d4c48-7f40-49a6-a49d-56a763800a42",
-      "published": "2026-07-13T22:08:31+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "小型無人飛行機等の飛行禁止区域に関する資料等を更新しました",
-      "link": "https://www.digital.go.jp/about/drone",
-      "published": "2026-07-13T21:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "自治体フロントヤード改革の取組状況に関するダッシュボードを更新しました",
-      "link": "https://www.digital.go.jp/resources/govdashboard/front-yard-reform",
-      "published": "2026-07-13T21:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "マイナンバーカードを用いた公的個人認証サービス（JPKI）導入事業者及び事例一覧を更新しました",
-      "link": "https://www.digital.go.jp/policies/mynumber/private-business/jpki-introduction/mynumbercard-user-list",
-      "published": "2026-07-13T21:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "民間事業者向けマイナンバーカード活用情報における基本情報の資料を更新しました",
-      "link": "https://www.digital.go.jp/policies/mynumber/private-business",
-      "published": "2026-07-13T21:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "松本大臣記者会見（令和8年7月14日）動画を掲載しました",
-      "link": "https://www.digital.go.jp/speech/minister-260714-01",
-      "published": "2026-07-13T18:18:19+00:00",
       "summary": "",
       "watches": []
     },
@@ -678,420 +1081,11 @@
     },
     {
       "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "楽天市場におけるAI活用は？ パーソナライズされた買い物体験を強化へ",
-      "link": "https://paymentnavi.com/paymentnews/176965.html",
-      "published": "2026-07-13T15:35:48+00:00",
-      "summary": "2026年7月14日9:35 楽天グループは、2026年7月7日、「楽天市場」におけるAI活用の取り組みに関する説明会を開催した。楽天では、全社的に「AI-nization（エーアイナイゼーション）」を推進しており、同説 […] The post 楽天市場におけるAI活用は？ パーソナライズされた買い物体験を強化へ first appeared on ペイメントナビ .",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "Finextra",
-      "title": "Monzo co-founder Blomfield joins Anthropic",
-      "link": "https://www.finextra.com/newsarticle/48080/monzo-co-founder-blomfield-joins-anthropic?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "published": "2026-07-13T15:01:00+00:00",
-      "summary": "AI giant Anthropic has hired the co-founder and former CEO of UK digital bank Monzo, Tom Blomfield.",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "McKinsey Insights",
-      "title": "How consumers are reshaping the future of mobility",
-      "link": "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/how-consumers-are-reshaping-the-future-of-mobility",
-      "published": "2026-07-13T15:00:00+00:00",
-      "summary": "Our recent survey reveals shifting consumer priorities, with rising expectations for affordability, sustainability, and technology and greater openness to new brands and transportation modes.",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "McKinsey Insights",
-      "title": "How physician CEOs hone the double-edged sword of clinical training",
-      "link": "https://www.mckinsey.com/industries/healthcare/our-insights/how-physician-ceos-hone-the-double-edged-sword-of-clinical-training",
-      "published": "2026-07-13T15:00:00+00:00",
-      "summary": "The journey from physician to CEO has no prescribed path, but those who’ve reached the top reveal how they evolved the strengths and instincts forged in clinical training for enterprise leadership.",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "McKinsey Insights",
-      "title": "Rewiring customer experience for the agentic era",
-      "link": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/rewiring-customer-experience-for-the-agentic-era",
-      "published": "2026-07-13T15:00:00+00:00",
-      "summary": "As AI agents take on moment-to-moment decisions, leading companies are redesigning customer experience from predefined journeys to dynamic, cross-channel orchestration.",
-      "watches": [
-        "機械が払うWeb"
-      ]
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "McKinsey Insights",
-      "title": "Building expertise in the age of AI: Who trains the next generation?",
-      "link": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/building-expertise-in-the-age-of-ai-who-trains-the-next-generation",
-      "published": "2026-07-13T15:00:00+00:00",
-      "summary": "As AI reshapes entry-level work, organizations should rethink how expertise is developed by integrating knowledge management, role design, learning, and coaching into a single system.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "「名古屋栄周辺エリアQIRA［キラ］ポイントキャンペーン」実施（JFRカード）",
-      "link": "https://paymentnavi.com/paymentnews/176962.html",
-      "published": "2026-07-13T14:08:32+00:00",
-      "summary": "2026年7月14日8:08 JFRカードは、2026年6月に名古屋・栄に新たに開業した新たなラグジュアリーモール「HAERA」を含む栄周辺エリアの回遊促進と地域活性化を目的に、2026年7月22日から8月16日までの期 […] The post 「名古屋栄周辺エリアQIRA［キラ］ポイントキャンペーン」実施（JFRカード） first appeared on ペイメントナビ .",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "ペイメントナビ",
-      "title": "壱岐市と7社、「壱岐島キャッシュレス推進プロジェクト」開始",
-      "link": "https://paymentnavi.com/paymentnews/176958.html",
-      "published": "2026-07-13T14:01:15+00:00",
-      "summary": "2026年7月14日8:01 長崎県壱岐市、ふくおかフィナンシャルグループ（FFG）、十八親和銀行、FFGカード、FFGビジネスコンサルティング、iBankマーケティング、三井住友カード、SMBC GMO PAYMENT […] The post 壱岐市と7社、「壱岐島キャッシュレス推進プロジェクト」開始 first appeared on ペイメントナビ .",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "「自動運転社会を支える通信インフラ戦略」の公表",
-      "link": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000794.html",
-      "published": "2026-07-13T11:00:00+00:00",
-      "summary": "「自動運転社会を支える通信インフラ戦略」の公表",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "情報通信行政・郵政行政審議会 電気通信事業部会 市場検証委員会（第12回）",
-      "link": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/policyreports/joho_tsusin/kaisai/yusei/02kiban02_04000899.html",
-      "published": "2026-07-13T11:00:00+00:00",
-      "summary": "情報通信行政・郵政行政審議会 電気通信事業部会 市場検証委員会（第12回）",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "ICTリテラシーに係る実態調査の結果公表",
-      "link": "https://www.soumu.go.jp/menu_news/s-news/01ryutsu05_02000193.html",
-      "published": "2026-07-13T11:00:00+00:00",
-      "summary": "ICTリテラシーに係る実態調査の結果公表",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "オンラインカジノに係るアクセス抑止の在り方に関する検討会（第15回）",
-      "link": "https://www.soumu.go.jp/main_sosiki/kenkyu/online_casino/02kiban18_02000493.html",
-      "published": "2026-07-13T11:00:00+00:00",
-      "summary": "オンラインカジノに係るアクセス抑止の在り方に関する検討会（第15回）",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "林総務大臣閣議後記者会見の概要",
-      "link": "https://www.soumu.go.jp/menu_news/kaiken/01koho01_02001557.html",
-      "published": "2026-07-13T11:00:00+00:00",
-      "summary": "林総務大臣閣議後記者会見の概要",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "令和８年７月滋賀県甲賀市の土砂崩れに係る災害等に対する金融上の措置について公表しました。",
-      "link": "https://www.fsa.go.jp/news/r8/ginkou/20260713.html",
-      "published": "2026-07-13T09:50:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "金融経済教育イベント「ワニーサと学ぶ 未来のためのお金の教室 in旭川」の開催について公表しました。",
-      "link": "https://www.fsa.go.jp/news/r8/sonota/20260713/20260713.html",
-      "published": "2026-07-13T07:00:00+00:00",
-      "summary": "金融経済教育イベント「ワニーサと学ぶ 未来のためのお金の教室 in旭川」の開催について公表しました。詳しくは特設サイトをご覧ください。",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "PaymentsDive",
-      "title": "FedNow advances over hurdles",
-      "link": "https://www.paymentsdive.com/news/fednow-advances-over-hurdles/825071/",
-      "published": "2026-07-13T06:22:53+00:00",
-      "summary": "The Federal Reserve’s instant payments system is adding banks and accounts, but building more use cases to spur uptake remains a challenge.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "人事異動（令和８年７月10日付及び令和８年７月11日付）について公表しました。",
-      "link": "https://www.fsa.go.jp/common/about/jinji/index.html",
-      "published": "2026-07-13T06:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "PaymentsDive",
-      "title": "Why Cash App wants food orders",
-      "link": "https://www.paymentsdive.com/news/why-cash-app-wants-food-orders-square-merchants-dining/825040/",
-      "published": "2026-07-13T04:46:30+00:00",
-      "summary": "Block aims to meld its Square merchants network with Cash App users to push local dining, boosting the app’s stickiness and payments volume.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
       "source": "日本銀行",
       "title": "令和8年7月滋賀県甲賀市の土砂崩れに係る災害等に対する金融上の措置について（滋賀県）",
       "link": "http://www.boj.or.jp/about/bcp/fso/fso260713a.pdf",
       "published": "2026-07-12T23:00:00+00:00",
       "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "松本大臣記者会見（令和8年7月10日）要旨を掲載しました",
-      "link": "https://www.digital.go.jp/speech/minister-260710-01",
-      "published": "2026-07-12T22:30:14+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "デジタル庁における契約事業者等に関する情報の資料を更新しました",
-      "link": "https://www.digital.go.jp/procurement",
-      "published": "2026-07-12T21:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "アナログ規制見直しを進めるダイアローグ「RegTech ミート」7月の開催スケジュールを掲載しました",
-      "link": "https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee/regtechconsortium/regtechmeet",
-      "published": "2026-07-12T21:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "デジタル庁",
-      "title": "令和8年7月13日付デジタル庁幹部一覧を掲載しました",
-      "link": "https://www.digital.go.jp/about/member",
-      "published": "2026-07-12T21:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "McKinsey Insights",
-      "title": "Rewired takes: Practical people lessons for scaling AI adoption",
-      "link": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/rewired-takes-practical-people-lessons-for-scaling-ai-adoption",
-      "published": "2026-07-12T15:00:00+00:00",
-      "summary": "McKinsey Senior Partner Brooke Weddle explores how companies are successfully scaling their AI programs.",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "McKinsey Insights",
-      "title": "Is that AI agent worth it? Agentic economics and the modern operating model",
-      "link": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/is-that-ai-agent-worth-it-agentic-economics-and-the-modern-operating-model",
-      "published": "2026-07-12T15:00:00+00:00",
-      "summary": "As companies focus on spiraling AI costs, they need to make sure not to lose sight of the real prize.",
-      "watches": [
-        "機械が払うWeb"
-      ]
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "McKinsey Insights",
-      "title": "How AI is reshaping value creation in residential real estate",
-      "link": "https://www.mckinsey.com/industries/real-estate/our-insights/how-ai-is-reshaping-value-creation-in-residential-real-estate",
-      "published": "2026-07-12T15:00:00+00:00",
-      "summary": "McKinsey’s Alex Wolkomir discusses how housing leaders can win with AI by improving customer experiences, redesigning workflows, and building trust between parties in the ecosystem.",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "宇宙通信アドバイザリーボード（第10回）",
-      "link": "https://www.soumu.go.jp/main_sosiki/kenkyu/Space_Communications/02tsushin05_04000184.html",
-      "published": "2026-07-12T11:00:00+00:00",
-      "summary": "宇宙通信アドバイザリーボード（第10回）",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "地域における外国人との秩序ある共生社会の実現のための研究会（第2回）",
-      "link": "https://www.soumu.go.jp/main_sosiki/kenkyu/chiikiniokerugaikokujintonochitsujoaru/02gyosei05_04000118.html",
-      "published": "2026-07-12T11:00:00+00:00",
-      "summary": "地域における外国人との秩序ある共生社会の実現のための研究会（第2回）",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "総務省",
-      "title": "基幹放送用周波数使用計画の一部を変更する告示案等に関する意見募集",
-      "link": "https://www.soumu.go.jp/menu_news/s-news/01ryutsu09_02000393.html",
-      "published": "2026-07-12T11:00:00+00:00",
-      "summary": "基幹放送用周波数使用計画の一部を変更する告示案等に関する意見募集",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "「貸金業法施行規則の一部を改正する内閣府令（案）」に対するパブリックコメントの実施について公表しました。",
-      "link": "https://www.fsa.go.jp/news/r8/kashikin/20260710/20260710.html",
-      "published": "2026-07-10T08:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "「連結財務諸表の用語、様式及び作成方法に関する規則に規定する金融庁長官が定める企業会計の基準を指定する件」に対するパブリックコメントの実施について公表しました。",
-      "link": "https://www.fsa.go.jp/news/r8/sonota/20260710-2/20260710.html",
-      "published": "2026-07-10T08:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "金融庁",
-      "title": "令和５年金融商品取引法等改正及び社債、株式等の振替に関する法律等改正（３年６月以内施行）に係る内閣府令（案）に対するパブリックコメントの実施について公表しました。",
-      "link": "https://www.fsa.go.jp/news/r8/sonota/20260710-4/20260710.html",
-      "published": "2026-07-10T08:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "PaymentsDive",
-      "title": "Fraud fight can’t wait on government",
-      "link": "https://www.paymentsdive.com/news/merchants-must-fight-fraud-on-the-frontlines-retail-chargebacks/824949/",
-      "published": "2026-07-10T05:27:32+00:00",
-      "summary": "“While we wait for federal roundtable policies to trickle down, merchants are suffering heavily right now,” writes one industry consultant.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "PaymentsDive",
-      "title": "Merchants blast credit union rule",
-      "link": "https://www.paymentsdive.com/news/merchants-blast-credit-union-card-fee-rule/824904/",
-      "published": "2026-07-10T05:13:00+00:00",
-      "summary": "Retail and restaurant groups say federal credit union regulators imposed an “unlawful” rule preempting an Illinois law that curbs payment card fees.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "日本銀行",
-      "title": "フェイルの発生状況（6月）",
-      "link": "http://www.boj.or.jp/statistics/set/bffail/sjgb2606.pdf",
-      "published": "2026-07-09T22:30:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "日本銀行",
-      "title": "（日銀レビュー）高粒度データを用いた大手行の外貨預金の顧客動態・預金スプレッドの考察",
-      "link": "http://www.boj.or.jp/research/wps_rev/rev_2026/rev26j10.htm",
-      "published": "2026-07-09T22:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "McKinsey Insights",
-      "title": "How a 180-year-old news institution prepares for its next reinvention",
-      "link": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/how-a-180-year-old-news-institution-prepares-for-its-next-reinvention",
-      "published": "2026-07-09T15:00:00+00:00",
-      "summary": "Associated Press CEO Daisy Veerasingham discusses AI, the economics of trusted content, and why preserving editorial independence matters more than preserving any particular business structure.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "日本銀行",
-      "title": "企業物価指数（6月）",
-      "link": "http://www.boj.or.jp/statistics/pi/cgpi_release/cgpi2606.pdf",
-      "published": "2026-07-09T14:50:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "PaymentsDive",
-      "title": "Debit cards top payments, Fed says",
-      "link": "https://www.paymentsdive.com/news/debit-cards-top-payments-fed-says/824840/",
-      "published": "2026-07-09T05:57:00+00:00",
-      "summary": "While the cards still dominate payments, growth in their use for 2024 was the slowest since a triennial Federal Reserve report started in 2001.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "PaymentsDive",
-      "title": "Cash App triggers $45M settlement",
-      "link": "https://www.paymentsdive.com/news/cash-app-block-to-pay-45m-over-consumer-fraud-states-penalty/824795/",
-      "published": "2026-07-09T04:20:00+00:00",
-      "summary": "Block misled consumers about the safety of using the financial app and failed to help users who were fraud victims, 46 states alleged.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "PaymentsDive",
-      "title": "U.S. Bank pursues payments-first strategy",
-      "link": "https://www.paymentsdive.com/news/us-bank-pursues-gen-z-payments-first-strategy-deposits-banking/824823/",
-      "published": "2026-07-09T03:22:59+00:00",
-      "summary": "With payments as the entry point to banking relationships, the lender cultivates a low-cost funding base, said executive Arijit Roy.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "日本銀行",
-      "title": "地域経済報告（さくらレポート、2026年7月）",
-      "link": "http://www.boj.or.jp/research/brp/rer/rer260709.htm",
-      "published": "2026-07-08T20:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "日本銀行",
-      "title": "東海地域業況判断DI（6月）",
-      "link": "http://www.boj.or.jp/statistics/other/toukai/toukai.xlsx",
-      "published": "2026-07-08T20:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "日本銀行",
-      "title": "関東甲信越地域業況判断DI（6月）",
-      "link": "http://www.boj.or.jp/statistics/other/kantou/kantou.xlsx",
-      "published": "2026-07-08T20:00:00+00:00",
-      "summary": "",
-      "watches": []
-    },
-    {
-      "theme": "コンサル/政策",
-      "source": "McKinsey Insights",
-      "title": "Agents, robots, and us: How AI reshapes work and skills in Latin America",
-      "link": "https://www.mckinsey.com/mgi/our-research/agents-robots-and-us-how-ai-reshapes-work-and-skills-in-latin-america",
-      "published": "2026-07-08T15:00:00+00:00",
-      "summary": "Most skills will still be needed—but how people use them will change as they work alongside intelligent machines.",
-      "watches": []
-    },
-    {
-      "theme": "決済・フィンテック",
-      "source": "PaymentsDive",
-      "title": "Fiserv president exits",
-      "link": "https://www.paymentsdive.com/news/fiserv-president-exits/824708/",
-      "published": "2026-07-08T06:01:00+00:00",
-      "summary": "As Dhivya Suryadevara announced her resignation Tuesday, the company elevated two other executives.",
       "watches": []
     }
   ]
